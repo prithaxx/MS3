@@ -10,6 +10,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 40px;
+  padding-top: 70px;
 }
 
 @media screen and (min-width: 900px) {
@@ -130,13 +131,13 @@ body {
   margin-bottom: 30px;
 }
 
-/* NAVBAR */
+/* ------------NAVBAR------------- */
 
 nav{
   display: flex;
   width: 100%;
   background-color: rgba(4, 6, 56, 0.894);
-  position: relative;
+  position: fixed;
   justify-content: space-between;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
@@ -196,7 +197,7 @@ nav{
   color: white;
 }
 
-/* BURGER  */
+/* --------------BURGER ---------------- */
 .openbtn{
   background-color: transparent;
   border: none;
