@@ -3,56 +3,88 @@ body{
     margin: 0;
     background-color: aliceblue;
 }
-.page {
+
+h1{
+
+     
+}
+
+.mainpage {
     font-family: Helvetica, sans-serif;
     font-size: 13px;
-    margin-left: 5%;
-    margin-right: 5%;
+   
     margin-bottom: 40px;
+    align-content: center;
     
 }
 @media screen and (min-width: 900px) {
-    .page {
+    .mainpage {
       margin-left: 15%; 
       margin-right: 15%;
     }
   }
 
-.browseCat{
+.browse{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    
     
 }
-.doll_list_flex {
-    width: 800px;
-    height: 400px;
-    
 
-    /*
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 100%;
-    text-align: center;
+
+.service_header, .contractor_list{
+    width: 900px; 
+    height: 50px;
+    padding-bottom: 15px; 
+    
+    padding-left: 40px;
+    margin: auto;
+    
+    background-color:rgb(4, 6, 56);
+    color: white;
+    display: flex;
+    
+   
+
+    
+    
+    
+}
+.doll_and_list {
+    
     padding-top: 20px;
-    */
-  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    position: absolute; 
-
-    margin: auto;  
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+    margin: auto;
+     
     
 
 }
 
 .dollhouse {
-    /*border: 1px solid;*/ 
+    display: flex;
     width: 400px;
     height: 400px;
     float: left; 
-    
-    
-
     max-width: 800px;
+}
+
+.doll-buttons {
+    position: absolute;
+    
+}
+
+.doll-kitchen button{
+    background-color: red;
+    width: 40px; 
+    height: 60px; 
+    position: absolute; 
 }
 
 .dollImg {
@@ -62,42 +94,21 @@ body{
 }
 
 .serviceList{
-    /* border: 1px solid; */
-    width: 400px;
-    height: 400px;
-    max-width: 800px; 
-    float: right; 
-
     
+    
+    max-width: 800px;
+    display: flex; 
+    padding-top: 20px;
+    float: right; 
+    
+
 
 }
 
 .list{
     display: flex; 
     flex-direction: row; 
-}
-
-.results {
-    
-}
-
-.clisting{
-    width: 800px;
-    height: 400px;
-    margin: 40px;
-}
-
-.sort{
-    width: 600px;
-    height: 50px;
-    margin: 50px;
-
-}
-
-h1{
-    
-    margin: 20px;
-     
+    font-size: 16px;
 }
 
 .slist.left{
@@ -116,6 +127,56 @@ h1{
     position: relative;
     
 }
+
+.results {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.clisting{
+    width: 800px;
+    height: 400px;
+    margin: 40px;
+}
+
+.sort{
+
+    background-color: rgba(6, 62, 126, 0.212);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 50%;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: black;
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    
+    
+
+}
+
+.sort_options {
+    margin-top: 18px;
+    margin-left: 60px;
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+
+}
+
+.sort-dropdown {
+    padding-left: 10px;
+    justify-content: space-between;
+    
+
+}
+
+
 
 .item{
     padding-bottom: 5px;

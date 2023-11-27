@@ -11,52 +11,87 @@
     <div>
         <!--Nav bar-->
     </div>
-    <div class = "page"> 
-        <div class = "browseCat">
-            <div class = "doll_list_flex"> 
+    <div class = "mainpage"> 
+        <div class = "browse">
+            <div class = "service_header">
+                <div style= "padding-right: 230px;">
+                <h1>Services by Space</h1></div>
+                <div style = "float: right;">
+                <h1>Service List</h1>
+                </div>
+            </div>
+            <div class = "doll_and_list"> 
                 <div class = "dollhouse">
-                    <div><h1>Services by Space</h1></div>
+                    
                     <img class = "dollImg" src="dollhouse-PhotoRoom.png"> 
+                    <div class= "doll-buttons">
+                        <button class = "doll-kitchen">Kitchen</button>
+
+                    </div>
                 </div>
                 <div class = "serviceList">   
-                    <h1>Service List</h1>
-                        <div class = "list">
-                        <ul class = "slist.left">
-                            <li class = item >Appliance Repair</li>
-                            <li class = item >Basement Renovation</li>
-                            <li class = item >Bathroom Renovation</li>
-                            <li class = item>Carpeting</li>
-                            <li class = item>Drywalling</li>
-                            <li class = item>Electrical</li>
-                            <li class = item>Flooring</li>
-                            <li class = item>Foundation</li>
-                            <li class = item>Heating and Cooling</li>
-                        </ul>
                     
-                        <ul class = "slist.right">
-                            <li class = item>Insulation</li>
-                            <li class = item>Landscaping</li>
-                            <li class = item>Painting</li>
-                            <li class = item>Plumbing</li>
-                            <li class = item>Roofing</li>
-                            <li class = item>Siding</li>
-                            <li class = item>Tree Services</li>
-                            <li class = item>Water Heating</li>
-                            <li class = item>Windows and Doors</li>
-                        </ul>
+                        <div class = "list">
+                            <ul class = "slist.left">
+                                <li class = item >Appliance Repair</li>
+                                <li class = item >Basement Renovation</li>
+                                <li class = item >Bathroom Renovation</li>
+                                <li class = item>Carpeting</li>
+                                <li class = item>Drywalling</li>
+                                <li class = item>Electrical</li>
+                                <li class = item>Flooring</li>
+                                <li class = item>Foundation</li>
+                                <li class = item>Heating and Cooling</li>
+                            </ul>
+                        
+                            <ul class = "slist.right">
+                                <li class = item>Insulation</li>
+                                <li class = item>Landscaping</li>
+                                <li class = item>Painting</li>
+                                <li class = item>Plumbing</li>
+                                <li class = item>Roofing</li>
+                                <li class = item>Siding</li>
+                                <li class = item>Tree Services</li>
+                                <li class = item>Water Heating</li>
+                                <li class = item>Windows and Doors</li>
+                            </ul>
                         </div>
                 </div>
             </div>
-        </div>
-        <div class = "results">
-            <h1>Contractor List</h1>
-        </div>
-        <div class = "sort">
-            <div>
-                
+        
+            <div class = "results">
+                <div class = "contractor_list">
+                    <h1>Contractor List: [Selected Category]</h1>
+                    
+                </div>
+            
+                <div class = "sort">
+                    
+                    <h2>Sort:</h2>
+                    <div class = "sort_options">
+                        <select class="dropdown" name="distance" id="distance">
+                            <option value="distance">Distance</option>
+                            <option value="radius">Radius</option>
+                            <option value="postal">Postal Code</option>
+                            
+                        </select>
+                        <select class="sort-dropdown" name="price" id="price">
+                            <option value="$">$</option>
+                            <option value="$$">$$</option>
+                            <option value="$$$">$$$</option>
+                            
+                        </select>
+                        <select class="dropdown" name="reviews" id="reviews">
+                            <option value="top-rated">Top Rated</option>
+                            <option value="lowest-rating">Lowest Rating</option>
+                            <option value="highest-rating">Highest Rating</option>
+                            
+                        </select>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-
         
     </div>
     </body>
