@@ -90,3 +90,10 @@ function goToUserHomePage(){
   var targetPage = 'user_home.html';
   window.location.href = targetPage;
 }
+
+function confirmDelete(btn) {
+  if (confirm("Are you sure you want to delete this row?")) {
+      var row = btn.parentNode.parentNode; // Get the parent <tr> of the button
+      row.parentNode.removeChild(row); // Remove the <tr> from the table
+  }
+}
