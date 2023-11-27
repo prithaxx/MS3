@@ -46,6 +46,7 @@ h1{
     background-color:rgb(4, 6, 56);
     color: white;
     display: flex;
+    align-items: normal;
     
    
 
@@ -55,13 +56,13 @@ h1{
 }
 .doll_and_list {
     
-    padding-top: 20px;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     height: 400px;
-    margin: auto;
+    
      
     
 
@@ -77,21 +78,185 @@ h1{
 
 .doll-buttons {
     position: absolute;
-    
+
 }
 
-.doll-kitchen button{
-    background-color: red;
-    width: 40px; 
-    height: 60px; 
-    position: absolute; 
-}
+
 
 .dollImg {
     display: flex; 
     height: 65%; 
     margin-left: 20px;
 }
+.doll-kitchen{
+    margin-top: 182px;
+    margin-left: 210px;
+    background-color: red;
+    border: none;
+    width: 105px; 
+    height: 68px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 25px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.doll-kitchen button:hover{
+    background-color: grey;
+    color: white; 
+}
+.doll-bathroom{
+    margin-top: 182px;
+    margin-left: 112px;
+    background-color: red;
+    border: none;
+    width: 95px; 
+    height: 68px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 13px;
+    font-size: medium;
+}
+
+.doll-bathroom button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-utility{
+    margin-top: 182px;
+    margin-left: 40px;
+    background-color: red;
+    border: none;
+    width: 68px; 
+    height: 68px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 13px;
+    font-size: medium;
+}
+
+.doll-utility button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-bathroom2{
+    margin-top: 110px;
+    margin-left: 246px;
+    background-color: red;
+    border: none;
+    width: 68px; 
+    height: 68px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 6px;
+    font-size: small;
+}
+
+.doll-bathroom2 button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-nursery{
+    margin-top: 108px;
+    margin-left: 146px;
+    background-color: red;
+    border: none;
+    width: 95px; 
+    height: 70px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 16px;
+    font-size: medium;
+}
+
+.doll-nursery button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-bedroom{
+    margin-top: 95px;
+    margin-left: 40px;
+    background-color: red;
+    border: none;
+    width: 102px; 
+    height: 83px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 33px;
+    padding-left: 18px;
+    font-size: medium;
+}
+
+.doll-bedroom button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-attic{
+    margin-top: 16px;
+    margin-left: 50px;
+    background-color: red;
+    border: none;
+    width: 98px; 
+    height: 76px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 30px;
+    font-size: medium;
+
+    
+    border: 0 solid red;
+    width: 90px;
+    border-bottom-width: 100%;
+    border-left-width: 100px;
+    border-left-color: transparent;
+      
+}
+
+.doll-attic button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+.doll-office{
+    margin-top: 36px;
+    margin-left: 146px;
+    background-color: red;
+    border: none;
+    width: 95px; 
+    height: 68px; 
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: medium;
+}
+
+.doll-office button:hover{
+    background-color: grey;
+    color: white; 
+}
+
+
 
 .serviceList{
     
@@ -100,6 +265,7 @@ h1{
     display: flex; 
     padding-top: 20px;
     float: right; 
+    margin-left: 100px;
     
 
 
@@ -135,10 +301,12 @@ h1{
     
 }
 
+.clist{
+   
+}
+
 .clisting{
-    width: 800px;
-    height: 400px;
-    margin: 40px;
+
 }
 
 .sort{
