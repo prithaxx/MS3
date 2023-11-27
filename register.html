@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>YourContractor.com</title>
+      <link rel="stylesheet" href="register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+       <!-- Navigation bar -->
+      <nav>
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <div class="nav-header">
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+            <a href="#" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+          </div>
+          <a href="#">Home</a>
+          <a href="#">Feed</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a hred="#" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a hred="#" style="font-size: 20px;">Electrical</a>
+              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
+              <a hred="#" style="font-size: 20px;">Interior Painting</a>
+              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
+              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
+              <a hred="#" style="font-size: 20px;">General Contracting</a>
+              <a hred="#" style="font-size: 20px;">Gas Lines</a>
+              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-location-bars">
+          <input type="search" placeholder="Basement Renovations" style="width: 300px;">
+    
+          <!-- Location bar -->
+          <input type="search" placeholder="Winnipeg, MB" style="width: 300px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account"><i class="fa fa-user"></i> My Account</button>
+        </div>
+
+      </nav>
+
+      <div class="register-box">
+        <h1>Register</h1>
+        <form>
+            <div class="register-group">
+                <div class="register-field">
+                    <label>Enter email as username:</label>
+                    <input type="email" placeholder="example@something.ca">
+                </div>
+
+                <div class="register-field">
+                    <label>Create password:</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="register-field">
+                    <label>Confirm password:</label>
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <button type="button">Register</button>
+            </div>
+        </form>
+
+
+      </div>
+
+    </body>
+    
+</html>    
