@@ -49,8 +49,55 @@ function toggleNav() {
   } else {
     // Open the side navigation
     nav.style.width = "250px";
-    btnText.innerHTML = ""; // Make the text inside the button disappear
+    btnText.innerHTML = ""; 
   }
+}
+
+// ------------ SEARCH FUNCTIONALITIES ----------------
+
+document.addEventListener('click', function(event) {
+  const input = document.getElementById('searchInput');
+  const suggestionsContainer = document.getElementById('suggestions-container');
+  if (!input.contains(event.target) && !suggestionsContainer.contains(event.target)) {
+      suggestionsContainer.style.display = 'none';
+  }
+});
+
+function showSuggestions() {
+  const input = document.getElementById('searchInput');
+  const suggestionsContainer = document.getElementById('suggestions-container');
+  suggestionsContainer.innerHTML = '';
+  const suggestions = getSuggestions(input.value);
+
+  // Display suggestions
+  suggestions.forEach(suggestion => {
+      const suggestionLink = document.createElement('a');
+      suggestionLink.className = 'suggestion-item';
+      suggestionLink.textContent = suggestion;
+      suggestionLink.href = 'user_home.html'; // change this
+
+      suggestionLink.addEventListener('click', (event) => {
+          event.preventDefault(); 
+          input.value = suggestion;
+          suggestionsContainer.style.display = 'none';
+      });
+
+      suggestionsContainer.appendChild(suggestionLink);
+  });
+  suggestionsContainer.style.display = suggestions.length > 0 ? 'block' : 'none';
+  input.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+          const selectedLink = suggestionsContainer.querySelector('.suggestion-item');
+          if (selectedLink) {
+              window.location.href = selectedLink.href;
+          }
+      }
+  });
+}
+
+function getSuggestions(query) {
+  const suggestionsList = ['Bathroom tile fixing', 'Kitchen remodelling', 'Carpet installation', 'Innovate Renovations'];
+  return suggestionsList.filter(suggestion => suggestion.toLowerCase().includes(query.toLowerCase()));
 }
 
 function scrollWriteReviewSection() {
@@ -93,7 +140,7 @@ function goToUserHomePage(){
 
 function confirmDelete(btn) {
   if (confirm("Are you sure you want to delete this row?")) {
-      var row = btn.parentNode.parentNode; // Get the parent <tr> of the button
-      row.parentNode.removeChild(row); // Remove the <tr> from the table
+      var row = btn.parentNode.parentNode; 
+      row.parentNode.removeChild(row); 
   }
 }
