@@ -13,6 +13,9 @@
     </div>
     <div class = "mainpage"> 
         <div class = "browse">
+            <div class = "breadcrumb">
+                <h3 class = "breadcrumb">Main > Browse</h3>
+            </div>
             <div class = "service_header">
                 <div style= "width: 50%;">
                     <h1>Services by Space</h1>
@@ -26,50 +29,52 @@
                     
                     <img class = "dollImg" src="dollhouse-PhotoRoom.png"> 
                     <div class= "doll-buttons">
-                    <button class = "doll-kitchen">Kitchen</button>
-                    <button class = "doll-bathroom">Bathroom</button>
-                    <button class = "doll-utility">Utility</button>
-                    <button class = "doll-bathroom2">Bathroom</button>
-                    <button class = "doll-nursery">Nursery</button>
-                    <button class = "doll-bedroom">Bedroom</button>
+                    <button onclick="updateCHeader('Kitchen')" class = "doll-kitchen">Kitchen</button>
+                    <button onclick="updateCHeader('Bathroom')" class = "doll-bathroom">Bathroom</button>
+                    <button onclick="updateCHeader('Utility')" class = "doll-utility">Utility</button>
+                    <button onclick="updateCHeader('Bathroom')"class = "doll-bathroom2">Bathroom</button>
+                    <button onclick="updateCHeader('Nursery')"class = "doll-nursery">Nursery</button>
+                    <button onclick="updateCHeader('Bedroom')"class = "doll-bedroom">Bedroom</button>
                     <!-- <button class = "doll-attic"></button> -->
-                    <button class = "doll-attic-text">Attic</button>
-                    <button class = "doll-office">Office</button>
+                    <button onclick="updateCHeader('Attic')" class = "doll-attic-text">Attic</button>
+                    <button onclick="updateCHeader('Office')" class = "doll-office">Office</button>
                     </div>
                 </div>
                 <div class = "serviceList">   
-                    
+                    <p onclick="updateCHeader('Browse All')" class = "item" class = "browseAll">Browse All</p>
+                                                   
                         <div class = "list">
                             <ul class = "slist.left">
-                                <li class = item >Appliance Repair</li>
-                                <li class = item >Basement Renovation</li>
-                                <li class = item >Bathroom Renovation</li>
-                                <li class = item>Carpeting</li>
-                                <li class = item>Drywalling</li>
-                                <li class = item>Electrical</li>
-                                <li class = item>Flooring</li>
-                                <li class = item>Foundation</li>
-                                <li class = item>Heating and Cooling</li>
+                                <li onclick="updateCHeader('Appliance Repair')" class = item >Appliance Repair</li>
+                                <li onclick="updateCHeader('Basement Renovation')" class = item >Basement Renovation</li>
+                                <li onclick="updateCHeader('Bathroom Renovation')" class = item >Bathroom Renovation</li>
+                                <li onclick="updateCHeader('Carpeting')" class = item>Carpeting</li>
+                                <li onclick="updateCHeader('Drywalling')" class = item>Drywalling</li>
+                                <li onclick="updateCHeader('Electrical')" class = item>Electrical</li>
+                                <li onclick="updateCHeader('Flooring')" class = item>Flooring</li>
+                                <li onclick="updateCHeader('Foundation')" class = item>Foundation</li>
+                                <li onclick="updateCHeader('Heating and Cooling')" class = item>Heating and Cooling</li>
                             </ul>
                         
                             <ul class = "slist.right">
-                                <li class = item>Insulation</li>
-                                <li class = item>Landscaping</li>
-                                <li class = item>Painting</li>
-                                <li class = item>Plumbing</li>
-                                <li class = item>Roofing</li>
-                                <li class = item>Siding</li>
-                                <li class = item>Tree Services</li>
-                                <li class = item>Water Heating</li>
-                                <li class = item>Windows and Doors</li>
+                                <li onclick="updateCHeader('Insulation')" class = item>Insulation</li>
+                                <li onclick="updateCHeader('Landscaping')" class = item>Landscaping</li>
+                                <li onclick="updateCHeader('Painting')" class = item>Painting</li>
+                                <li onclick="updateCHeader('Plumbing')" class = item>Plumbing</li>
+                                <li onclick="updateCHeader('Roofing')" class = item>Roofing</li>
+                                <li onclick="updateCHeader('Siding')" class = item>Siding</li>
+                                <li onclick="updateCHeader('Tree Services')" class = item>Tree Services</li>
+                                <li onclick="updateCHeader('Water Heating')" class = item>Water Heating</li>
+                                <li onclick="updateCHeader('Windows and Doors')" class = item>Windows and Doors</li>
                             </ul>
                         </div>
+                        
                 </div>
             </div>
         
             <div class = "results">
                 <div class = "contractor_list">
-                    <h1>Contractor List: [Selected Category]</h1>
+                    <h1 id= "cHeader">Contractor List: [Selected Category]</h1>
                     
                 </div>
             
