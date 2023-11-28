@@ -288,11 +288,16 @@ table {
   font-size: 15px;
 }
 
-.individual-booking{
+.individual-booking, .booking-heading{
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
+
+.cancelbtn{
+  text-align: center;
+}
+
 td {
   text-align: right;
 }
