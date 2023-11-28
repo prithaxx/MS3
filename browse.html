@@ -14,10 +14,11 @@
     <div class = "mainpage"> 
         <div class = "browse">
             <div class = "service_header">
-                <div style= "display:flex; float:left; margin-right: 25%;">
-                <h1>Services by Space</h1></div>
-                <div style = "display:flex; float:right;">
-                <h1>Service List</h1>
+                <div style= "width: 50%;">
+                    <h1>Services by Space</h1>
+                </div>
+                <div >
+                    <h1>Service List</h1>
                 </div>
             </div>
             <div class = "doll_and_list"> 
@@ -25,14 +26,15 @@
                     
                     <img class = "dollImg" src="dollhouse-PhotoRoom.png"> 
                     <div class= "doll-buttons">
-                        <button class = "doll-kitchen">Kitchen</button>
-                        <button class = "doll-bathroom">Bathroom</button>
-                        <button class = "doll-utility">Utility</button>
-                        <button class = "doll-bathroom2">Bathroom</button>
-                        <button class = "doll-nursery">Nursery</button>
-                        <button class = "doll-bedroom">Bedroom</button>
-                        <button class = "doll-attic">Attic</button>
-                        <button class = "doll-office">Office</button>
+                    <button class = "doll-kitchen">Kitchen</button>
+                    <button class = "doll-bathroom">Bathroom</button>
+                    <button class = "doll-utility">Utility</button>
+                    <button class = "doll-bathroom2">Bathroom</button>
+                    <button class = "doll-nursery">Nursery</button>
+                    <button class = "doll-bedroom">Bedroom</button>
+                    <!-- <button class = "doll-attic"></button> -->
+                    <button class = "doll-attic-text">Attic</button>
+                    <button class = "doll-office">Office</button>
                     </div>
                 </div>
                 <div class = "serviceList">   
@@ -75,7 +77,7 @@
                     
                     <h2>Sort:</h2>
                     <div class = "sort_options">
-                        <select class="dropdown" name="distance" id="distance">
+                        <select class="sort-dropdown" name="distance" id="distance">
                             <option value="distance">Distance</option>
                             <option value="radius">Radius</option>
                             <option value="postal">Postal Code</option>
@@ -87,19 +89,387 @@
                             <option value="$$$">$$$</option>
                             
                         </select>
-                        <select class="dropdown" name="reviews" id="reviews">
+                        <select class="sort-dropdown" name="reviews" id="reviews">
                             <option value="top-rated">Top Rated</option>
                             <option value="lowest-rating">Lowest Rating</option>
                             <option value="highest-rating">Highest Rating</option>
                             
                         </select>
                     </div>
+                    <div class = "toggle">
+                        <p style= "padding-right: 10px; margin-bottom: 2px; margin-left: 30px;">Map</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <p style= "padding-left: 10px; margin-bottom: 2px; ">List</p>
+                    </div>
                     
                 </div>
                 <div class = "clist">
-                    <div class = "clisting">
-                        
-                    </div>
+                    <ul class="clist">
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 1</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 2</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 3</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 4</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 5</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 6</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 7</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 8</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 9</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 10</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 11</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+                        <li class = "clisting">
+                            <div class = "c-info">
+                                <div class = "clisting">
+                                    <h1>Contractor 12</h1>
+                                    <div class = "c-rating">
+                                        <p>Rating: 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                          </p>
+                                    </div>
+                                </div>
+                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                <div class = "c-listing-buttons">
+                                    <div class="important-btns">
+                                        <button>Schedule</button>
+                                        <button>Contact</button>
+                                        <button>Get a Quote</button>
+                                        <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                      </div>
+
+                                </div>
+                                </div>
+                            
+                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            
+                        </li>
+
+                    </ul>
                 </div>
 
             </div>

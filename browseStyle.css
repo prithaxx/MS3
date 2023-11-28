@@ -8,6 +8,12 @@ h1{
 
      
 }
+ul li{
+    text-indent: 0;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
 
 .mainpage {
     font-family: Helvetica, sans-serif;
@@ -15,6 +21,7 @@ h1{
    
     margin-bottom: 40px;
     align-content: center;
+    height: 100%; 
     
 }
 @media screen and (min-width: 900px) {
@@ -28,7 +35,7 @@ h1{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
     padding-top: 50px;
     
     
@@ -36,18 +43,33 @@ h1{
 
 
 .service_header, .contractor_list{
-    width: 900px; 
+    /* width: 80%; 
     height: 50px;
     padding-bottom: 15px; 
     
     padding-left: 40px;
-    margin: auto;
+    /* margin: auto; */
     
-    background-color:rgb(4, 6, 56);
+    /* background-color:rgb(4, 6, 56);
     color: white;
     display: flex;
-    align-items: normal;
+    align-items: normal; */ 
     
+
+    background-color: rgb(4,6,56) ; 
+    border: none;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    /* margin-right: 30%; */
+    width: 100%; 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: start; */
    
 
     
@@ -91,27 +113,41 @@ h1{
 .doll-kitchen{
     margin-top: 182px;
     margin-left: 210px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 105px; 
     height: 68px; 
     display: flex;
     position: absolute; 
     text-align: center;
-    padding-top: 23px;
+    padding-top: 13px;
     padding-left: 25px;
     font-size: medium;
-    cursor: pointer;
+    transition-duration: 0.2s;
+    color:transparent; 
+    
 }
 
-.doll-kitchen button:hover{
-    background-color: grey;
-    color: white; 
+.doll-kitchen:hover{
+    
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
+    
+    
 }
+
+
+.doll-kitchen           :focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+
 .doll-bathroom{
     margin-top: 182px;
     margin-left: 112px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 95px; 
     height: 68px; 
@@ -121,17 +157,20 @@ h1{
     padding-top: 23px;
     padding-left: 13px;
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-bathroom button:hover{
-    background-color: grey;
-    color: white; 
+.doll-bathroom:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
 }
 
 .doll-utility{
     margin-top: 182px;
     margin-left: 40px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 68px; 
     height: 68px; 
@@ -141,37 +180,43 @@ h1{
     padding-top: 23px;
     padding-left: 13px;
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-utility button:hover{
-    background-color: grey;
-    color: white; 
+.doll-utility:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
 }
 
 .doll-bathroom2{
-    margin-top: 110px;
+    margin-top: 90px;
     margin-left: 246px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 68px; 
-    height: 68px; 
+    height: 88px; 
     display: flex;
     position: absolute; 
     text-align: center;
-    padding-top: 23px;
+    padding-top: 40px;
     padding-left: 6px;
     font-size: small;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-bathroom2 button:hover{
-    background-color: grey;
-    color: white; 
+.doll-bathroom2:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
 }
 
 .doll-nursery{
     margin-top: 108px;
     margin-left: 146px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 95px; 
     height: 70px; 
@@ -181,17 +226,20 @@ h1{
     padding-top: 25px;
     padding-left: 16px;
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-nursery button:hover{
-    background-color: grey;
-    color: white; 
+.doll-nursery:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
 }
 
 .doll-bedroom{
     margin-top: 95px;
     margin-left: 40px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 102px; 
     height: 83px; 
@@ -201,45 +249,80 @@ h1{
     padding-top: 33px;
     padding-left: 18px;
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-bedroom button:hover{
-    background-color: grey;
-    color: white; 
+.doll-bedroom:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold; 
 }
 
 .doll-attic{
-    margin-top: 16px;
-    margin-left: 50px;
-    background-color: red;
-    border: none;
-    width: 98px; 
-    height: 76px; 
+    background-color: transparent;
+    margin-top: 37px;
+    margin-left: 54px;
+    /* background-color: red; */
+    transform: rotate(-45deg);
+    border-left:58px solid transparent;
+    border-right: 58px solid transparent;
+    border-bottom: transparent;
+    border-top: 58px solid transparent; 
+    width: 0; 
+    height: 0; 
     display: flex;
     position: absolute; 
     text-align: center;
-    padding-top: 25px;
-    padding-left: 30px;
+    /* padding-top: 45px;
+    padding-left: 50px; */
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 
     
-    border: 0 solid red;
-    width: 90px;
-    border-bottom-width: 100%;
-    border-left-width: 100px;
-    border-left-color: transparent;
       
 }
 
-.doll-attic button:hover{
-    background-color: grey;
-    color: white; 
+.doll-attic:hover{
+    
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
+    border-top-color: rgba(128, 128, 128, 1);
+}
+
+.doll-attic-text{
+    margin-top: 33px;
+    margin-left: 70px;
+    background-color: transparent;
+    border: none;
+    /* transform: rotate(-45deg);
+    border-left:58px solid transparent;
+    border-right: 58px solid transparent;
+    border-bottom: transparent;
+    border-top: 58px solid transparent; 
+    width: 0; 
+    height: 0;  */
+    
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    padding-top: 33px;
+    padding-left: 18px;
+    font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent; 
+}
+.doll-attic-text:hover{
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
+    border-top-color: rgba(128, 128, 128, 0.5); 
 }
 
 .doll-office{
     margin-top: 36px;
     margin-left: 146px;
-    background-color: red;
+    background-color: transparent;
     border: none;
     width: 95px; 
     height: 68px; 
@@ -249,11 +332,14 @@ h1{
     padding-top: 25px;
     padding-left: 25px;
     font-size: medium;
+    transition-duration: 0.2s;
+    color:transparent;
 }
 
-.doll-office button:hover{
-    background-color: grey;
-    color: white; 
+.doll-office:hover{
+    background-color:  rgba(128, 128, 128, 0.5);
+    color: rgba(0, 0, 0, 1); 
+    font-weight: bold;
 }
 
 
@@ -294,61 +380,196 @@ h1{
     
 }
 
+.item{
+    padding-bottom: 5px;
+    list-style-type: none;
+    display: table; 
+    clear: both;
+    text-indent: 0; 
+}
+.item:hover{
+    color:rgb(141,27,5);
+    font-weight: bold;
+}
+
 .results {
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
+    width: 100%;
     
 }
 
+
 .clist{
+    text-indent: 0;
+    list-style-position: inside;
+    width: 100%;
+    
    
 }
 
 .clisting{
-
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(6, 62, 126, 0.212);
+    text-indent: 0; 
+    width: 100%;
+}
+.clisting1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    clear: both;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(6, 62, 126, 0.212);
 }
 
-.sort{
+.c-info{
+    width: 100%; 
+    background-color: transparent;
+    padding-left: 10px; 
+    padding-bottom: 10px;
+}
 
+.listing-img{
+    display: flex; 
+    float: left; 
+    width: 200px; 
+    height: 200px; 
+    margin-left: 20px; 
+    border-radius: 5px;
+}
+
+.c-listing-buttons{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content:flex-start;
+    
+}
+
+.c-rating{
+    margin-left: 50%;
+    margin-top: 10px; 
+}
+.c-rating i{
+    color: rgb(255, 123, 0);
+    font-size: 15px;
+  }
+
+.sort{
+    width: 100%;
     background-color: rgba(6, 62, 126, 0.212);
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 50%;
+    /* margin-top: 10px; */
+    /* margin-right: 30%; */
     padding-left: 20px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
     color: black;
     display:flex;
     flex-direction: row;
-    align-items: start;
+    justify-content: space-between;
+    /* align-items: start; */
     
     
 
 }
 
 .sort_options {
-    margin-top: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 60px;
     display:flex;
     flex-direction: row;
     
-    justify-content: space-between;
-
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .sort-dropdown {
-    padding-left: 10px;
-    justify-content: space-between;
+    margin-left: 10px;
+    
     
 
 }
 
-
-
-.item{
-    padding-bottom: 5px;
+.toggle{
+    /* margin-top: 10px; */
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 20px; 
+    /* padding-right: 20px; */
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+
+
+
 
 
 
