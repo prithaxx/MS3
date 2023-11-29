@@ -302,6 +302,9 @@ nav{
 }
 
 .nav-header{
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
   display: flex;
 }
 
