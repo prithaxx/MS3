@@ -446,16 +446,21 @@ ul li{
     width: 100%;
     padding-right: 30px;
 }
-/* .clisting1{
+.clisting1{
     list-style-type: none;
-    display: flex;
+    display:flex;  
     flex-direction: row; 
     clear: both;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
     border-radius: 5px;
     background-color: rgba(6, 62, 126, 0.212);
+    text-indent: 0; 
+    width: 100%;
+    padding-right: 30px;
     
-} */
+}
 
 .c-info{
     width: 100%; 
@@ -597,6 +602,17 @@ ul li{
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+  }
+
+  .show {
+    display: flex;
+  }
+  .hide{
+    display: none;
+  }
+
+  .container {
+    overflow: hidden;
   }
 
 

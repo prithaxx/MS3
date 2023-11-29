@@ -81,53 +81,53 @@
             </div>
             <div class = "doll_and_list"> 
                 <div class = "dollhouse">
-                    
+
                     <img class = "dollImg" src="dollhouse-PhotoRoom.png"> 
                     <div class= "doll-buttons">
-                    <button onclick="updateCHeader('Kitchen')" class = "doll-kitchen">Kitchen</button>
-                    <button onclick="updateCHeader('Bathroom')" class = "doll-bathroom">Bathroom</button>
-                    <button onclick="updateCHeader('Utility')" class = "doll-utility">Utility</button>
-                    <button onclick="updateCHeader('Bathroom')"class = "doll-bathroom2">Bathroom</button>
-                    <button onclick="updateCHeader('Nursery')"class = "doll-nursery">Nursery</button>
-                    <button onclick="updateCHeader('Bedroom')"class = "doll-bedroom">Bedroom</button>
+                    <button onclick="updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" class = "doll-kitchen">Kitchen</button>
+                    <button onclick="updateCHeader('Bathroom'); goToResults(); filterSelection('bathroom');" class = "doll-bathroom">Bathroom</button>
+                    <button onclick="updateCHeader('Utility'); goToResults(); filterSelection('utility');" class = "doll-utility">Utility</button>
+                    <button onclick="updateCHeader('Bathroom'); goToResults(); filterSelection('bathroom');"class = "doll-bathroom2">Bathroom</button>
+                    <button onclick="updateCHeader('Nursery'); goToResults(); filterSelection('nursery');"class = "doll-nursery">Nursery</button>
+                    <button onclick="updateCHeader('Bedroom'); goToResults(); filterSelection('bedroom');"class = "doll-bedroom">Bedroom</button>
                     <!-- <button class = "doll-attic"></button> -->
-                    <button onclick="updateCHeader('Attic')" class = "doll-attic-text">Attic</button>
-                    <button onclick="updateCHeader('Office')" class = "doll-office">Office</button>
+                    <button onclick="updateCHeader('Attic'); goToResults(); filterSelection('attic');" class = "doll-attic-text">Attic</button>
+                    <button onclick="updateCHeader('Office'); goToResults(); filterSelection('office');" class = "doll-office">Office</button>
                     </div>
                 </div>
                 <div class = "serviceList">   
-                    <p onclick="updateCHeader('Browse All')" class = "item" class = "browseAll">Browse All</p>
+                    <p onclick="updateCHeader('Browse All'); goToResults(); filterSelection('all');" class = "item" class = "browseAll">Browse All</p>
                                                    
                         <div class = "list">
                             <ul class = "slist.left">
-                                <li onclick="updateCHeader('Appliance Repair')" class = item >Appliance Repair</li>
-                                <li onclick="updateCHeader('Basement Renovation')" class = item >Basement Renovation</li>
-                                <li onclick="updateCHeader('Bathroom Renovation')" class = item >Bathroom Renovation</li>
-                                <li onclick="updateCHeader('Carpeting')" class = item>Carpeting</li>
-                                <li onclick="updateCHeader('Drywalling')" class = item>Drywalling</li>
-                                <li onclick="updateCHeader('Electrical')" class = item>Electrical</li>
-                                <li onclick="updateCHeader('Flooring')" class = item>Flooring</li>
-                                <li onclick="updateCHeader('Foundation')" class = item>Foundation</li>
-                                <li onclick="updateCHeader('Heating and Cooling')" class = item>Heating and Cooling</li>
+                                <li onclick="updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');" class = item >Appliance Repair</li>
+                                <li onclick="updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');" class = item >Basement Renovation</li>
+                                <li onclick="updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" class = item >Bathroom Renovation</li>
+                                <li onclick="updateCHeader('Carpeting'); goToResults(); filterSelection('carpet');" class = item>Carpeting</li>
+                                <li onclick="updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" class = item>Drywalling</li>
+                                <li onclick="updateCHeader('Electrical'); goToResults(); filterSelection('electric');" class = item>Electrical</li>
+                                <li onclick="updateCHeader('Flooring'); goToResults(); filterSelection('flooring');" class = item>Flooring</li>
+                                <li onclick="updateCHeader('Foundation'); goToResults(); filterSelection('foundation');" class = item>Foundation</li>
+                                <li onclick="updateCHeader('Heating and Cooling'); goToResults(); filterSelection('heating-cooling');" class = item>Heating and Cooling</li>
                             </ul>
                         
                             <ul class = "slist.right">
-                                <li onclick="updateCHeader('Insulation')" class = item>Insulation</li>
-                                <li onclick="updateCHeader('Landscaping')" class = item>Landscaping</li>
-                                <li onclick="updateCHeader('Painting')" class = item>Painting</li>
-                                <li onclick="updateCHeader('Plumbing')" class = item>Plumbing</li>
-                                <li onclick="updateCHeader('Roofing')" class = item>Roofing</li>
-                                <li onclick="updateCHeader('Siding')" class = item>Siding</li>
-                                <li onclick="updateCHeader('Tree Services')" class = item>Tree Services</li>
-                                <li onclick="updateCHeader('Water Heating')" class = item>Water Heating</li>
-                                <li onclick="updateCHeader('Windows and Doors')" class = item>Windows and Doors</li>
+                                <li onclick="updateCHeader('Insulation'); goToResults(); filterSelection('insulation');" class = item>Insulation</li>
+                                <li onclick="updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" class = item>Landscaping</li>
+                                <li onclick="updateCHeader('Painting'); goToResults(); filterSelection('painting');" class = item>Painting</li>
+                                <li onclick="updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');" class = item>Plumbing</li>
+                                <li onclick="updateCHeader('Roofing'); goToResults(); filterSelection('roofing');" class = item>Roofing</li>
+                                <li onclick="updateCHeader('Siding'); goToResults(); filterSelection('siding');" class = item>Siding</li>
+                                <li onclick="updateCHeader('Tree Services'); goToResults(); filterSelection('tree-services');" class = item>Tree Services</li>
+                                <li onclick="updateCHeader('Water Heating'); goToResults(); filterSelection('water-heating');" class = item>Water Heating</li>
+                                <li onclick="updateCHeader('Windows and Doors'); goToResults(); filterSelection('windows-doors');" class = item>Windows and Doors</li>
                             </ul>
                         </div>
                         
                 </div>
             </div>
         
-            <div class = "results">
+            <div class = "results" id = "results">
                 <div class = "contractor_list">
                     <h1 id= "cHeader">Contractor List: [Selected Category]</h1>
                     
@@ -168,9 +168,9 @@
                 </div>
                 <div class = "clist">
                     <ul class="clist">
-                        <li class = "clisting">
+                        <li id = "filterContractors" class="clisting all landscaping tree-services foundation">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 1</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -182,7 +182,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does landscaping, tree services, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -198,9 +198,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class = "clisting all appliance electric kitchen water-heating utility">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 2</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -212,7 +212,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does appliance, electric, kitchen, water-heating, utility       ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -228,9 +228,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all bathroom drywall flooring electric painting plumbing utility">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 3</h1>
                                     <div class = "c-rating">
                                         <p style = "justify-content:flex-end;">Rating: 
@@ -242,7 +242,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does bathroom, drywall, flooring, electric, painting, plumbing, utility     lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -258,9 +258,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all basement carpet drywall foundation flooring insulation painting bedroom office nursery">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 4</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -272,7 +272,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does basement, carpet, drywall, foundation, flooring, insulation, painting, bedroom, office, nursery lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -288,9 +288,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class="clisting all roofing siding attic windows-doors foundation">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 5</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -302,7 +302,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: roofing, siding, attic, windows-doors, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -318,9 +318,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all heating-cooling utility water-heating appliance electric plumbing">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 6</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -332,7 +332,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: heating-cooling, utility, water-heating, appliance, electric, plumbing ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -348,9 +348,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class="clisting all office bedroom bathroom nursery painting drywall carpet flooring">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 7</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -362,7 +362,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: office, bedroom, bathroom, nursery, painting, drywall, carpet, flooringlkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -378,9 +378,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all appliance electric utility water-heating heating-cooling">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 8</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -392,7 +392,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: appliance, electric, utility, water-heating, heating-cooling lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -408,9 +408,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all landscaping windows-doors siding attic roofing tree-services basement foundation">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 9</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -422,7 +422,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: this contractor does: landscaping, windows-doors, siding, attic, roofing, tree-service, basement, foundation lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -438,9 +438,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all kitchen plumbing electric painting bathroom utility">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 10</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -452,7 +452,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: kitchen, plumbing, electric, painting, bathroom, utility lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -468,9 +468,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class = "clisting all insulation drywall painting flooring carpet bedroom nursery office basement">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 11</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -482,7 +482,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: insulation, drywall, painting, flooring, carpeting, bedroom, nursery, office, basement lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -498,9 +498,9 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li class = "clisting">
+                        <li id = "filterContractors" class= "clisting all utility plumbing electric heating-cooling water-heating">
                             <div class = "c-info">
-                                <div class = "clisting">
+                                <div class = "clisting1">
                                     <h1>Contractor 12</h1>
                                     <div class = "c-rating">
                                         <p>Rating: 
@@ -512,7 +512,7 @@
                                           </p>
                                     </div>
                                 </div>
-                                <p>Contractor description: lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                <p>Contractor description: This contractor does: utility, plumbing, electric, heating-cooling, water-heating    gfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
