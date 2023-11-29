@@ -299,8 +299,11 @@ body {
     .burger-links {padding-top: 15px;}
     .burger-links a {font-size: 18px;}
   }
-  
+
   .nav-header{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
     display: flex;
   }
   
