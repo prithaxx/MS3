@@ -774,7 +774,7 @@ ul li{
   /* The actual popup */
   .contact .popuptext {
     visibility: hidden;
-    width: 90px;
+    width: 100px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -786,7 +786,7 @@ ul li{
     z-index: 1;
     bottom: 125%;
     /* left: 50%; */
-    margin-left: -93px;
+    margin-left: -95px;
   }
   
 

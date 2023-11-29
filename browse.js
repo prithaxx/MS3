@@ -213,7 +213,8 @@ function priceOrder(direction){
 }
 }
 
-function comparator(a, b) { 
+function sortArray(a) { 
+  for()
   if (a.dataset.clisting < b.dataset.clisting) 
       return -1; 
   if (a.dataset.clisting > b.dataset.clisting) 
@@ -225,7 +226,7 @@ function comparator(a, b) {
 function SortData() { 
   var listings = document.querySelectorAll("[data-clisting]"); 
   var listingsArray = Array.from(listings); 
-  let sorted = listingsArray.sort(comparator()); 
+  let sorted = listingsArray; 
   sorted.forEach(e => 
       document.querySelector("#clist").appendChild(e)); 
 } 
