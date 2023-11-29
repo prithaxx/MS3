@@ -4,6 +4,8 @@
     <link rel= "stylesheet" href= "contractor_home.css">
     <script src= "browse.js"></script>
     <script src = "contractor_home.js"></script>
+    
+    <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
 
     <head>
 
@@ -137,22 +139,25 @@
                     
                     <h2>Sort:</h2>
                     <div class = "sort_options">
-                        <select class="sort-dropdown" name="distance" id="distance">
-                            <option value="distance">Distance</option>
-                            <option value="radius">Radius</option>
-                            <option value="postal">Postal Code</option>
+                        <select class="sort-dropdown" name="distance" id="distance" onchange="filterSort('distance',value);">
+                            <option value="distance" >Distance</option>
+                            <option value="radius" >Radius</option>
+                            <option value="postal" >Postal Code</option>
                             
                         </select>
-                        <select class="sort-dropdown" name="price" id="price">
-                            <option value="$">$</option>
-                            <option value="$$">$$</option>
-                            <option value="$$$">$$$</option>
+                        <select class="sort-dropdown" name="price" id="price" onchange="filterSort('price',value);">
+                            <option value="$1" onchange="filterSelection('$');">$</option>
+                            <option value="$2" onchange="filterSelection('$$');">$$</option>
+                            <option value="$3" onclick="filterSelection('$$$');">$$$</option>
+                            <option value="low-high" onchange="sortByPrice('low-high');">Low - High</option>
+                            <option value="high-low" onchange="sortByPrice('high-low');">High - Low</option>
+
                             
                         </select>
-                        <select class="sort-dropdown" name="reviews" id="reviews">
-                            <option value="top-rated">Top Rated</option>
-                            <option value="lowest-rating">Lowest Rating</option>
-                            <option value="highest-rating">Highest Rating</option>
+                        <select class="sort-dropdown" name="reviews" id="reviews" onchange="filterSort('reviews',value);">
+                            <option value="top-rated" onclick="sortByRating('top-rated');">Top Rated</option>
+                            <option value="lowest-rating" onclick="sortByRating('lowest-rating');">Lowest Rating</option>
+                            <option value="highest-rating" onclick="sortByRating('highest-rating');">Highest Rating</option>
                             
                         </select>
                     </div>
@@ -168,10 +173,11 @@
                 </div>
                 <div class = "clist">
                     <ul class="clist">
-                        <li id = "filterContractors" class="clisting all landscaping tree-services foundation">
+                        <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 1</h1>
+                                    <h1 id= "c1">Contractor 1</h1>
+                                    <h3 class = "price">$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -181,6 +187,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart" onclick= "favourite('heart');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does landscaping, tree services, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -198,10 +205,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class = "clisting all appliance electric kitchen water-heating utility">
+                        <li id = "filterContractors" class = "clisting all $1 appliance electric kitchen water-heating utility">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 2</h1>
+                                    <h1 id= "c2">Contractor 2</h1>
+                                    <h3 class = "price">$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -211,6 +219,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart1" onclick= "favourite('heart1');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does appliance, electric, kitchen, water-heating, utility       ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -228,10 +237,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all bathroom drywall flooring electric painting plumbing utility">
+                        <li id = "filterContractors" class= "clisting all $2 bathroom drywall flooring electric painting plumbing utility">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 3</h1>
+                                    <h1 id= "c3">Contractor 3</h1>
+                                    <h3 class = "price">$$</h3>
                                     <div class = "c-rating">
                                         <p style = "justify-content:flex-end;">Rating: 
                                             <i class="fa fa-star"></i>
@@ -241,6 +251,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart2" onclick= "favourite('heart2');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does bathroom, drywall, flooring, electric, painting, plumbing, utility     lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -258,10 +269,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all basement carpet drywall foundation flooring insulation painting bedroom office nursery">
+                        <li id = "filterContractors" class= "clisting all $1 basement carpet drywall foundation flooring insulation painting bedroom office nursery">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 4</h1>
+                                    <h1 id = "c4">Contractor 4</h1>
+                                    <h3 class = "price">$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -271,6 +283,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart3" onclick= "favourite('heart3');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does basement, carpet, drywall, foundation, flooring, insulation, painting, bedroom, office, nursery lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -288,10 +301,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all roofing siding attic windows-doors foundation">
+                        <li id = "filterContractors" class="clisting all $3 roofing siding attic windows-doors foundation">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 5</h1>
+                                    <h1 id="c5">Contractor 5</h1>
+                                    <h3 class = "price">$$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -301,6 +315,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart4" onclick= "favourite('heart4');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: roofing, siding, attic, windows-doors, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -318,10 +333,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all heating-cooling utility water-heating appliance electric plumbing">
+                        <li id = "filterContractors" class= "clisting all $1 heating-cooling utility water-heating appliance electric plumbing">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 6</h1>
+                                    <h1 id="c6">Contractor 6</h1>
+                                    <h3 class = "price">$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -331,6 +347,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart5" onclick= "favourite('heart5');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: heating-cooling, utility, water-heating, appliance, electric, plumbing ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -348,10 +365,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all office bedroom bathroom nursery painting drywall carpet flooring">
+                        <li id = "filterContractors" class="clisting all $2 office bedroom bathroom nursery painting drywall carpet flooring">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 7</h1>
+                                    <h1 id="c7">Contractor 7</h1>
+                                    <h3 class = "price">$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -361,6 +379,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart6" onclick= "favourite('heart6');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: office, bedroom, bathroom, nursery, painting, drywall, carpet, flooringlkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -378,10 +397,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all appliance electric utility water-heating heating-cooling">
+                        <li id = "filterContractors" class= "clisting all $1 appliance electric utility water-heating heating-cooling">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 8</h1>
+                                    <h1 id="c8">Contractor 8</h1>
+                                    <h3 class = "price">$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -391,6 +411,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart7" onclick= "favourite('heart7');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: appliance, electric, utility, water-heating, heating-cooling lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -408,10 +429,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all landscaping windows-doors siding attic roofing tree-services basement foundation">
+                        <li id = "filterContractors" class= "clisting all $3 landscaping windows-doors siding attic roofing tree-services basement foundation">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 9</h1>
+                                    <h1 id="c9">Contractor 9</h1>
+                                    <h3 class = "price">$$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -421,6 +443,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart8" onclick= "favourite('heart8');" ></i>
                                 </div>
                                 <p>Contractor description: this contractor does: landscaping, windows-doors, siding, attic, roofing, tree-service, basement, foundation lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -438,10 +461,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all kitchen plumbing electric painting bathroom utility">
+                        <li id = "filterContractors" class= "clisting all $2 kitchen plumbing electric painting bathroom utility">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 10</h1>
+                                    <h1 id="c10">Contractor 10</h1>
+                                    <h3 class = "price">$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -451,6 +475,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart9" onclick= "favourite('heart9');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: kitchen, plumbing, electric, painting, bathroom, utility lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -468,10 +493,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class = "clisting all insulation drywall painting flooring carpet bedroom nursery office basement">
+                        <li id = "filterContractors" class = "clisting all $3 insulation drywall painting flooring carpet bedroom nursery office basement">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 11</h1>
+                                    <h1 id= "c11">Contractor 11</h1>
+                                    <h3 class = "price">$$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -481,6 +507,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart10" onclick= "favourite('heart10');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: insulation, drywall, painting, flooring, carpeting, bedroom, nursery, office, basement lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
@@ -498,10 +525,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all utility plumbing electric heating-cooling water-heating">
+                        <li id = "filterContractors" class= "clisting all $2 utility plumbing electric heating-cooling water-heating">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h1>Contractor 12</h1>
+                                    <h1 id="c12">Contractor 12</h1>
+                                    <h3 class = "price">$$</h3>
                                     <div class = "c-rating">
                                         <p>Rating: 
                                             <i class="fa fa-star"></i>
@@ -511,6 +539,7 @@
                                             <i class="fa fa-star"></i>
                                           </p>
                                     </div>
+                                    <i class="fa fa-heart" id="heart11" onclick= "favourite('heart11');" ></i>
                                 </div>
                                 <p>Contractor description: This contractor does: utility, plumbing, electric, heating-cooling, water-heating    gfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
                                     kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>

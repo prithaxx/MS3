@@ -450,6 +450,7 @@ ul li{
     list-style-type: none;
     display:flex;  
     flex-direction: row; 
+    justify-content: space-evenly;
     clear: both;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -458,7 +459,7 @@ ul li{
     background-color: rgba(6, 62, 126, 0.212);
     text-indent: 0; 
     width: 100%;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     
 }
 
@@ -489,17 +490,144 @@ ul li{
     
 }
 
+.price{
+    margin-left: 30px; 
+    margin-top: 25px; 
+}
+
 .c-rating{
     /* align-items: self-end; */
-    margin-left: 30%;
+    margin-left: 20px;
     margin-top: 10px; 
-    width: 20%; 
-    justify-content: right;
+    /* width: 20%;  */
+    /* justify-content: right; */
 }
 .c-rating i{
     color: rgb(255, 123, 0);
     font-size: 15px;
   }
+
+  #heart {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart1 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart1.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart2 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart2.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart3 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart3.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart4 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart4.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart5 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart5.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart6 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart6.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart7 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart7.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart8 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart8.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart9 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart9.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart10 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart10.red {
+    color: rgb(163, 7, 7);
+  }
+
+  #heart11 {
+    margin-top: 15px; 
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart11.red {
+    color: rgb(163, 7, 7);
+  }
+
+  
 
 .sort{
     width: 100%;

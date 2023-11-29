@@ -101,3 +101,66 @@ function filterSelection(c) {
     element.className = arr1.join(" ");
     // w3AddClass(element, "hide");
   }
+
+  function filterSort(type, value){
+    if(type == "reviews"){
+        sortByRating(value); 
+    }else if(type == "price"){
+        sortByPrice(value); 
+    }else if(type == "distance")
+        sortByDistance(value); 
+  }
+  function sortByRating(value){
+    if(value == "top-rated"){
+
+    }else if(value == "highest-rating"){
+
+    }else if(value == "low-rating"){
+
+    }
+  }
+
+  function sortByDistance(value){
+    if(value == "distance"){
+
+    }else if(value == "radius"){
+
+    }else if(value == "postal"){
+        
+    }
+  }
+
+  function sortByPrice(value){
+    if(value == "high-low"){
+
+    }else if (value == "low-high"){
+
+    }
+    filterSelection(value); 
+  }
+
+  
+
+  function favourite(i) {
+    const heart = document.getElementById(i); 
+    heart.addEventListener('click', redHeart(i) );
+  }
+
+  function redHeart(i) {
+    const heart = document.getElementById(i);
+    heart.classList.toggle('red');
+    // addToFavourites(); 
+  }
+
+  function addToFavourites(){
+
+  }
+
+  function contractorPage(c){
+    
+    document.getElementById('c').style.display= "flex";
+  }
+
+  function closeContractorPage(c){
+    document.getElementById('c').style.display= "none";
+  }
