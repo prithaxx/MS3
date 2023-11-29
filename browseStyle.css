@@ -627,6 +627,23 @@ ul li{
     color: rgb(163, 7, 7);
   }
 
+  .clistingName {
+
+  }
+  .clistingName:hover {
+    color: rgb(141,27,5);
+  }
+  #c1 {
+    color:black; 
+  }
+  #c1:hover{
+    color: rgb(141,27,5); 
+  }
+
+  #c1.visited{
+    color:#5a01a7; 
+  }
+
   
 
 .sort{

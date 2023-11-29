@@ -164,3 +164,12 @@ function filterSelection(c) {
   function closeContractorPage(c){
     document.getElementById('c').style.display= "none";
   }
+
+  function clistingName(i) {
+    const contractor = document.getElementById(i); 
+    heart.addEventListener('click', visited(i) );
+  }
+  function visited(c){
+    const contractor = document.getElementById('c');
+    contractor.classList.toggle('visited'); 
+  }
