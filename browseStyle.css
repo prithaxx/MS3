@@ -761,7 +761,44 @@ ul li{
   }
 
 
+  .contact {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .contact .popuptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    padding-left: 20px;
+    padding-right: 20px; 
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* left: 50%; */
+    margin-left: -93px;
+  }
+  
 
+  
+  /* Toggle this class - hide and show the popup */
+  .contact .showPopUp {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+   
+  
 
 
 

@@ -146,6 +146,7 @@
                             
                         </select>
                         <select class="sort-dropdown" name="price" id="price" onchange="filterSort('price',value);">
+                            <option value="price">Price</option>
                             <option value="$1" onchange="filterSelection('$');">$</option>
                             <option value="$2" onchange="filterSelection('$$');">$$</option>
                             <option value="$3" onclick="filterSelection('$$$');">$$$</option>
@@ -172,8 +173,8 @@
                     
                 </div>
                 <div class = "clist">
-                    <ul class="clist">
-                        <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation">
+                    <ul class="clist" id = "clist">
+                        <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
@@ -194,7 +195,7 @@
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
                                         <button>Schedule</button>
-                                        <button>Contact</button>
+                                        <button class= "contact" onclick="contact('contact1')">Contact<span class="popuptext" id= "contact1">111-111-1111</span></button>
                                         <button>Get a Quote</button>
                                         <button onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
@@ -205,7 +206,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class = "clisting all $1 appliance electric kitchen water-heating utility">
+                        <li id = "filterContractors" class = "clisting all $1 appliance electric kitchen water-heating utility" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id= "c2">Contractor 2</h1>
@@ -237,7 +238,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 bathroom drywall flooring electric painting plumbing utility">
+                        <li id = "filterContractors" class= "clisting all $2 bathroom drywall flooring electric painting plumbing utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id= "c3">Contractor 3</h1>
@@ -269,7 +270,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 basement carpet drywall foundation flooring insulation painting bedroom office nursery">
+                        <li id = "filterContractors" class= "clisting all $1 basement carpet drywall foundation flooring insulation painting bedroom office nursery" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id = "c4">Contractor 4</h1>
@@ -301,7 +302,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all $3 roofing siding attic windows-doors foundation">
+                        <li id = "filterContractors" class="clisting all $3 roofing siding attic windows-doors foundation" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c5">Contractor 5</h1>
@@ -333,7 +334,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 heating-cooling utility water-heating appliance electric plumbing">
+                        <li id = "filterContractors" class= "clisting all $1 heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c6">Contractor 6</h1>
@@ -365,7 +366,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all $2 office bedroom bathroom nursery painting drywall carpet flooring">
+                        <li id = "filterContractors" class="clisting all $2 office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c7">Contractor 7</h1>
@@ -397,7 +398,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 appliance electric utility water-heating heating-cooling">
+                        <li id = "filterContractors" class= "clisting all $1 appliance electric utility water-heating heating-cooling" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c8">Contractor 8</h1>
@@ -429,7 +430,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $3 landscaping windows-doors siding attic roofing tree-services basement foundation">
+                        <li id = "filterContractors" class= "clisting all $3 landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c9">Contractor 9</h1>
@@ -461,7 +462,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 kitchen plumbing electric painting bathroom utility">
+                        <li id = "filterContractors" class= "clisting all $2 kitchen plumbing electric painting bathroom utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c10">Contractor 10</h1>
@@ -493,7 +494,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class = "clisting all $3 insulation drywall painting flooring carpet bedroom nursery office basement">
+                        <li id = "filterContractors" class = "clisting all $3 insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id= "c11">Contractor 11</h1>
@@ -525,7 +526,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 utility plumbing electric heating-cooling water-heating">
+                        <li id = "filterContractors" class= "clisting all $2 utility plumbing electric heating-cooling water-heating" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h1 id="c12">Contractor 12</h1>
