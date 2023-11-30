@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>YourContractor.com</title>
+      <link rel="stylesheet" href="contractor_home.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+       <!-- Navigation bar -->
+      <nav>
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <div class="nav-header">
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+            <a href="#" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+          </div>
+          <a href="#">Home</a>
+          <a href="#">Feed</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a hred="#" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a hred="#" style="font-size: 20px;">Electrical</a>
+              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
+              <a hred="#" style="font-size: 20px;">Interior Painting</a>
+              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
+              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
+              <a hred="#" style="font-size: 20px;">General Contracting</a>
+              <a hred="#" style="font-size: 20px;">Gas Lines</a>
+              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-location-bars">
+          <input type="search" placeholder="Basement Renovations" style="width: 300px;">
+    
+          <!-- Location bar -->
+          <input type="search" placeholder="Winnipeg, MB" style="width: 300px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account"><i class="fa fa-user"></i> My Account</button>
+        </div>
+
+      </nav>
+<!-- **********USER HOME******************* -->
+<div class="my-account-heading">
+    <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">My Account</h2>
+</div>
+
+<div class="account">
+    <div class="user-profile">
+        <img src="images/janedoe.jpeg">
+        <h1>Jane Doe</h1>
+        <p>Member since 2020<br>Booked with us over 10+ times</p>
+    </div>
+
+    <div class="user-logistics">
+      <h2 style="margin-left: 20px;">My Posts</h2>
+      <div class="posted-images">
+        <span>
+          <img src="images/kitchen_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 30
+            <i class="fa fa-comment" aria-hidden="true"></i> 12</p></p>
+        </span>
+        <span>
+          <img src="images/bathroom_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 10
+            <i class="fa fa-comment" aria-hidden="true"></i> 3</p>
+        </span>
+        <span>
+          <img src="images/kitchen_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 30
+            <i class="fa fa-comment" aria-hidden="true"></i> 12</p></p>
+        </span>
+        <span>
+          <img src="images/bathroom_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 10
+            <i class="fa fa-comment" aria-hidden="true"></i> 3</p>
+        </span>
+        <span>
+          <img src="images/kitchen_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 30
+            <i class="fa fa-comment" aria-hidden="true"></i> 12</p></p>
+        </span>
+        <span>
+          <img src="images/bathroom_jd.jpeg">
+          <p><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 10
+            <i class="fa fa-comment" aria-hidden="true"></i> 3</p>
+        </span>
+      </div>
+
+      <div class="favourite-contractors">
+        <h2 style="margin-left: 20px;">My Favourites</h2>
+        <div class="favourite-list">
+          <div class="cont-link"><a href="contractor_home.html">Innovate Renovations</a></div>
+          <div class="cont-link">BuildPro Inc.</div>
+          <div class="cont-link">Fabulous Carpeting</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-bookings">
+    <div class="my-account-heading">
+      <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px; margin-top: 50px;">My Upcoming Bookings</h2>
+    </div>
+    <table class="bookings">
+      <tr>
+        <td class="booking-heading" style="background: rgb(197, 224, 250); font-weight: bold;">Date</td>
+        <td class="booking-heading" style="background: rgb(197, 224, 250); font-weight: bold;">Time</td>
+        <td class="booking-heading" style="background: rgb(197, 224, 250); font-weight: bold;" >Company</td>
+        <td class="booking-heading" style="background: rgb(197, 224, 250); font-weight: bold;" ></td>
+      </tr>
+      <tr>
+        <td class="individual-booking" >2024-01-03</td>
+        <td class="individual-booking">14:30 hrs</td>
+        <td class="individual-booking">Innovate Renovations</td>
+        <td class="cancelbtn individual-booking"><button class="cancel-btn" onclick="confirmDelete(this)">Cancel</button></td> 
+      </tr>
+      <tr>
+        <td class="individual-booking">2024-02-15</td>
+        <td class="individual-booking">09:00 hrs</td>
+        <td class="individual-booking">BuildPro Inc.</td>
+        <td class="cancelbtn individual-booking"><button class="cancel-btn" onclick="confirmDelete(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td class="individual-booking">2024-02-19</td>
+        <td class="individual-booking">09:00 hrs</td>
+        <td class="individual-booking">BuildPro Inc.</td>
+        <td class="cancelbtn individual-booking"><button class="cancel-btn" onclick="confirmDelete(this)">Cancel</button></td>
+      </tr>
+      <tr>
+        <td class="individual-booking">2024-03-02</td>
+        <td class="individual-booking">10:00 hrs</td>
+        <td class="individual-booking">Fabulous Carpetting Group</td>
+        <td class="cancelbtn individual-booking"><button class="cancel-btn" onclick="confirmDelete(this)">Cancel</button></td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+
+
+
+
+
+
+<!-- *****************BROWSE******************************** -->
+
+<!-- <div class = "mainpage"> -->
+    <div class = "browse">
+        <div class = "breadcrumb">
+            <h3 class = "breadcrumb">Main > Browse</h3>
+        </div>
+        <div class = "service_header">
+            <div style= "width: 50%;">
+                <h1>Services by Space</h1>
+            </div>
+            <div >
+                <h1>Service List</h1>
+            </div>
+        </div>
+        <div class = "doll_and_list"> 
+            <div class = "dollhouse">
+
+                <img class = "dollImg" src="dollhouse-PhotoRoom.png"> 
+                <div class= "doll-buttons">
+                <button onclick="updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" class = "doll-kitchen">Kitchen</button>
+                <button onclick="updateCHeader('Bathroom'); goToResults(); filterSelection('bathroom');" class = "doll-bathroom">Bathroom</button>
+                <button onclick="updateCHeader('Utility'); goToResults(); filterSelection('utility');" class = "doll-utility">Utility</button>
+                <button onclick="updateCHeader('Bathroom'); goToResults(); filterSelection('bathroom');"class = "doll-bathroom2">Bathroom</button>
+                <button onclick="updateCHeader('Nursery'); goToResults(); filterSelection('nursery');"class = "doll-nursery">Nursery</button>
+                <button onclick="updateCHeader('Bedroom'); goToResults(); filterSelection('bedroom');"class = "doll-bedroom">Bedroom</button>
+                <!-- <button class = "doll-attic"></button> -->
+                <button onclick="updateCHeader('Attic'); goToResults(); filterSelection('attic');" class = "doll-attic-text">Attic</button>
+                <button onclick="updateCHeader('Office'); goToResults(); filterSelection('office');" class = "doll-office">Office</button>
+                </div>
+            </div>
+            <div class = "serviceList">   
+                <p onclick="updateCHeader('Browse All'); goToResults(); filterSelection('all');" class = "item" class = "browseAll">Browse All</p>
+                                               
+                    <div class = "list">
+                        <ul class = "slist.left">
+                            <li onclick="updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');" class = item >Appliance Repair</li>
+                            <li onclick="updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');" class = item >Basement Renovation</li>
+                            <li onclick="updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" class = item >Bathroom Renovation</li>
+                            <li onclick="updateCHeader('Carpeting'); goToResults(); filterSelection('carpet');" class = item>Carpeting</li>
+                            <li onclick="updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" class = item>Drywalling</li>
+                            <li onclick="updateCHeader('Electrical'); goToResults(); filterSelection('electric');" class = item>Electrical</li>
+                            <li onclick="updateCHeader('Flooring'); goToResults(); filterSelection('flooring');" class = item>Flooring</li>
+                            <li onclick="updateCHeader('Foundation'); goToResults(); filterSelection('foundation');" class = item>Foundation</li>
+                            <li onclick="updateCHeader('Heating and Cooling'); goToResults(); filterSelection('heating-cooling');" class = item>Heating and Cooling</li>
+                        </ul>
+                    
+                        <ul class = "slist.right">
+                            <li onclick="updateCHeader('Insulation'); goToResults(); filterSelection('insulation');" class = item>Insulation</li>
+                            <li onclick="updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" class = item>Landscaping</li>
+                            <li onclick="updateCHeader('Painting'); goToResults(); filterSelection('painting');" class = item>Painting</li>
+                            <li onclick="updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');" class = item>Plumbing</li>
+                            <li onclick="updateCHeader('Roofing'); goToResults(); filterSelection('roofing');" class = item>Roofing</li>
+                            <li onclick="updateCHeader('Siding'); goToResults(); filterSelection('siding');" class = item>Siding</li>
+                            <li onclick="updateCHeader('Tree Services'); goToResults(); filterSelection('tree-services');" class = item>Tree Services</li>
+                            <li onclick="updateCHeader('Water Heating'); goToResults(); filterSelection('water-heating');" class = item>Water Heating</li>
+                            <li onclick="updateCHeader('Windows and Doors'); goToResults(); filterSelection('windows-doors');" class = item>Windows and Doors</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    
+        <div class = "results" id = "results">
+            <div class = "contractor_list">
+                <h1 id= "cHeader">Contractor List: [Selected Category]</h1>
+                
+            </div>
+        
+            <div class = "sort">
+                
+                <h2>Sort:</h2>
+                <div class = "sort_options">
+                    <select class="sort-dropdown" name="distance" id="distance" onchange="filterSort('distance',value);">
+                        <option value="distance" >Distance</option>
+                        <option value="radius" >Radius</option>
+                        <option value="postal" >Postal Code</option>
+                        
+                    </select>
+                    <select class="sort-dropdown" name="price" id="price" onchange="filterSort('price',value);">
+                        <option value="price">Price</option>
+                        <option value="$1" onchange="filterSelection('$');">$</option>
+                        <option value="$2" onchange="filterSelection('$$');">$$</option>
+                        <option value="$3" onclick="filterSelection('$$$');">$$$</option>
+                        <option value="low-high" onchange="sortByPrice('low-high');">Low - High</option>
+                        <option value="high-low" onchange="sortByPrice('high-low');">High - Low</option>
+
+                        
+                    </select>
+                    <select class="sort-dropdown" name="reviews" id="reviews" onchange="filterSort('reviews',value);">
+                        <option value="top-rated" onclick="sortByRating('top-rated');">Top Rated</option>
+                        <option value="lowest-rating" onclick="sortByRating('lowest-rating');">Lowest Rating</option>
+                        <option value="highest-rating" onclick="sortByRating('highest-rating');">Highest Rating</option>
+                        
+                    </select>
+                </div>
+                <div class = "toggle">
+                    <p style= "padding-right: 10px; margin-bottom: 2px; margin-left: 30px;">Map</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p style= "padding-left: 10px; margin-bottom: 2px; ">List</p>
+                </div>
+                
+            </div>
+            <div class = "clist">
+                <ul class="clist" id = "clist">
+                    <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                <h3 class = "price">$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart" onclick= "favourite('heart');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does landscaping, tree services, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact1')">Contact<span class="popuptext" id= "contact1">111-111-1111</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class = "clisting all $1 appliance electric kitchen water-heating utility" data-clisting = "1">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id= "c2">Contractor 2</h1>
+                                <h3 class = "price">$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart1" onclick= "favourite('heart1');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does appliance, electric, kitchen, water-heating, utility       ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact2')">Contact<span class="popuptext" id= "contact2">222-222-2222</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $2 bathroom drywall flooring electric painting plumbing utility" data-clisting = "2">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id= "c3">Contractor 3</h1>
+                                <h3 class = "price">$$</h3>
+                                <div class = "c-rating">
+                                    <p style = "justify-content:flex-end;">Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart2" onclick= "favourite('heart2');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does bathroom, drywall, flooring, electric, painting, plumbing, utility     lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact3')">Contact<span class="popuptext" id= "contact3">333-333-3333</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $1 basement carpet drywall foundation flooring insulation painting bedroom office nursery" data-clisting = "1">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id = "c4">Contractor 4</h1>
+                                <h3 class = "price">$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart3" onclick= "favourite('heart3');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does basement, carpet, drywall, foundation, flooring, insulation, painting, bedroom, office, nursery lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact4')">Contact<span class="popuptext" id= "contact4">444-444-4444</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class="clisting all $3 roofing siding attic windows-doors foundation" data-clisting = "3">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c5">Contractor 5</h1>
+                                <h3 class = "price">$$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart4" onclick= "favourite('heart4');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: roofing, siding, attic, windows-doors, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact5')">Contact<span class="popuptext" id= "contact5">555-555-5555</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $1 heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c6">Contractor 6</h1>
+                                <h3 class = "price">$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart5" onclick= "favourite('heart5');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: heating-cooling, utility, water-heating, appliance, electric, plumbing ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact6')">Contact<span class="popuptext" id= "contact6">666-666-6666</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class="clisting all $2 office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "2">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c7">Contractor 7</h1>
+                                <h3 class = "price">$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart6" onclick= "favourite('heart6');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: office, bedroom, bathroom, nursery, painting, drywall, carpet, flooringlkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact7')">Contact<span class="popuptext" id= "contact7">777-777-7777</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $1 appliance electric utility water-heating heating-cooling" data-clisting = "1">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c8">Contractor 8</h1>
+                                <h3 class = "price">$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart7" onclick= "favourite('heart7');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: appliance, electric, utility, water-heating, heating-cooling lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact8')">Contact<span class="popuptext" id= "contact8">888-888-8888</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $3 landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c9">Contractor 9</h1>
+                                <h3 class = "price">$$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart8" onclick= "favourite('heart8');" ></i>
+                            </div>
+                            <p>Contractor description: this contractor does: landscaping, windows-doors, siding, attic, roofing, tree-service, basement, foundation lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact9')">Contact<span class="popuptext" id= "contact9">999-999-9999</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $2 kitchen plumbing electric painting bathroom utility" data-clisting = "2">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c10">Contractor 10</h1>
+                                <h3 class = "price">$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart9" onclick= "favourite('heart9');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: kitchen, plumbing, electric, painting, bathroom, utility lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact10')">Contact<span class="popuptext" id= "contact10">101-101-1010</span></button>
+
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class = "clisting all $3 insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id= "c11">Contractor 11</h1>
+                                <h3 class = "price">$$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart10" onclick= "favourite('heart10');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: insulation, drywall, painting, flooring, carpeting, bedroom, nursery, office, basement lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact11')">Contact<span class="popuptext" id= "contact11">101-101-1111</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+                    <li id = "filterContractors" class= "clisting all $2 utility plumbing electric heating-cooling water-heating" data-clisting = "2">
+                        <div class = "c-info">
+                            <div class = "clisting1">
+                                <h1 id="c12">Contractor 12</h1>
+                                <h3 class = "price">$$</h3>
+                                <div class = "c-rating">
+                                    <p>Rating: 
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </p>
+                                </div>
+                                <i class="fa fa-heart" id="heart11" onclick= "favourite('heart11');" ></i>
+                            </div>
+                            <p>Contractor description: This contractor does: utility, plumbing, electric, heating-cooling, water-heating    gfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
+                                kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                            <div class = "c-listing-buttons">
+                                <div class="important-btns">
+                                    <button>Schedule</button>
+                                    <button class= "contact" onclick="contact('contact12')">Contact<span class="popuptext" id= "contact12">121-121-1212</span></button>
+                                    <button>Get a Quote</button>
+                                    <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+                                  </div>
+
+                            </div>
+                            </div>
+                        
+                        <img class = "listing-img" src="images/innovate_reno.jpeg">
+                        
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- *************************CONTRACTOR HOME************************************ -->
+
+
+    <!-- ********************************FABULOUS CARPETING********************* -->
+
+
+    
+
+
+    <!-- ***********************LOGIN****************************** -->
+
+
+
+    <!-- *******************REGISTER******************* -->
+
+
+
+    <!-- **********************FEED************************ -->
+
+    </body>
+</html>
+    
