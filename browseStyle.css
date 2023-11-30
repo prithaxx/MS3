@@ -13,9 +13,10 @@ ul li{
 }
 
 .mainpage {
-    font-family: kanit;
+    font-family: Helvetica, sans-serif;
     font-size: 13px;
-   
+   font-weight:100;
+  
     margin-bottom: 40px;
     align-content: center;
     height: 100%; 
