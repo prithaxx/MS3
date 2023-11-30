@@ -10,6 +10,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 40px;
+  padding-top: 70px;
 }
 
 @media screen and (min-width: 900px) {
@@ -130,13 +131,13 @@ body {
   margin-bottom: 30px;
 }
 
-/* NAVBAR */
+/* ------------NAVBAR------------- */
 
 nav{
   display: flex;
   width: 100%;
   background-color: rgba(4, 6, 56, 0.894);
-  position: relative;
+  position: fixed;
   justify-content: space-between;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
@@ -159,6 +160,10 @@ nav{
   border: solid;
   max-width: 100%;
   position: relative;
+}
+
+.search-location-bars input::placeholder{
+  padding-left: 10px;
 }
 
 .search-location-bars button{
@@ -196,7 +201,7 @@ nav{
   color: white;
 }
 
-/* BURGER  */
+/* --------------BURGER ---------------- */
 .openbtn{
   background-color: transparent;
   border: none;
@@ -328,4 +333,62 @@ nav{
   width: 120px;
   font-size: 15px;
   margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.submit-confirmation{
+  width: 400px;
+  background: aliceblue;
+  border-radius: 6px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  z-index: 1000;
+  visibility: hidden;
+}
+.open-submit-confirmation{
+  visibility: visible;
+}
+
+.submit-confirmation img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.submit-confirmation h2{
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.submit-confirmation h3{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 30px 0 10px;
+}
+.submit-confirmation button{
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 0;
+  background: rgb(4, 6, 56);
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: none;
+  z-index: 999; /* Ensure the overlay appears below the popup */
 }

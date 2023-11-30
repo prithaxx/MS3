@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="browseStyle.css">
-    <link rel= "stylesheet" href= "contractor_home.css">
+    <!-- <link rel= "stylesheet" href= "contractor_home.css"> -->
     <script src= "browse.js"></script>
-    <script src = "contractor_home.js"></script>
+    <script src = "script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDmID1lwMhjTimTKGMNSVR4x6jBIb6Hdmc">
     <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
@@ -14,14 +14,14 @@
     </head>
 
     <body>
-    <div>
+    <div class = "navDiv">
         <!-- Navigation bar -->
       <nav>
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
           <div class="nav-header">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
             <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
-            <a href="#" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
           </div>
           <a href="#">Home</a>
           <a href="#">Feed</a>
@@ -53,21 +53,19 @@
           <button>Contractor Pro</button>
         </div>
 
-        <!-- Search bar -->
-        <div class="search-location-bars">
-          <input type="search" placeholder="Basement Renovations" style="width: 300px;">
-    
-          <!-- Location bar -->
-          <input type="search" placeholder="Winnipeg, MB" style="width: 300px;">
-          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-        </div>
+       <!-- Search bar -->
+       <div class="search-location-bars">
+        <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+        <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+      </div>
 
         <!-- My Account Button -->
         <div class="login-signup">
-          <button class = "my-account"><i class="fa fa-user"></i> My Account</button>
+          <button class = "my-account" onclick="goToUserHomePage()"><i class="fa fa-user"></i> My Account</button>
         </div>
 
       </nav>
+    </div>    
 
 
 
@@ -76,7 +74,7 @@
 
 
 
-    </div>
+
     <div class = "mainpage"> 
         <div class = "browse">
             <!-- <div class = "breadcrumb">
