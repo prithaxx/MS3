@@ -67,11 +67,16 @@ body {
   padding-right: 10px;
   color: black;
 }
+.listingbuttons{
+  margin-right: 10px; 
+}
+
 
 .important-btns{
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  
+  /* justify-content: space-between; */
   size: 100%;
 }
 .important-btns button{

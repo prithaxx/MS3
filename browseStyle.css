@@ -541,6 +541,39 @@ ul li{
   margin-right: 10px; 
 }
 
+.important-btns{
+  padding-top: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  size: 100%;
+}
+.important-btns button{
+  max-width: 100%;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  background-color: #c2452d;
+  font-size: 15px;
+}
+.important-btns button:hover{
+  background-color: white;
+  color: #c2452d;
+  transition: 0.3s;
+}
+.important-btns button:active{
+  background-color: rgb(141, 27, 5);
+  color: white;
+}
+.important-btns button:last-child {
+  margin-right: 0;
+}
+
+
+
 .cIconInfo{
   /* width: 40%;  */
   display: flex;
