@@ -109,26 +109,31 @@ function sortByPrice(value){
 }
 
 function toggleMapList(){
-    list = document.getElementById("clist"); 
-    map = document.getElementsByClassName("map"); 
+    // list = document.getElementById("clist"); 
+    // map = document.getElementsByClassName("map"); 
 
-    w3RemoveClass(list, "show");
-    w3AddClass(list, "show"); 
-    w3RemoveClass(map, "hide"); 
-    w3AddClass(map, "show"); 
+    // w3RemoveClass(list, "show");
+    // w3AddClass(list, "show"); 
+    // w3RemoveClass(map, "hide"); 
+    // w3AddClass(map, "show"); 
 
 
-    // const toggle = document.getElementById("toggle"); 
-    // toggle.addEventListener('click', toggleMap(toggle)); 
+    const toggle = document.getElementById("map"); 
+    toggle.addEventListener('click', toggleMap("map")); 
 
     
     // w3AddClass(); 
 }
 function toggleMap(i) {
-    const heart = document.getElementById(i);
-    heart.classList.toggle('map');
+    const map = document.getElementById(i);
+    map.classList.toggle('show');
+    const list = document.getElementById("clist"); 
+    w3AddClass(list, "hide");
     // addToFavourites(); 
-  }
+}
+
+
+
 
 
 function favourite(i) {
