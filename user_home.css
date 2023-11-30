@@ -1,36 +1,36 @@
 html{
-  scroll-behavior: smooth;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  *{
     margin: 0;
-    background-color: aliceblue;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-.mainpage{
-    font-family: Helvetica, sans-serif;
-    font-size: 13px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 40px;
-    padding-top: 70px;
-}
+  body {
+      height: 100%;
+      margin: 0;
+      background-color: aliceblue;
+  }
+    
+  .mainpage{
+      font-family: Helvetica, sans-serif;
+      font-size: 13px;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 40px;
+      padding-top: 70px;
+  }
+    
+  @media screen and (min-width: 900px) {
+      .mainpage {
+        margin-left: 15%; 
+        margin-right: 15%;
+      }
+  }
   
-@media screen and (min-width: 900px) {
-    .mainpage {
-      margin-left: 15%; 
-      margin-right: 15%;
-    }
-}
-
-  /* ------------NAVBAR------------- */
+    /* ------------NAVBAR------------- */
 
 nav{
   display: flex;
@@ -46,6 +46,7 @@ nav{
 
 .website-icon button{
   font-family: 'Kanit', sans-serif;
+  padding-top: 5px;
   font-size: 20px;
   background-color: transparent;
   border: none;
@@ -54,7 +55,10 @@ nav{
 }
 
 .search-location-bars input{
+  top: 3px;
   height: 35px;
+  padding: 5px 15px 5px 15px;
+  text-align: left;
   border-radius: 10px;
   border: solid;
   max-width: 100%;
@@ -62,6 +66,8 @@ nav{
 }
 
 .search-location-bars button{
+  padding-top: 6px;
+  padding-left: 6px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -75,12 +81,13 @@ nav{
 }
 
 .login-signup button{
+  top: 3px;
   position: relative;
   max-width: 100%;
   color: white;
   font-weight: bold;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 7px;
   border: none;
   cursor: pointer;
   width: 120px;
@@ -96,7 +103,7 @@ nav{
   color: white;
 }
 
-/* --------------BURGER ---------------- */
+/* ------------BURGER------------- */
 .openbtn{
   background-color: transparent;
   border: none;
@@ -114,6 +121,7 @@ nav{
   left: 0;
   background-color: rgb(4, 6, 56);
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -192,6 +200,13 @@ nav{
   cursor: pointer;
   font-size: 20px;
   padding-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.services-container {
+  display: none;
+  overflow-y: auto;
+  max-height: calc(100vh - 350px);
 }
 
 /* Some media queries for responsiveness */
@@ -200,113 +215,122 @@ nav{
   .burger-links a {font-size: 18px;}
 }
 
-.nav-header{
-  display: flex;
-}
-
-/*----------MAINPAGE------------ */
-
-.my-account-heading{
-  margin-top: 35px;
+.nav-footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   background-color:rgb(4, 6, 56);
-  color: white;
-}
-.account{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 100%;
-  padding-top: 20px;
-}
-.user-profile img{
-  margin-top: 50%;
-  height: 220px;
-  width: 220px;
-  border-radius: 50%;
-  border: solid;
-}
-.user-profile{
-  text-align: center;
-  margin-right: 80px;
-}
-
-@media screen and (max-width: 700px) {
-  .user-profile img {
-    display: none;
-  }
-}
-
-.user-logistics{
-  border-left: solid;
-  border-left-width: 1px;
-}
-.posted-images {
-  margin-top: 10px;
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 10px;
-  width: fit-content;
-  height: 400px; /* Set the fixed height for the container */
-  overflow-y: auto; /* Enable vertical scrollbar */
-}
-
-.posted-images span img {
-  width: 100%; 
-  height: 100%; 
-  object-fit:contain; 
-  cursor: pointer;
-}
-.posted-images span p{
-  padding-bottom: 10px;
-}
-
-.favourite-contractors{
-  margin-top: 10px;
-}
-.favourite-list{
-  margin-top: 10px;
-  margin-left: 20px;
   display: flex;
-  gap: 10px;
 }
-.cont-link{
-  background: rgba(6, 62, 126, 0.212);
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-table {
-  margin-top: 20px;
-  background: white;
-  border-collapse:collapse;
-  width: 100%;
-  font-size: 15px;
-}
-
-.individual-booking{
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-td {
-  text-align: right;
-}
-.cancel-btn {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-}
-.cancel-btn:active{
-  background-color: rgb(141, 27, 5);
-}
+  
+  /*----------MAINPAGE------------ */
+  
+  .my-account-heading{
+    margin-top: 35px;
+    background-color:rgb(4, 6, 56);
+    color: white;
+  }
+  .account{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    padding-top: 20px;
+  }
+  .user-profile img{
+    margin-top: 50%;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: solid;
+  }
+  .user-profile{
+    text-align: center;
+    margin-right: 80px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .user-profile img {
+      display: none;
+    }
+  }
+  
+  .user-logistics{
+    border-left: solid;
+    border-left-width: 1px;
+  }
+  .posted-images {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: fit-content;
+    height: 400px; /* Set the fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+  .posted-images span img {
+    width: 100%; 
+    height: 100%; 
+    object-fit:contain; 
+    cursor: pointer;
+  }
+  .posted-images span p{
+    padding-bottom: 10px;
+  }
+  
+  .favourite-contractors{
+    margin-top: 10px;
+  }
+  .favourite-list{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .cont-link{
+    background: rgba(6, 62, 126, 0.212);
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    margin-top: 20px;
+    background: white;
+    border-collapse:collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .individual-booking, .booking-heading{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .cancelbtn{
+    text-align: center;
+  }
+  
+  td {
+    text-align: right;
+  }
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .cancel-btn:active{
+    background-color: rgb(141, 27, 5);
+  }
