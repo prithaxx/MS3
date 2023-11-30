@@ -14,7 +14,7 @@
     </head>
 
     <body>
-    <div class = "navDiv">
+    <!-- ÷<div class = "navDiv"> -->
         <!-- Navigation bar -->
       <nav>
         <div id = "my-burger-links" class="burger-links">
@@ -23,26 +23,35 @@
             <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
             <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
           </div>
-          <a href="#">Home</a>
-          <a href="#">Feed</a>
+          <a href="index.html">Home</a>
+          <a href="index.html">Feed</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
             <a hred="#" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
-              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+              <a href="#" style="font-size: 20px;">Browse All</a> 
+              <a href="#" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="#" style="font-size: 20px;">Basement Renovation</a>
+              <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
+              <a href="#" style="font-size: 20px;">Drywalling</a>
+              <a href="#" style="font-size: 20px;">Electrical</a>
+              <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a href="#" style="font-size: 20px;">Landscaping</a>
+              <a href="#" style="font-size: 20px;">Painting</a>
               <a hred="#" style="font-size: 20px;">Plumbing</a>
-              <a hred="#" style="font-size: 20px;">Electrical</a>
-              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
-              <a hred="#" style="font-size: 20px;">Interior Painting</a>
-              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
-              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
-              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
-              <a hred="#" style="font-size: 20px;">General Contracting</a>
-              <a hred="#" style="font-size: 20px;">Gas Lines</a>
-              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="#" style="font-size: 20px;">Roofing</a>
+              
+              
+              
+              
+              
+              
+              
+              
             </div>
           </div>
+        
         </div>
 
         <div id="main">
@@ -65,7 +74,7 @@
         </div>
 
       </nav>
-    </div>    
+    <!-- </div>     -->
 
 
 
@@ -149,7 +158,7 @@
                         <select class="sort-dropdown" name="distance" id="distance" onchange="filterSort('distance',value);">
                             <option value="distance" >Distance</option>
                             <option value="radius" >Radius</option>
-                            <option value="postal" >Postal Code</option>
+                            <!-- <option value="postal" >Postal Code</option> -->
                             
                         </select>
                         <select class="sort-dropdown" name="price" id="price" onchange="filterSort('price',value);">
@@ -157,15 +166,15 @@
                             <option value="$1" onchange="filterSelection('$');">$</option>
                             <option value="$2" onchange="filterSelection('$$');">$$</option>
                             <option value="$3" onclick="filterSelection('$$$');">$$$</option>
-                            <option value="low-high" onchange="sortByPrice('low-high');">Low - High</option>
-                            <option value="high-low" onchange="sortByPrice('high-low');">High - Low</option>
+                            <option value="priceAsc" onchange="sortByPrice('priceAsc');">Low - High</option>
+                            <option value="priceDesc" onchange="sortByPrice('priceDesc');">High - Low</option>
 
                             
                         </select>
                         <select class="sort-dropdown" name="reviews" id="reviews" onchange="filterSort('reviews',value);">
-                            <option value="top-rated" onclick="sortByRating('top-rated');">Top Rated</option>
-                            <option value="lowest-rating" onclick="sortByRating('lowest-rating');">Lowest Rating</option>
-                            <option value="highest-rating" onclick="sortByRating('highest-rating');">Highest Rating</option>
+                            <option value="topRated" onclick="sortByRating('topRated');">Top Rated</option>
+                            <option value="lowRating" onclick="sortByRating('lowRating');">Lowest Rating</option>
+                            <option value="highestRating" onclick="sortByRating('highestRating');">Highest Rating</option>
                             
                         </select>
                     </div>
@@ -179,12 +188,12 @@
                     </div>
                     
                 </div>
-                <div class = "clist">
-                    <ul class="clist" id = "clist">
+                <div class = "clist sortAll" id = "clist">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1sortALL</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -634,12 +643,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "priceAsc">
+                <div class = "clist sortAll hide" id = "priceAsc">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1price asc</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -1097,12 +1106,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "priceDesc">
+                <div class = "clist sortAll hide" id = "priceDesc">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1price desc</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -1555,12 +1564,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "topRated">
+                <div class = "clist sortAll hide" id = "topRated">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1top rated</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -2013,12 +2022,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "lowRating">
+                <div class = "clist sortAll hide" id = "lowRating">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1lowest rating </h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -2475,12 +2484,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "highestRating">
+                <div class = "clist sortAll hide" id = "highestRating">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1highest rating</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -2937,12 +2946,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "distance">
+                <div class = "clist sortAll hide" id = "distance">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1distance</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -3396,12 +3405,12 @@
 
 
 
-                <div class = "clist">
-                    <ul class="clist" id = "radius">
+                <div class = "clist sortAll hide" id = "radius">
+                    <ul class="clist" >
                         <li id = "filterContractors" class="clisting all $1 landscaping tree-services foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1</h1>
+                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Contractor 1radius</h1>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
