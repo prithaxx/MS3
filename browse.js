@@ -103,6 +103,16 @@ function w3RemoveClass(element, name) {
 }
 
 
+// ids for sorting div swap
+// priceAsc
+// priceDesc
+// topRated
+// highestRating
+// lowRating
+// radius
+// distance
+
+
 function filterSort(type, value){
   if(type == "reviews"){
       sortByRating(value); 
@@ -157,79 +167,65 @@ function sortByPrice(value){
   if(value == "high-low"){
     priceOrder("desc");
   }else if (value == "low-high"){
-    SortData(); 
+    priceOrder("asc");
+    // SortData(); 
+    // sort(); 
+  }else{
+    filterSelection(value); 
   }
-  filterSelection(value); 
+  
 }
 
 function priceOrder(direction){
-  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-  list = document.getElementsById("clist");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = direction;
-  // Make a loop that will continue until no switching has been done:
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    b = list.getElementsByClassName("price");
-    // Loop through all list-items:
-    for (i = 0; i < (b.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Check if the next item should switch place with the current item,
-      based on the sorting direction (asc or desc): */
-      if (dir == "asc") {
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-          /* If next item is alphabetically lower than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
-          /* If next item is alphabetically higher than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      b[i].parentNode.insertBefore(b[i + 1], b[i]);
-      switching = true;
-      // Each time a switch is done, increase switchcount by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
+  var i, list, low, mid, high,parent; 
+  parent = document.getElementById('clist'); 
+  parent.innerHTML = ""; 
+  list = document.getElementsByClassName("all"); 
+  list= Array.prototype.slice.call(list, 0);
+  low= list.getElementsById("$1"); 
+  low== Array.prototype.slice.call(low, 0);
+  mid= list.getElementsById("$2"); 
+  mid= Array.prototype.slice.call(mid, 0);
+  high = list.getElementsById("$3"); 
+  high== Array.prototype.slice.call(high, 0);
+
+  if(direction == "asc"){
+
+
+
+
+
+    // for(i = 0, i<low.length; i++;){
+    //   list[i] = low[i]; 
+    // }
+    // for(i, i<low.length + mid.length-1; i++;){
+    //   list[i] = mid[i-low.length]; 
+    // }
+    // for(i, i<low.length+mid.length+high.length; i++;){
+    //   list[i] = high[i-low.length-mid.length]; 
+    // }
+    // sort(); 
+  }else if(direction == "desc"){
+
+
+
+
+
+  //   for(i = 0, i<high.length; i++;){
+  //     list[i] = high[i]; 
+  //   }
+  //   for(i, i<high.length + mid.length-1; i++;){
+  //     list[i] = mid[i-high.length]; 
+  //   }
+  //   for(i, i<low.length+mid.length+high.length; i++;){
+  //     list[i] = low[i-high.length-mid.length]; 
+  //   }
+  // }
+
+  // for(var i = 0, l = list.length; i < l; i++) {
+  //   parent.appendChild(list[i]);
 }
 }
-
-function sortArray(a) { 
-  for()
-  if (a.dataset.clisting < b.dataset.clisting) 
-      return -1; 
-  if (a.dataset.clisting > b.dataset.clisting) 
-      return 1; 
-  return 0; 
-} 
-
-// Function to sort Data 
-function SortData() { 
-  var listings = document.querySelectorAll("[data-clisting]"); 
-  var listingsArray = Array.from(listings); 
-  let sorted = listingsArray; 
-  sorted.forEach(e => 
-      document.querySelector("#clist").appendChild(e)); 
-} 
 
 
 
