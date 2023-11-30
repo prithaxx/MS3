@@ -768,6 +768,7 @@ ul li{
 
 }
 
+
 .toggle{
     /* margin-top: 10px; */
     width: 100%;
@@ -844,6 +845,16 @@ ul li{
     overflow: hidden;
   }
 
+  .map{
+
+  }
+  .map .mapContent{
+    visibility: hidden;
+  }
+
+  .map .showMap{
+    visibility: visible;
+  }
 
   .contact {
     position: relative;

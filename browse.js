@@ -43,24 +43,7 @@ function goToResults(){
 //attic*
 //
 //
-// function filterSelection(filter){
-//     var li,i,j; 
-//     li = document.getElementsById("filterContractors"); 
-//     filterItems = document.getElementsByClassName(filter); 
-//     // if (filter == "all") filter = "";
-//     //find the listings with the filter id
-//     for(i = 0; i < li.length; i++){
-//         for(j=0; j<filterItems.length; j++){
-//             if(li[i]==filterItems[j]){
-//                 li[i].style.display = "";
-//             } else {
-//                 li[i].style.display = "none";
-//             }
-//         }
-        
-//     }
-    
-// }
+
 
 function filterSelection(c) {
   var x, i;
@@ -103,53 +86,11 @@ function w3RemoveClass(element, name) {
 }
 
 
-// ids for sorting div swap
-// priceAsc
-// priceDesc
-// topRated
-// highestRating
-// lowRating
-// radius
-// distance
-
-function sortSelection(c) {
-  if(c == "priceAsc"){
-    w3RemoveClass()
-  }else if(){
-
-  }else if(){
-
-  }else if(){
-
-  }else if(){
-
-  }else if(){
-
-  }
-  var x, i;
-  x = document.getElementsByClassName("sortAll");
-  if (c == "sortAll") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    w3RemoveClass(x[i], "hide")
-    if (x[i].className.indexOf(c) > -1){
-      w3AddClass(x[i], "show");
-    } else {w3AddClass(x[i], "hide"); }
-  }
-}
-
-
 
 
 
 function filterSort(type, value){
-  if(type == "price"){
-      sortByPrice(value); 
-  }else{
-    sortSelection(value); 
-  }
-  
+  filterSelection(value); 
       
 }
 
@@ -160,15 +101,34 @@ function sortByPrice(value){
     
   }else if (value == "low-high"){
      
+    lowToHigh(); 
   }else{
     filterSelection(value); 
   }
   
 }
 
+function toggleMapList(){
+    list = document.getElementById("clist"); 
+    map = document.getElementsByClassName("map"); 
+
+    w3RemoveClass(list, "show");
+    w3AddClass(list, "show"); 
+    w3RemoveClass(map, "hide"); 
+    w3AddClass(map, "show"); 
 
 
+    // const toggle = document.getElementById("toggle"); 
+    // toggle.addEventListener('click', toggleMap(toggle)); 
 
+    
+    // w3AddClass(); 
+}
+function toggleMap(i) {
+    const heart = document.getElementById(i);
+    heart.classList.toggle('map');
+    // addToFavourites(); 
+  }
 
 
 function favourite(i) {

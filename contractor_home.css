@@ -37,6 +37,9 @@ body {
   color: rgb(255, 123, 0);
   font-size: 15px;
 }
+.rating2 {
+  color: grey; 
+}
 
 .contractor-images img{
   height: 280px;
