@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Contractor Pro</title>
+    <link rel="stylesheet" href="contractor_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div id = "my-burger-links" class="burger-links">
+        <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+        
+        <a href="#">Home</a>
+        <a href="#">Feed</a>
+        <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+        <div class="browse-container">
+          <a hred="#" style="font-size: 20px;">By Region</a>
+          <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+          <div class="services-container">
+            <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+            <a hred="#" style="font-size: 20px;">Plumbing</a>
+            <a hred="#" style="font-size: 20px;">Electrical</a>
+            <a hred="#" style="font-size: 20px;">Basement Finishing</a>
+            <a hred="#" style="font-size: 20px;">Interior Painting</a>
+            <a hred="#" style="font-size: 20px;">Graden & Yard</a>
+            <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
+            <a hred="#" style="font-size: 20px;">Carpentry Works</a>
+            <a hred="#" style="font-size: 20px;">General Contracting</a>
+            <a hred="#" style="font-size: 20px;">Gas Lines</a>
+            <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+          <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+        </div>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+      </div>
+
+      <div class="website-icon">
+        <button>Contractor Pro</button>
+      </div>
+
+    <!-- Search bar -->
+    <div class="search-location-bars">
+      <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+      <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+    </div>
+
+      <!-- My Account Button -->
+      <div class="login-signup">
+        <button class = "my-account" onclick="goToUserHomePage()"><i class="fa fa-user"></i> My Account</button>
+      </div>
+
+    </nav>
+
+
+        <!-- MAIN PAGE STARTS HERE -->
+        <div class="mainpage">
+          <div class="contractor-intro">
+            <div class="contractor-info">
+              <h1>Smith & Sons Pvt Ltd</h1>
+              <p style="font-size: 15px;">Welcome to Smith & Sons Construction, where dreams take shape and visions become reality. With a legacy of craftsmanship and a commitment to excellence, we stand as your trusted partner in building the spaces you envision. From concept to completion, Smith & Sons Construction is dedicated to delivering quality construction services tailored to your unique needs.</p>
+              <h2 style="color: brown;">190 Oak Street, Selkirk, MB P3T5S2</h2>  
+              <h3>Services Provided</h3>
+              <div class="services-provided">
+                <button disabled>Kitchen Remodeling</button>
+                <button disabled>Bedroom and Bathroom</button>
+                <button disabled>Plumbing</button>
+                <button disabled>Cleaning Services</button>
+              </div>
+              <div class="important-btns">
+                <button>Schedule</button>
+                <button>Contact</button>
+                <button>Get a Quote</button>
+                <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+              </div>
+            </div>
+
+            <div class="contractor-images">
+              <img src="images/smithson.jpeg">
+              <div class="rating">
+                <p>Rating: <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="customer-reviews">
+            <div class="review-heading">
+              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">2 Customer Reviews</h2>
+            </div>
+            
+            <div class="comments">
+              <div class="box">
+                <h2>Pritha Das</h2>
+                <p class="summary">Not so great. They get frustrated <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    </i>
+                 </p>
+                <p class="descriptive-summary">Unfortunately, I had a very disappointing experience with Smith & Sons Construction. The project encountered numerous setbacks, and the team seemed unorganized and indifferent to my concerns. The craftsmanship was below par, and I had to invest additional time and money to rectify mistakes. Overall, a regrettable choice for construction services.</p>
+              </div>
+
+              <h2>Melanie Turman</h2>
+              <p class="summary">Awful behaviour <i class="fa fa-star"></i>
+                </p>
+              <p class="descriptive-summary">My experience with Smith & Sons Construction was nothing short of a nightmare. From delays in project timelines to subpar workmanship, the entire process was riddled with frustration. Communication was lacking, and the final result did not meet the standards promised. I would caution anyone considering their services to think twice before entrusting them with a construction project.</p>
+            </div>
+          </div>
+
+          <div class="write-review" id="write-review-section">
+            <div class="write-review-heading">
+              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Write a Review</h2>
+          </div>
+          <form class="review" id ="review">
+            <textarea class="message" placeholder="Enter your name" rows="1"></textarea>
+            <textarea class="message" placeholder="Enter your email" rows="1"></textarea>
+            <textarea class="message" placeholder="Enter your message here" rows="8"></textarea>
+            <button class="submit-button" onclick="openSubmitConf()">Submit</button>
+
+            <div class="overlay" id="overlay"></div>
+            <div class="submit-confirmation" id="submit-confirmation">
+              <img src="images/bluetick.png">
+              <h2>Thank You!</h2>
+              <h3>Your Review has been submitted successfully</h2>
+              <button onclick="closeSubmitConf()">OK</button>
+            </div>
+          </form>
+            
+        </div>
+      <script src="script.js"></script>
+  
+    </body>
+
+</html>
