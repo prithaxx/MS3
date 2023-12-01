@@ -76,7 +76,6 @@ function goToLogin(){
 
 var swiper = new Swiper('.main-container', {
   slidesPerView: 4,
-  // slidesPerGroup: 4,
   centerSlide: "true",
   spaceBetween: 10,
   pagination: {
@@ -97,4 +96,5 @@ function openPopupPost() {
 function closePopupPost() {
   document.getElementById("newPost").style.display = "none";
 }
+
 
