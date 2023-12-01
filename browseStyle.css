@@ -59,12 +59,13 @@ margin-bottom: 100px;
 }
 
 h2{
-  font-weight: lighter; 
+  font-weight:normal; 
   padding-left: 15px; 
   /* padding-top: 8px; 
   padding-bottom: 8px; */
   margin-bottom: 10px;
   margin-top: 10px;
+  font-family: kanit;
 }
 
 .service_header, .contractor_list{
