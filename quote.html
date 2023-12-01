@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>getAQUote</title>
+    <link rel="stylesheet" href="quote.css" />  
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+</head>
+  <body>
+     <!-- Navigation bar -->
+      <nav class="navMargin">
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <a href="#">Home</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a hred="#" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a href="#" style="font-size: 20px;">Browse All</a> 
+              <a href="#" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="#" style="font-size: 20px;">Basement Renovation</a>
+              <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
+              <a href="#" style="font-size: 20px;">Drywalling</a>
+              <a href="#" style="font-size: 20px;">Electrical</a>
+              <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a href="#" style="font-size: 20px;">Landscaping</a>
+              <a href="#" style="font-size: 20px;">Painting</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a href="#" style="font-size: 20px;">Roofing</a>
+            </div>
+          </div>
+          <div class="nav-footer">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+       <!-- Search bar -->
+       <div class="search-location-bars">
+        <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+        <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        <div id="suggestions-container" class="suggestions-dropdown"></div>
+      </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
+        </div>
+
+      </nav>
+      
+    <div class="form-container">
+        <div class="header">
+
+          <h1>Get a Quote</h1>
+          <p>Fill out all the fields before submitting your request for a quote.</p><p> You should except a response within 24 hours.</p>
+        </div>
+      
+      <form>
+        <div class="form-group">    
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phoneNumber" name="phoneNumber" required />
+          </div>
+          <div class="form-group">
+              <label for="Type of service">Type of service:</label>
+              <select name="services" id="service-type">
+                  <option value = "default">Select a Service</option>
+                  <option value="IP">Interior painting</option>
+                  <option value="KR">Kitchen remodeling</option>
+                  <option value="CW">Carpentry works</option>
+                  <option value="F">Flooring</option>
+                  <option value="BF">Basement furninshing</option>
+              </select>
+              <!-- <input type="text" id="service" name="service" required /> -->
+          </div>
+          <div class="form-group">
+            <label for="message">Description:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button id="SubmitQButton" onclick="getAQuote()" type="submit">Get a quote</button>
+
+          <!-- <div class="overlay" id="overlay"></div>
+            <div class="submit-confirmation" id="submit-confirmation">
+              <img src="images/bluetick.png">
+              <h2>Thank You!</h2>
+              <h3>Your request to get a quote has been submitted successfully</h2>
+              <button onclick="submitGetAQuote()">OK</button>
+            </div> -->
+        </form>
+    </div>
+        
+  </body>
+  <script src="quote.js"></script>
+  <script src="script.js"></script>
+
+</html>
+
+

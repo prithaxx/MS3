@@ -1,0 +1,410 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+    margin: 0;
+    /* padding: 0;  */
+  }
+  
+  .header {
+    /* margin-top: 35px; */
+    background-color: rgb(4, 6, 56);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #fcfafa;
+    font-style: normal;
+  }
+  
+  p {
+    color: #fbf9f9;
+    font-style: italic;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navMargin {
+    margin-top: -100px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #SubmitQButton {
+    background-color: rgb(141, 27, 5);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #SubmitQButton:hover {
+    background-color: #0056b3;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Optional: Add some responsive styles */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+    }
+  }
+  
+  /* ------------NAVBAR------------- */
+  
+  nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(4, 6, 56);
+    position: fixed;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    padding: 15px 30px;
+  }
+  
+  .website-icon button {
+    font-family: "Kanit", sans-serif;
+    padding-top: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: azure;
+  }
+  
+  .search-location-bars input {
+    top: 3px;
+    height: 35px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    border: solid;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .search-location-bars button {
+    padding-top: 6px;
+    padding-left: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    color: azure;
+  }
+  
+  .search-location-bars button i:hover {
+    color: rgb(229, 30, 30);
+    transition: 0.3s;
+  }
+  
+  .login-signup button {
+    top: 3px;
+    position: relative;
+    max-width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    background-color: #c2452d;
+  }
+  .login-signup button:hover {
+    background-color: white;
+    color: #c2452d;
+    transition: 0.3s;
+  }
+  .login-signup button:active {
+    background-color: rgb(141, 27, 5);
+    color: white;
+  }
+  
+  /* BURGER  */
+  .openbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: azure;
+  }
+  
+  .burger-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 6, 56);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .burger-links a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: block;
+    transition: 0.3s;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    border: none;
+  }
+  
+  .browse-dropdown-btn,
+  .servicesbtn {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: block;
+    background-color: rgb(4, 6, 56);
+    transition: 0.3s;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    border: none;
+  }
+  
+  .burger-links a:hover {
+    color: #c2452d;
+    transition: 0.3s;
+  }
+  
+  .burger-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: azure;
+  }
+  
+  #main {
+    transition: margin-left 0.5s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .burger-links {
+      padding-top: 15px;
+    }
+    .burger-links a {
+      font-size: 18px;
+    }
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #c2452d;
+    transition: 0.3s;
+  }
+  
+  .burger-links .browse-dropdown-btn.active:hover,
+  .burger-links .servicesbtn.active:hover {
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .burger-links .browse-dropdown-btn:not(.active):hover,
+  .burger-links .servicesbtn:not(.active):hover {
+    color: #c2452d;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .browse-container,
+  .services-container {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+  
+  .services-container {
+    display: none;
+    overflow-y: auto;
+    max-height: calc(100vh - 400px);
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .burger-links {
+      padding-top: 15px;
+    }
+    .burger-links a {
+      font-size: 18px;
+    }
+  }
+  
+  .nav-footer {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    background-color: rgb(4, 6, 56);
+    display: flex;
+  }
+  
+  .write-review {
+    padding-top: 30px;
+  }
+  
+  .write-review-heading h2 {
+    font-weight: lighter;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .review {
+    padding-top: 8px;
+  }
+  
+  .review textarea {
+    display: block;
+    resize: none;
+    width: 95%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    font-family: Arial;
+    font-size: 15px;
+  }
+  .message {
+    padding: 5px 15px 5px 15px;
+  }
+  .submit-button {
+    display: block;
+    margin: 0 auto; /* This will center the button horizontally */
+    background-color: #c2452d;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+  
+  .submit-confirmation {
+    width: 400px;
+    background: aliceblue;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    z-index: 1000;
+    visibility: hidden;
+  }
+  .open-submit-confirmation {
+    visibility: visible;
+  }
+  
+  .submit-confirmation img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .submit-confirmation h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .submit-confirmation h3 {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 30px 0 10px;
+  }
+  .submit-confirmation button {
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0;
+    background: rgb(4, 6, 56);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: none;
+    z-index: 999; /* Ensure the overlay appears below the popup */
+  }
+  
+  .suggestions-dropdown {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    width: 400px;
+    overflow-y: auto;
+    position: fixed;
+    display: none; /* initially hide the suggestions */
+  }
+  
+  .suggestions-dropdown a {
+    display: block; /* Each suggestion link on a separate line */
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .suggestions-dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  

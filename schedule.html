@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Schedule</title>
+    <link rel="stylesheet" href="schedule.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    </style>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+      <nav class="navMargin">
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <a href="#">Home</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a hred="#" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a href="#" style="font-size: 20px;">Browse All</a> 
+              <a href="#" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="#" style="font-size: 20px;">Basement Renovation</a>
+              <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
+              <a href="#" style="font-size: 20px;">Drywalling</a>
+              <a href="#" style="font-size: 20px;">Electrical</a>
+              <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a href="#" style="font-size: 20px;">Landscaping</a>
+              <a href="#" style="font-size: 20px;">Painting</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a href="#" style="font-size: 20px;">Roofing</a>
+            </div>
+          </div>
+          <div class="nav-footer">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+       <!-- Search bar -->
+       <div class="search-location-bars">
+        <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+        <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        <div id="suggestions-container" class="suggestions-dropdown"></div>
+      </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
+        </div>
+
+      </nav>
+    <div id="scheduler">
+      <div id="calendar">
+        <h2>Book your Appointment</h2>
+        <table id="dateTable">
+          <thead>
+            <tr>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendarBody"></tbody>
+        </table>
+      </div>
+
+      <div id="selectedDateForm">
+        <div id="selectedDate">Selected Date:</div>
+        <div id="timeList">
+          <label
+            ><input type="radio" name="time" value="9:00 AM" /> 9:00 AM</label
+          >
+          <label
+            ><input type="radio" name="time" value="1:00 PM" /> 1:00 PM</label
+          >
+          <label
+            ><input type="radio" name="time" value="3:00 PM" /> 3:00 PM</label
+          >
+        </div>
+        <button id="subButton" onclick="submitAppointment()">Submit Appointment</button>
+        <div class="overlay" id="overlay"></div>
+            <div class="submit-confirmation" id="submit-confirmation">
+              <img src="images/bluetick.png">
+              <h2>Thank You!</h2>
+              <h3>Your Appointment has been scheduled successfully</h2>
+
+              <button onclick="closeSubmitConf()">OK</button>
+              
+            </div>
+        
+      </div>
+    </div>
+
+    <script src="schedule.js">
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
