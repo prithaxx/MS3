@@ -4,7 +4,6 @@
     <link rel= "stylesheet" href= "contractor_home.css">
     <link rel="stylesheet" href="browseStyle.css">
     <script src= "browse.js"></script>
-    <!-- <script src = "script.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDmID1lwMhjTimTKGMNSVR4x6jBIb6Hdmc">
     <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
@@ -80,7 +79,7 @@
 
 
 
-    <div class = "mainpage"> 
+    <div class = "mainpage" onload= "initialMap();"> 
         <div class = "browse">
             <!-- <div class = "breadcrumb">
                 <h3 class = "breadcrumb">Main > Browse</h3>
@@ -195,7 +194,7 @@
                         <li id = "filterContractors" class="clisting all $1 5star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="go('c1');">Innovate Renovations</h2>
+                                    <h2 class = "clistingName" id= "c1" onclick="gotoc1();">Innovate Renovations</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -233,7 +232,7 @@
                         <li id = "filterContractors" class = "clisting all $1 10km 5star appliance electric kitchen water-heating cleaning tiling" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c2" href="kitchenKing.html">Kitchen Kings</h2>
+                                    <h2 class = "clistingName" id= "c2" onclick="gotoc1();">Kitchen Kings</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -268,7 +267,7 @@
                         <li id = "filterContractors" class= "clisting all $2 5km 3star bathroom drywall flooring electric painting tiling plumbing utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id= "c3" href= "smith_sons.html">Smith & Sons Pvt Ltd</h2>
+                                    <h2  class = "clistingName" id= "c3" onclick="gotoc1();">Smith & Sons Pvt Ltd</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -303,7 +302,7 @@
                         <li id = "filterContractors" class= "clisting all $1 20km basement  4star roofing siding attic windows-doors foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id = "c4">Chip Off the Block Builders</h2>
+                                    <h2  class = "clistingName" id = "c4" onclick="gotoc1();">Chip Off the Block Builders</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -341,7 +340,7 @@
                         <li id = "filterContractors" class="clisting all $3 1star carpet flooring basement bedroom office nursery painting tiling cleaning" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c5">Fabulous Carpeting</h2>
+                                    <h2  class = "clistingName" id="c5" onclick="gotoc1();">Fabulous Carpeting</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$$</h3>
                                         <div class = "c-rating">
@@ -376,7 +375,7 @@
                         <li id = "filterContractors" class= "clisting all $1 4star 5km drywall insulation painting carpet bedroom nursery office tiling flooring">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c6">Knockout Renovation</h2>
+                                    <h2  class = "clistingName" id="c6"onclick="gotoc1();">Knockout Renovation</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -415,7 +414,7 @@
                         <li id = "filterContractors" class="clisting all $2 3star landscaping cleaning painting insulation tree-services foundation" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c7">Fence Masters</h2>
+                                    <h2  class = "clistingName" id="c7"onclick="gotoc1();">Fence Masters</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -454,7 +453,7 @@
                         <li id = "filterContractors" class= "clisting all $1 5star 10km appliance electric insulation utility water-heating heating-cooling" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c8">Emerge Contractors</h2>
+                                    <h2  class = "clistingName" id="c8"onclick="gotoc1();">Emerge Contractors</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -493,7 +492,7 @@
                         <li id = "filterContractors" class= "clisting all $3 2star 20km landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c9">Mountain Home Construction</h2>
+                                    <h2  class = "clistingName" id="c9"onclick="gotoc1();">Mountain Home Construction</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$$</h3>
                                         <div class = "c-rating">
@@ -532,7 +531,7 @@
                         <li id = "filterContractors" class= "clisting all $2 1star 5km kitchen plumbing electric painting bathroom tiling utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c10">My Home Design and Remodeling</h2>
+                                    <h2  class = "clistingName" id="c10"onclick="gotoc1();">My Home Design and Remodeling</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -572,7 +571,7 @@
                         <li id = "filterContractors" class = "clisting all $3 3star 5km insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id= "c11">Home Front Resources</h2>
+                                    <h2  class = "clistingName" id= "c11"onclick="gotoc1();">Home Front Resources</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$$</h3>
                                         <div class = "c-rating">
@@ -611,7 +610,7 @@
                         <li id = "filterContractors" class= "clisting all $2 5star 5km utility plumbing cleaning appliance heating-cooling water-heating" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  onclick ="gotoc12();" class="clistingName" id="c12">Empire Gen Construction</h2>
+                                    <h2  onclick ="gotoc12();" class="clistingName" id="c12"onclick="gotoc1();">Empire Gen Construction</h2>
                                     
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
@@ -667,7 +666,7 @@
                             <li id = "filterContractors" class="maplisting all $1 5star landscaping tree-services foundation" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2 class = "mapclistingName" id= "c1" onclick="clistingName('c1');">Innovate Renovations</h2>
+                                        <h2 class = "mapclistingName" id= "c1" onclick="gotoc1();">Innovate Renovations</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -690,7 +689,7 @@
                             <li id = "filterContractors" class = "maplisting all $1 10km 5star appliance electric kitchen water-heating utility" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2 class = "mapclistingName" id= "c2">Kitchen Kings</h2>
+                                        <h2 class = "mapclistingName" id= "c2"onclick="gotoc1();">Kitchen Kings</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -713,7 +712,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 5km 3star bathroom drywall flooring electric painting plumbing utility" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id= "c3">Smith & Sons Pvt Ltd</h2>
+                                        <h2  class = "mapclistingName" id= "c3"onclick="gotoc1();">Smith & Sons Pvt Ltd</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">
@@ -736,7 +735,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 20km basement  4star carpet drywall foundation flooring insulation painting bedroom office nursery" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id = "c4">Contractor 4</h2>
+                                        <h2  class = "mapclistingName" id = "c4"onclick="gotoc4();">Chip Off the Block Builders</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -759,7 +758,7 @@
                             <li id = "filterContractors" class="maplisting all $3 1star roofing siding attic windows-doors foundation" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c5">Fabulous Carpeting</h2>
+                                        <h2  class = "mapclistingName" id="c5"onclick="gotoc5();">Fabulous Carpeting</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "c-rating">
@@ -782,7 +781,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 4star 5km heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c6">Contractor 6</h2>
+                                        <h2  class = "mapclistingName" id="c6"onclick="gotoc6();">Knockout Renovation</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -806,7 +805,7 @@
                             <li id = "filterContractors" class="maplisting all $2 3star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c7">Contractor 7</h2>
+                                        <h2  class = "mapclistingName" id="c7"onclick="gotoc7();">Fence Masters</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "c-rating">
@@ -829,7 +828,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 5star 10km appliance electric utility water-heating heating-cooling" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c8">Contractor 8</h2>
+                                        <h2  class = "mapclistingName" id="c8"onclick="gotoc8();">Emerge Contractors</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "c-rating">
@@ -852,7 +851,7 @@
                             <li id = "filterContractors" class= "maplisting all $3 2star 20km landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c9">Contractor 9</h2>
+                                        <h2  class = "mapclistingName" id="c9"onclick="gotoc9();">Mountain Home Construction</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "map-c-rating">
@@ -875,7 +874,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 1star 5km kitchen plumbing electric painting bathroom utility" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c10">Contractor 10</h2>
+                                        <h2  class = "mapclistingName" id="c10"onclick="gotoc10();">My Home Design and Remodeling</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">
@@ -898,7 +897,7 @@
                             <li id = "filterContractors" class = "maplisting all $3 3star 5km insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id= "c11">Contractor 11</h2>
+                                        <h2  class = "mapclistingName" id= "c11"onclick="gotoc11();">Home Front Resources</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "map-c-rating">
@@ -921,7 +920,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 5star 5km utility plumbing electric heating-cooling water-heating" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "mapclistingName" id="c12">Contractor 12</h2>
+                                        <h2  class = "mapclistingName" id="c12"onclick="gotoc12();">Empire Gen Construction</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">

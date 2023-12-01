@@ -1,5 +1,10 @@
 var cHeader = "Contractor List"; 
 
+function initialMap(){
+  var map = document.getElementById('map'); 
+  w3AddClass(map, "hide");
+}
+
 function updateCHeader (service){
     document.getElementById('cHeader').innerHTML = cHeader + ": " + service;
     
