@@ -22,24 +22,24 @@
             <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
             <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
           </div>
-          <a href="user_home.html">Home</a>
+          <a href="#">Home</a>
           <a href="#">Feed</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
             <a hred="#" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
-              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
-                  <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');"style="font-size: 20px;">Appliance Repairs</a>
-                  <a href="browse.html" onclick= "goToBrowseBasement(); updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');"style="font-size: 20px;">Basement Renovation</a>
-                  <a href="browse.html" onclick= "goToBrowseBathroom(); updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" style="font-size: 20px;">Bathroom Renovation</a>
-                  <a href="browse.html" onclick= "goToBrowseDrywall(); updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" style="font-size: 20px;">Drywalling</a>
-                  <a href="browse.html" onclick= "goToBrowseElectric(); updateCHeader('Electrical'); goToResults(); filterSelection('electric');" style="font-size: 20px;">Electrical</a>
-                  <a href="browse.html" onclick= "goToBrowseKitchen(); updateCHeader('Kitchen Remodeling'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
-                  <a href="browse.html" onclick= "goToBrowseLandscaping(); updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" style="font-size: 20px;">Landscaping</a>
-                  <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
-                  <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
-                  <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
+              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a hred="#" style="font-size: 20px;">Electrical</a>
+              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
+              <a hred="#" style="font-size: 20px;">Interior Painting</a>
+              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
+              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
+              <a hred="#" style="font-size: 20px;">General Contracting</a>
+              <a hred="#" style="font-size: 20px;">Gas Lines</a>
+              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
             </div>
           </div>
         </div>
@@ -49,7 +49,8 @@
         </div>
 
         <div class="website-icon">
-          <button href="index.html">Contractor Pro</button>        </div>
+          <button>Contractor Pro</button>
+        </div>
 
         <!-- Search bar -->
         <div class="search-location-bars">
@@ -70,6 +71,9 @@
       <div class="mainpage">
 
         <!-- Feed -->
+        
+
+
         <div class="feed-container swiper">
           <h2 class="review-heading" style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Feed</h2>
           <div class="main-container">
@@ -85,7 +89,10 @@
                   </div>
                   <h5 class="post-contractor-name"></h5>
                   <p class="post-comments">Make a new post by clicking below</p>
-                  <button class="button">New Post</button>
+                  <button class="button" onclick="openPopupPost()">New Post</button>
+                  
+                  
+                  
                 </div>
               </div>
               <div class="post swiper-slide">
@@ -444,6 +451,31 @@
             </div>
           </div>
         </div>
+
+        <div class="popup-post" id="newPost">
+          <form class="post-form-container">
+            <h1>Create New Post</h1>
+            <div class="image-content">
+              <div class="image-post">
+                <img src="images/add_photos.jpeg" alt="" class="img-post">
+                
+              </div> 
+            </div>
+            <br>  
+            <div class="post-field">
+              <label>Contractor name:</label>
+              <input type="text" placeholder="John Doe">
+            </div>
+            <div class="post-field">
+              <label>Comments:</label><br>
+              <textarea></textarea>
+            </div>
+            <br>
+            <button class="button" onclick="closePopupPost()">Post</button>
+            <button class="cancel-button" onclick="closePopupPost()">Cancel</button>
+          </form>
+        </div>
+
       </div>
       
       <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
