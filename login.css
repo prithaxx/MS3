@@ -1,81 +1,43 @@
 body {
   height: 100%;
   margin: 0;
-  background-color: rgb(26, 55, 100);
+  background-color: aliceblue;
 }
 
 .mainpage{
-font-family: Helvetica, sans-serif;
-font-size: 13px;
-margin-left: 5%;
-margin-right: 5%;
-margin-bottom: 40px;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 900px) {
-.mainpage {
-  margin-left: 15%; 
-  margin-right: 15%;
+  .mainpage {
+    margin-left: 15%; 
+    margin-right: 15%;
   }
 }
 
 .login-box {
-border: solid;
-border-color: black;
-width: fit-content;
-color: black;
-font-size: 15px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-box-sizing: border-box;
-font-family: 'Kanit', sans-serif;
-text-align: center;
-padding: 70px;
-background: none;
-border-radius: 8px;
+  width: fit-content;
+  background-color: rgba(143, 48, 29, 0.572);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: solid;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  padding: 50px 60px 70px;
+  background: none;
+  border-radius: 15px;
 }
-
 
 .login-field {
-height: 35px;
-max-width: 100%;
-position: relative;
-padding: 5px;
-margin-bottom: 15px;
-}
-
-table {
-margin-top: 20px;
-border-collapse:collapse;
-width: 100%;
-font-size: 15px;
-margin-bottom: 20px;
-}
-
-td {
-text-align: right;
-}
-td input{
- width: 90%;
-}
-
-.loginbtn{
-  margin-top: 25px;
-  max-width: 100%;
-  color: white;
-  font-weight: bold;
-  font-size: 17px;
   height: 35px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  width: 120px;
-  background-color: #9e260e;
-}
-
-.loginbtn:active{
-  background-color: white;
-  color: rgb(141, 27, 5);
+  max-width: 100%;
+  position: relative;
+  padding: 5px;
 }
