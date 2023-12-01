@@ -105,6 +105,8 @@ body {
   border-bottom-width: 1px;
 }
 .review-heading, .write-review-heading{
+  font-family: 'Kanit';
+  font-weight: normal;
   margin-top: 35px;
   background-color:rgb(4, 6, 56);
   color: white;
@@ -401,13 +403,14 @@ nav{
   font-family: 'Kanit', sans-serif;
   text-align: center;
   padding: 50px 60px 70px;
-  background:none;
+  
 }
 
 .feed-field {
   height: 35px;
   max-width: 100%;
   position: relative;
+  
 }
 
 .image-post {
@@ -454,12 +457,30 @@ nav{
   position: relative;
   display: flex;
   padding: 50px;
-  
 
+}
+.post-container-monthly {
+  width: 150px auto;
+  position: relative;
+  display: flex;
+  padding: 50px;
+  background-color: rgba(6, 62, 126, 0.271);
+}
+
+.post-container-monthly .post {
+  position: relative;
+  
+  border-radius: 15px;
+  background-color: rgb(251, 252, 253);
+  margin: 7px;
 }
 .main-container {
   width: 100%;
+  background-color: rgba(6, 62, 126, 0.271);
 }
+
+
+
 
 .feed-title {
   
@@ -500,7 +521,7 @@ nav{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(240, 248, 255, 0.576);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
@@ -512,7 +533,7 @@ nav{
   width: auto; 
   height: auto;
   padding: 20px;
-  background:#ffffff;
+  background:aliceblue;
   border: 2px solid;
   border-radius: 15px;
   z-index: 11;
@@ -533,10 +554,27 @@ nav{
   /* margin-top: 20px;  */
 }
 
-.cancel-button {
+
+.button:hover{
   margin: 0 auto;/* This will center the button horizontally */
-  background-color: #2d6bc2;
-  color: white;
+  background-color: white;
+  color: #c2452d;
+  transition: 0.3s;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  font-size: 15px;
+}
+
+
+.cancel-button:hover {
+  margin: 0 auto;/* This will center the button horizontally */
+  background-color: white;
+  color: #c2452d;
+  transition: 0.3s;
   font-weight: bold;
   height: 35px;
   border-radius: 5px;
