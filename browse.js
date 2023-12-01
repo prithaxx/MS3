@@ -1,11 +1,5 @@
 var cHeader = "Contractor List"; 
 
-function initializeBrowse(){
-
-}
-
-
-
 function updateCHeader (service){
     document.getElementById('cHeader').innerHTML = cHeader + ": " + service;
     
@@ -82,7 +76,7 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-  // w3AddClass(element, "hide");
+
 }
 
 
@@ -115,7 +109,6 @@ function switchVisible() {
         if (document.getElementById('clist').style.display == 'none') {
             document.getElementById('clist').style.display = 'block';
             document.getElementById('map').style.display = 'none';
-            // document.getElementById()
         }
         else {
             document.getElementById('clist').style.display = 'none';
@@ -125,27 +118,17 @@ function switchVisible() {
 
 }
 function toggleMapList(){
-    // list = document.getElementById("clist"); 
-    // map = document.getElementsByClassName("map"); 
-
-    // w3RemoveClass(list, "show");
-    // w3AddClass(list, "show"); 
-    // w3RemoveClass(map, "hide"); 
-    // w3AddClass(map, "show"); 
-
 
     const toggle = document.getElementById("map"); 
     toggle.addEventListener('click', toggleMap("map")); 
 
-    
-    // w3AddClass(); 
 }
 function toggleMap(i) {
     const map = document.getElementById(i);
     map.classList.toggle('show');
     const list = document.getElementById("clist"); 
     w3AddClass(list, "hide");
-    // addToFavourites(); 
+
 }
 
 
@@ -160,7 +143,7 @@ function favourite(i) {
 function redHeart(i) {
   const heart = document.getElementById(i);
   heart.classList.toggle('red');
-  // addToFavourites(); 
+
 }
 
 function addToFavourites(){
@@ -189,3 +172,60 @@ function contact(i) {
   var contact = document.getElementById(i);
   contact.classList.toggle("showPopUp");
 }
+
+
+function gotoc1(){
+  var targetPage = 'contractor_home.html';
+  window.location.href = targetPage;
+}
+
+function gotoc2(){
+  var targetPage = 'kitchenKing.html';
+  window.location.href = targetPage;
+}
+
+function gotoc3(){
+  var targetPage = 'smith_sons.html';
+  window.location.href = targetPage;
+}
+
+function gotoc4(){
+  var targetPage = 'c4.html';
+  window.location.href = targetPage;
+}
+
+function gotoc5(){
+  var targetPage = 'fabulousCarpeting.html';
+  window.location.href = targetPage;
+}
+
+function gotoc6(){
+  var targetPage = 'c6.html';
+  window.location.href = targetPage;
+}
+
+function gotoc7(){
+  var targetPage = 'c7.html';
+  window.location.href = targetPage;
+}
+function gotoc8(){
+  var targetPage = 'c8.html';
+  window.location.href = targetPage;
+}
+function gotoc9(){
+  var targetPage = 'c9.html';
+  window.location.href = targetPage;
+}
+function gotoc10(){
+  var targetPage = 'c10.html';
+  window.location.href = targetPage;
+}
+function gotoc11(){
+  var targetPage = 'c11.html';
+  window.location.href = targetPage;
+}
+function gotoc12(){
+  var targetPage = 'c12.html';
+  window.location.href = targetPage;
+}
+

@@ -18,10 +18,10 @@
       <nav>
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
               <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
@@ -35,7 +35,7 @@
                   <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
                   <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
                   <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
-            </div>
+</div>
           </div>
           <div class="nav-footer">
             <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
@@ -70,12 +70,9 @@
         <div class="mainpage">
           <div class="contractor-intro">
             <div class="contractor-info">
-              <h1>Innovate Renovations</h1>
-              <h3 style="color: brown; justify-content: flex-end;">214 Prince Avenue, Winnipeg, MB, R2T5G7</h3> 
-              <p style="font-size: 15px;">Here at Innovate Renovations we provide you with a family first aspect. 
-                We have three generations of family members here at Innovate Renovations. 
-                We are 100% family owned and operated with over 30 years of experience under our tool belts.
-                We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
+              <h1>Empire Gen Construction</h1>
+              <h3 style="color: brown; justify-content: flex-end;">995 McPhillips St, Winnipeg, MB R2X 2K3</h3> 
+              <p style="font-size: 15px;">Welcome to Empire Gen Construction, where dreams take shape and visions become reality. With a legacy of craftsmanship and a commitment to excellence, we stand as your trusted partner in building the spaces you envision. From concept to completion, Empire Gen Construction is dedicated to delivering quality construction services tailored to your unique needs.</p>
                
             </div>
             <div class="contractor-images">
@@ -88,7 +85,7 @@
           <div class="contractor-btn-rating">
             <div class="important-btns">
               <button onclick="goToScedulePage()">Schedule</button>
-              <button class ="contact" onclick="contact('contact1')" ><span class="popuptext" id= "contact1">111-111-1111</span>Contact</button>
+              <button class ="contact" onclick="contact('contact12')" ><span class="popuptext" id= "contact12">121-121-1212</span>Contact</button>
               <button onclick="goToQuotePage()">Get a Quote</button>
               <button onclick="scrollWriteReviewSection()"> Write a Review </button>
             </div>
@@ -108,12 +105,12 @@
           
           <h3>Services Provided</h3>
           <div class="services-provided">
-            <button disabled>Painting</button>
-            <button disabled>Drywalling</button>
-            <button disabled>Basement Renovation</button>
-            <button disabled>Flooring</button>
-            <button disabled>Flooring</button>
-            <button disabled>Flooring</button>
+            <button disabled>Plumbing</button>
+            <button disabled>Electric</button>
+            <button disabled>Heating and Cooling</button>
+            <button disabled>Water Heating</button>
+            <button disabled>Appliance Repair</button>
+            <button disabled>Cleaning Services</button>
 
           </div>
 
@@ -131,12 +128,12 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i></p>
-                <p class="descriptive-summary">I recently hired Innovative Renovations for a home renovation, and I'm thrilled with their work. 
+                <p class="descriptive-summary">I recently hired Empire Gen Construction for a home renovation, and I'm thrilled with their work. 
                   They demonstrated exceptional speed and efficiency, completing the project well ahead of schedule without sacrificing quality. 
-                  Innovative Renovations was not only fast but also incredibly helpful throughout the process. 
+                  Empire Gen Construction was not only fast but also incredibly helpful throughout the process. 
                   They took the time to understand my vision, provided valuable insights, and addressed any questions promptly. 
                   Their professionalism and transparent communication made the entire experience stress-free. 
-                  I highly recommend Innovative Renovations for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
+                  I highly recommend Empire Gen Construction for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
                   I am impressed with their dedication to customer satisfaction and will undoubtedly choose them for future projects.</p>
                 <div class="image-reviews">
                   <img src="images/basement1.jpeg">
@@ -149,11 +146,11 @@
                 <h2>Andre Braugher</h2>
                 <p class="summary">A little condescending <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
+                <p class="descriptive-summary">While I engaged with Empire Gen Construction for a recent project, their pace left much to be desired. 
                   Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
                   Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.
                    Perhaps a more considered approach would benefit both their work and customer satisfaction. 
-                   Overall, I would cautiously recommend Innovative Renovations to those with a surplus of patience and a penchant for rework..</p>
+                   Overall, I would cautiously recommend Empire Gen Construction to those with a surplus of patience and a penchant for rework..</p>
               </div>
 
               <h2>Paul Liberschtein</h2>
@@ -162,17 +159,17 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i></p>
-              <p class="descriptive-summary">I had the pleasure of working with Innovative Renovations for a recent home project, 
+              <p class="descriptive-summary">I had the pleasure of working with Empire Gen Constructionfor a recent home project, 
                 and I am genuinely delighted with the outcome. 
-                The team at Innovative Renovations displayed an admirable combination of politeness and punctuality throughout the entire process. 
+                The team at Empire Gen Construction displayed an admirable combination of politeness and punctuality throughout the entire process. 
                 They not only completed the renovation ahead of schedule but also maintained a high standard of quality in their work.
-                Innovative Renovations stood out for their impeccable professionalism. 
+                Empire Gen Construction stood out for their impeccable professionalism. 
                 Their polite and respectful demeanor made the collaboration a positive experience. 
                 They took the time to listen to my ideas, offered valuable suggestions, and ensured that every concern was promptly addressed.
-                Moreover, the punctuality displayed by Innovative Renovations was remarkable. Deadlines were not only met but exceeded, 
+                Moreover, the punctuality displayed by Empire Gen Construction was remarkable. Deadlines were not only met but exceeded, 
                 showcasing a commitment to delivering exceptional results in a timely manner. 
                 Their dedication to both politeness and punctuality has left a lasting impression, and 
-                I wholeheartedly recommend Innovative Renovations to anyone seeking a courteous and efficient contractor. 
+                I wholeheartedly recommend Empire Gen Construction to anyone seeking a courteous and efficient contractor. 
                 I am grateful for their outstanding service and look forward to future collaborations.</p>
               <div class="image-reviews">
                 <img src="images/living1.jpeg">

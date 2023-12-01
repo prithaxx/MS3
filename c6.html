@@ -18,10 +18,10 @@
       <nav>
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
               <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
@@ -70,10 +70,10 @@
         <div class="mainpage">
           <div class="contractor-intro">
             <div class="contractor-info">
-              <h1>Innovate Renovations</h1>
-              <h3 style="color: brown; justify-content: flex-end;">214 Prince Avenue, Winnipeg, MB, R2T5G7</h3> 
-              <p style="font-size: 15px;">Here at Innovate Renovations we provide you with a family first aspect. 
-                We have three generations of family members here at Innovate Renovations. 
+              <h1>Knockout Renovation</h1>
+              <h3 style="color: brown; justify-content: flex-end;">1433 Corydon Ave, Winnipeg, MB R3N 0J2</h3> 
+              <p style="font-size: 15px;">Here at Knockout Renovation we provide you with a family first aspect. 
+                We have three generations of family members here at Knockout Renovation. 
                 We are 100% family owned and operated with over 30 years of experience under our tool belts.
                 We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                
@@ -88,7 +88,7 @@
           <div class="contractor-btn-rating">
             <div class="important-btns">
               <button onclick="goToScedulePage()">Schedule</button>
-              <button class ="contact" onclick="contact('contact1')" ><span class="popuptext" id= "contact1">111-111-1111</span>Contact</button>
+              <button class ="contact" onclick="contact('contact6')" ><span class="popuptext" id= "contact6">666-666-6666</span>Contact</button>
               <button onclick="goToQuotePage()">Get a Quote</button>
               <button onclick="scrollWriteReviewSection()"> Write a Review </button>
             </div>
@@ -98,7 +98,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
               </p>
             </div>
           </div>
@@ -110,10 +110,10 @@
           <div class="services-provided">
             <button disabled>Painting</button>
             <button disabled>Drywalling</button>
-            <button disabled>Basement Renovation</button>
+            <button disabled>Insulation</button>
+            <button disabled>Carpeting</button>
             <button disabled>Flooring</button>
-            <button disabled>Flooring</button>
-            <button disabled>Flooring</button>
+            <button disabled>Tiling</button>
 
           </div>
 
@@ -130,13 +130,13 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i></p>
-                <p class="descriptive-summary">I recently hired Innovative Renovations for a home renovation, and I'm thrilled with their work. 
+                  <i class="fa-regularfa-star"></i></p>
+                <p class="descriptive-summary">I recently hired Knockout Renovation for a home renovation, and I'm thrilled with their work. 
                   They demonstrated exceptional speed and efficiency, completing the project well ahead of schedule without sacrificing quality. 
-                  Innovative Renovations was not only fast but also incredibly helpful throughout the process. 
+                  Knockout Renovation was not only fast but also incredibly helpful throughout the process. 
                   They took the time to understand my vision, provided valuable insights, and addressed any questions promptly. 
                   Their professionalism and transparent communication made the entire experience stress-free. 
-                  I highly recommend Innovative Renovations for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
+                  I highly recommend Knockout Renovation for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
                   I am impressed with their dedication to customer satisfaction and will undoubtedly choose them for future projects.</p>
                 <div class="image-reviews">
                   <img src="images/basement1.jpeg">
@@ -149,11 +149,11 @@
                 <h2>Andre Braugher</h2>
                 <p class="summary">A little condescending <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
+                <p class="descriptive-summary">While I engaged with Knockout Renovation for a recent project, their pace left much to be desired. 
                   Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
                   Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.
                    Perhaps a more considered approach would benefit both their work and customer satisfaction. 
-                   Overall, I would cautiously recommend Innovative Renovations to those with a surplus of patience and a penchant for rework..</p>
+                   Overall, I would cautiously recommend Knockout Renovation to those with a surplus of patience and a penchant for rework..</p>
               </div>
 
               <h2>Paul Liberschtein</h2>
@@ -161,18 +161,18 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i></p>
-              <p class="descriptive-summary">I had the pleasure of working with Innovative Renovations for a recent home project, 
+                <i class="fa-regular fa-star"></i></p>
+              <p class="descriptive-summary">I had the pleasure of working with Knockout Renovation for a recent home project, 
                 and I am genuinely delighted with the outcome. 
-                The team at Innovative Renovations displayed an admirable combination of politeness and punctuality throughout the entire process. 
+                The team at Knockout Renovation displayed an admirable combination of politeness and punctuality throughout the entire process. 
                 They not only completed the renovation ahead of schedule but also maintained a high standard of quality in their work.
-                Innovative Renovations stood out for their impeccable professionalism. 
+                Knockout Renovation stood out for their impeccable professionalism. 
                 Their polite and respectful demeanor made the collaboration a positive experience. 
                 They took the time to listen to my ideas, offered valuable suggestions, and ensured that every concern was promptly addressed.
-                Moreover, the punctuality displayed by Innovative Renovations was remarkable. Deadlines were not only met but exceeded, 
+                Moreover, the punctuality displayed by Knockout Renovation was remarkable. Deadlines were not only met but exceeded, 
                 showcasing a commitment to delivering exceptional results in a timely manner. 
                 Their dedication to both politeness and punctuality has left a lasting impression, and 
-                I wholeheartedly recommend Innovative Renovations to anyone seeking a courteous and efficient contractor. 
+                I wholeheartedly recommend Knockout Renovation to anyone seeking a courteous and efficient contractor. 
                 I am grateful for their outstanding service and look forward to future collaborations.</p>
               <div class="image-reviews">
                 <img src="images/living1.jpeg">

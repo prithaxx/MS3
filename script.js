@@ -219,6 +219,17 @@ function goToBrowseRoofing(){
   window.location.href = targetPage;
 }
 
+function toggleMapList(){
+  const toggle = document.getElementById("map"); 
+  toggle.addEventListener('click', toggleMap("map")); 
 
+}
+function toggleMap(i) {
+  const map = document.getElementById(i);
+  map.classList.toggle('show');
+  const list = document.getElementById("clist"); 
+  w3AddClass(list, "hide");
+
+}
   
 

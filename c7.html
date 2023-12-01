@@ -18,11 +18,10 @@
       <nav>
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <a href="#">Home</a>
-          <a href="#">Feed</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
               <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
@@ -52,12 +51,12 @@
           <button>Contractor Pro</button>
         </div>
 
-        <!-- Search bar -->
-        <div class="search-location-bars">
-            <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
-            <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-            <div id="suggestions-container" class="suggestions-dropdown"></div>
-          </div>
+       <!-- Search bar -->
+       <div class="search-location-bars">
+        <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+        <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        <div id="suggestions-container" class="suggestions-dropdown"></div>
+      </div>
 
         <!-- My Account Button -->
         <div class="login-signup">
@@ -71,86 +70,114 @@
         <div class="mainpage">
           <div class="contractor-intro">
             <div class="contractor-info">
-              <h1>Fabulous Carpetting</h1>
-              <h3 style="color: brown;">119 WillBorough Drive, Brandon, MB, B2M3S7</h3>
-              <p style="font-size: 15px;">Step into a world of luxury and comfort with Fabulous Carpeting. As your premier destination for exquisite flooring solutions, we bring elegance and style to every step. At Fabulous Carpeting, we redefine the art of interior design, creating spaces that are as remarkable as they are inviting.</p>
+              <h1>Fence Masters</h1>
+              <h3 style="color: brown; justify-content: flex-end;">179 Bannatyne Ave, Winnipeg, MB R3B 0R5</h3> 
+              <p style="font-size: 15px;">Here at Fence Masters we provide you with a family first aspect. 
+                We have three generations of family members here at Fence Masters. 
+                We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
+               
             </div>
             <div class="contractor-images">
-              <img src="images/fabCarpet.webp">
-              
-            </div>
-          </div>
-          <div class = "contractor-btn-rating">
-            <div class="important-btns">
-                <button onclick="goToScedulePage()">Schedule</button>
-                <button class="contact" onclick="contact('contact5')"><span class="popuptext" id= "contact5">555-555-5555</span>Contact</button>
-                <button onclick="goToQuotePage()">Get a Quote</button>
-                <button onclick="scrollWriteReviewSection()"> Write a Review </button>
-              </div>
-              <div class = "profileRating">
-              
-                  <p class="rating">Rating: <i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i></p>
-            </div>
-          </div>
-
-
-              <h3>Services Provided</h3>
-              <div class="services-provided">
-                <button disabled>Painting</button>
-                <button disabled>Tiling</button>
-                <button disabled>Carpet Installation</button>
-                <button disabled>Cleaning Services</button>
-                <button disabled>Flooring</button>
-                <button disabled>Basement Renovation</button>
-              </div>
+              <img src="images/innovate_reno.jpeg">
               
             
+            </div>
+          </div>
+        
+          <div class="contractor-btn-rating">
+            <div class="important-btns">
+              <button onclick="goToScedulePage()">Schedule</button>
+              <button class ="contact" onclick="contact('contact7')" ><span class="popuptext" id= "contact7">777-777-7777</span>Contact</button>
+              <button onclick="goToQuotePage()">Get a Quote</button>
+              <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+            </div>
+            
+            <div class ="profileRating">
+              <p class="rating">Rating: <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regularfa-star"></i>
+              </p>
+            </div>
+          </div>
+          
 
             
           
+          <h3>Services Provided</h3>
+          <div class="services-provided">
+            <button disabled>Painting</button>
+            <button disabled>Landscaping</button>
+            <button disabled>Tree Services</button>
+            <button disabled>Foundation</button>
+            <button disabled>Cleaning Services</button>
+            <button disabled>Insulation</button>
+
+          </div>
+
           
           <div class="customer-reviews">
             <div class="review-heading">
-              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">4 Customer Reviews</h2>
+              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">5 Customer Reviews</h2>
             </div>
             
             <div class="comments">
               <div class="box">
-                <h2>Felix</h2>
-                <p class="summary">Very rude <i class="fa fa-star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></i>
-                 </p>
-                <p class="descriptive-summary">Regrettably, the service fell short, displaying an unfortunate level of rudeness. 
-                    The staff's lack of courtesy and professionalism left a disappointing impression, diminishing the overall customer experience. 
-                    Enhancements in customer service are essential to ensure a more positive and welcoming atmosphere in the future.</p>
+                <h2>Jeff Winsten</h2>
+                <p class="summary">Fast Efficient Helpful <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i></p>
+                <p class="descriptive-summary">I recently hired Fence Masters for a home renovation, and I'm thrilled with their work. 
+                  They demonstrated exceptional speed and efficiency, completing the project well ahead of schedule without sacrificing quality. 
+                  Fence Masters was not only fast but also incredibly helpful throughout the process. 
+                  They took the time to understand my vision, provided valuable insights, and addressed any questions promptly. 
+                  Their professionalism and transparent communication made the entire experience stress-free. 
+                  I highly recommend Fence Masters for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
+                  I am impressed with their dedication to customer satisfaction and will undoubtedly choose them for future projects.</p>
+                <div class="image-reviews">
+                  <img src="images/basement1.jpeg">
+                  <img src="images/basement2.jpeg">
+                  <img src="images/basement3.jpeg">
+                </div>
               </div>
 
               <div class="box">
-                <h2>Richa Chaddha</h2>
-                <p class="summary">Very poor job <i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
+                <h2>Andre Braugher</h2>
+                <p class="summary">A little condescending <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                <p class="descriptive-summary">While I engaged with Fence Masters for a recent project, their pace left much to be desired. 
                   Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
                   Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.
                    Perhaps a more considered approach would benefit both their work and customer satisfaction. 
-                   Overall, I would cautiously recommend Innovative Renovations to those with a surplus of patience and a penchant for rework..</p>
+                   Overall, I would cautiously recommend Fence Masters to those with a surplus of patience and a penchant for rework..</p>
               </div>
 
-              <div class="box">
-                <h2>Jane Joe</h2>
-                <p class="summary">Not as bad like what other says <i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                <p class="descriptive-summary">These are fake reviews! Their work isn't that bad</p>
-              </div>
-
-              <h2>Anmol Singh</h2>
-              <p class="summary">Did not clean carpet properly <i class="fa fa-star"><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></i>
-                </p>
-              <p class="descriptive-summary"></p>
+              <h2>Paul Liberschtein</h2>
+              <p class="summary">Very polite and on time <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i></p>
+              <p class="descriptive-summary">I had the pleasure of working with Fence Masters for a recent home project, 
+                and I am genuinely delighted with the outcome. 
+                The team at Fence Masters displayed an admirable combination of politeness and punctuality throughout the entire process. 
+                They not only completed the renovation ahead of schedule but also maintained a high standard of quality in their work.
+                Fence Masters stood out for their impeccable professionalism. 
+                Their polite and respectful demeanor made the collaboration a positive experience. 
+                They took the time to listen to my ideas, offered valuable suggestions, and ensured that every concern was promptly addressed.
+                Moreover, the punctuality displayed by Fence Masters was remarkable. Deadlines were not only met but exceeded, 
+                showcasing a commitment to delivering exceptional results in a timely manner. 
+                Their dedication to both politeness and punctuality has left a lasting impression, and 
+                I wholeheartedly recommend Fence Masters to anyone seeking a courteous and efficient contractor. 
+                I am grateful for their outstanding service and look forward to future collaborations.</p>
               <div class="image-reviews">
-                <img src="images/dirtycarpet.jpeg">
-                <img src="images/dirtycarpet2.jpeg">
+                <img src="images/living1.jpeg">
+                <img src="images/living2.png">
+                <img src="images/living3.jpeg">
               </div>
             </div>
           </div>

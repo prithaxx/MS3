@@ -4,7 +4,7 @@
     <link rel= "stylesheet" href= "contractor_home.css">
     <link rel="stylesheet" href="browseStyle.css">
     <script src= "browse.js"></script>
-    <script src = "script.js"></script>
+    <!-- <script src = "script.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDmID1lwMhjTimTKGMNSVR4x6jBIb6Hdmc">
     <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
@@ -12,61 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script> 
+
     <head>
 
     </head>
 
     <body>
-        <nav>
-            <div id = "my-burger-links" class="burger-links">
-              <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-              <a href="#">Home</a>
-              <a href="#">Feed</a>
-              <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
-              <div class="browse-container">
-                <a hred="#" style="font-size: 20px;">By Region</a>
-                <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
-                <div class="services-container">
-                  <a href="#" style="font-size: 20px;">Browse All</a> 
-                  <a href="#" style="font-size: 20px;">Appliance Repairs</a>
-                  <a href="#" style="font-size: 20px;">Basement Renovation</a>
-                  <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
-                  <a href="#" style="font-size: 20px;">Drywalling</a>
-                  <a href="#" style="font-size: 20px;">Electrical</a>
-                  <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
-                  <a href="#" style="font-size: 20px;">Landscaping</a>
-                  <a href="#" style="font-size: 20px;">Painting</a>
-                  <a hred="#" style="font-size: 20px;">Plumbing</a>
-                  <a href="#" style="font-size: 20px;">Roofing</a>
-                </div>
-              </div>
-              <div class="nav-footer">
-                <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-                <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
-              </div>
+        <!-- Navigation bar -->
+      <nav>
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <a href="index.html">Home</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
+                  <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');"style="font-size: 20px;">Appliance Repairs</a>
+                  <a href="browse.html" onclick= "goToBrowseBasement(); updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');"style="font-size: 20px;">Basement Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseBathroom(); updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" style="font-size: 20px;">Bathroom Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseDrywall(); updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" style="font-size: 20px;">Drywalling</a>
+                  <a href="browse.html" onclick= "goToBrowseElectric(); updateCHeader('Electrical'); goToResults(); filterSelection('electric');" style="font-size: 20px;">Electrical</a>
+                  <a href="browse.html" onclick= "goToBrowseKitchen(); updateCHeader('Kitchen Remodeling'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
+                  <a href="browse.html" onclick= "goToBrowseLandscaping(); updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" style="font-size: 20px;">Landscaping</a>
+                  <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
+                  <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
+                  <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
+
             </div>
-    
-            <div id="main">
-              <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
-            </div>
-    
-            <div class="website-icon">
-              <button>Contractor Pro</button>
-            </div>
-    
-            <!-- Search bar -->
-            <div class="search-location-bars">
-                <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
-                <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-                <div id="suggestions-container" class="suggestions-dropdown"></div>
-              </div>
-    
-            <!-- My Account Button -->
-            <div class="login-signup">
-              <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
-            </div>
-    
-          </nav>
+          </div>
+          <div class="nav-footer">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-location-bars">
+          <input type="search" id="searchInput"  placeholder="Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+          <div id="suggestions-container" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
+        </div>
+
+      </nav>
 
 
 
@@ -154,7 +159,7 @@
                             <option value="5km" >5km Radius</option>
                             <option value="10km" >10km Radius</option>
                             <option value="20km">20km Radius</option>
-                            <!-- <option value="postal" >Postal Code</option> -->
+
                             
                         </select>
                         <select class="sort-dropdown" name="price" id="price" onchange="filterSort('price',value);">
@@ -162,9 +167,7 @@
                             <option value="$1" >$</option>
                             <option value="$2" >$$</option>
                             <option value="$3" >$$$</option>
-                            <!-- <option value="priceAsc" onchange="sortByPrice('priceAsc');">Low - High</option> -->
-                            <!-- <option value="priceAsc" onclick="lowToHigh()">Low - High</option>
-                            <option value="priceDesc" onchange="sortByPrice('priceDesc');">High - Low</option> -->
+ 
 
                             
                         </select>
@@ -193,7 +196,7 @@
                         <li id = "filterContractors" class="clisting all $1 5star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Innovate Renovations</h2>
+                                    <h2 class = "clistingName" id= "c1" onclick="go('c1');">Innovate Renovations</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -217,7 +220,7 @@
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
                                         <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
-                                        <button class= "contact listingbuttons" onclick="contact('contact1')">Contact<span class="popuptext" id= "contact1">111-111-1111</span></button>
+                                        <button  class= "contact listingbuttons" onclick="contact('contact1')">Contact<span class="popuptext" id= "contact1">111-111-1111</span></button>
                                         <button class = "listingbuttons"onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
@@ -301,7 +304,7 @@
                         <li id = "filterContractors" class= "clisting all $1 20km basement  4star roofing siding attic windows-doors foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id = "c4">Contractor 4</h2>
+                                    <h2  class = "clistingName" id = "c4">Chip Off the Block Builders</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -317,8 +320,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does basement, carpet, drywall, foundation, flooring, insulation, painting, bedroom, office, nursery lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                        kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Chip Off the Block Builders we provide you with a family first aspect. 
+                                        We have three generations of family members here at Chip Off the Block Builders. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
@@ -369,10 +374,10 @@
                             <img class = "listing-img" src="images/carpet_jd.webp">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 4star 5km heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
+                        <li id = "filterContractors" class= "clisting all $1 4star 5km drywall insulation painting carpet bedroom nursery office tiling flooring">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c6">Contractor 6</h2>
+                                    <h2  class = "clistingName" id="c6">Knockout Renovation</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -388,8 +393,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                     <p>Contractor description: This contractor does: heating-cooling, utility, water-heating, appliance, electric, plumbing ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                     <p>Here at Knockout Renovation we provide you with a family first aspect. 
+                                        We have three generations of family members here at Knockout Renovation. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                             
                                 </div>
                                <div class = "c-listing-buttons">
@@ -406,10 +413,10 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all $2 3star landscaping tree-services foundation" data-clisting = "2">
+                        <li id = "filterContractors" class="clisting all $2 3star landscaping cleaning painting insulation tree-services foundation" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c7">Contractor 7</h2>
+                                    <h2  class = "clistingName" id="c7">Fence Masters</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -425,8 +432,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: office, bedroom, bathroom, nursery, painting, drywall, carpet, flooringlkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Fence Masters we provide you with a family first aspect. 
+                                        We have three generations of family members here at Fence Masters. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -443,10 +452,10 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 5star 10km appliance electric utility water-heating heating-cooling" data-clisting = "1">
+                        <li id = "filterContractors" class= "clisting all $1 5star 10km appliance electric insulation utility water-heating heating-cooling" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c8">Contractor 8</h2>
+                                    <h2  class = "clistingName" id="c8">Emerge Contractors</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -462,8 +471,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: appliance, electric, utility, water-heating, heating-cooling lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Emerge Contractors we provide you with a family first aspect. 
+                                        We have three generations of family members here at Emerge Contractors. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -483,7 +494,7 @@
                         <li id = "filterContractors" class= "clisting all $3 2star 20km landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c9">Contractor 9</h2>
+                                    <h2  class = "clistingName" id="c9">Mountain Home Construction</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$$</h3>
                                         <div class = "c-rating">
@@ -499,8 +510,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: this contractor does: landscaping, windows-doors, siding, attic, roofing, tree-service, basement, foundation lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Mountain Home Construction we provide you with a family first aspect. 
+                                        We have three generations of family members here at Mountain Home Construction. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -517,10 +530,10 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 1star 5km kitchen plumbing electric painting bathroom utility" data-clisting = "2">
+                        <li id = "filterContractors" class= "clisting all $2 1star 5km kitchen plumbing electric painting bathroom tiling utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c10">Contractor 10</h2>
+                                    <h2  class = "clistingName" id="c10">My Home Design and Remodeling</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -536,8 +549,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: kitchen, plumbing, electric, painting, bathroom, utility lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at My Home Design and Remodeling we provide you with a family first aspect. 
+                                        We have three generations of family members here at My Home Design and Remodeling. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -558,7 +573,7 @@
                         <li id = "filterContractors" class = "clisting all $3 3star 5km insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id= "c11">Contractor 11</h2>
+                                    <h2  class = "clistingName" id= "c11">Home Front Resources</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$$</h3>
                                         <div class = "c-rating">
@@ -574,8 +589,10 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: insulation, drywall, painting, flooring, carpeting, bedroom, nursery, office, basement lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Home Front Resources we provide you with a family first aspect. 
+                                        We have three generations of family members here at Home Front Resources. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -592,10 +609,11 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 5star 5km utility plumbing electric heating-cooling water-heating" data-clisting = "2">
+                        <li id = "filterContractors" class= "clisting all $2 5star 5km utility plumbing cleaning appliance heating-cooling water-heating" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id="c12">Contractor 12</h2>
+                                    <h2  onclick ="gotoc12();" class="clistingName" id="c12">Empire Gen Construction</h2>
+                                    
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -611,8 +629,7 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: utility, plumbing, electric, heating-cooling, water-heating    gfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                    kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Welcome to Empire Gen Construction, where dreams take shape and visions become reality. With a legacy of craftsmanship and a commitment to excellence, we stand as your trusted partner in building the spaces you envision. From concept to completion, Empire Gen Construction is dedicated to delivering quality construction services tailored to your unique needs.</p>
                                 
                                 </div>
                                 <div class = "c-listing-buttons">
@@ -946,6 +963,7 @@
         </div>
         
     </div>
+    <script src="script.js"></script>
     </body>
 
 </html>
