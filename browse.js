@@ -142,6 +142,36 @@ function mapToggle(){
 }
 
 
+// var x = window.matchMedia("(max-width: 700px)")
+//  // Attach listener function on state changes
+//  x.addEventListener("change", function() {
+//     doll_list_resize(x);
+//   });
+
+// function doll_list_resize(x){
+//     if (x.matches) { // If media query matches
+//       document.getElementById("serviceList1").style.display = 'block';
+//       document.getElementById("doll_and_list").style.display = 'none';
+
+//     } else {
+//       document.getElementById("serviceList1").style.display = 'none';
+//       document.getElementById("doll_and_list").style.display = 'block';
+//     }
+  
+  
+  // // Create a MediaQueryList object
+  
+  
+  // // Call listener function at run time
+  // myFunction(x);
+  
+  
+
+  // const list = document.getElementById('serviceList1');
+  // list.classList.toggle('show'); 
+// }
+
+
 
 
 
