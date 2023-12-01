@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: aliceblue;
+  }
+  
+  .mainpage{
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    padding-top: 70px;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .mainpage {
+      margin-left: 15%; 
+      margin-right: 15%;
+    }
+  }

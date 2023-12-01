@@ -961,6 +961,14 @@ flex-direction: row;
 /* justify-content: space-evenly; */
 
 
+
+}
+#map{
+  visibility: hidden;
+}
+
+#map.show{
+  visibility: visible;
 }
 
 .mapContractors{

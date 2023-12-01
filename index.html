@@ -18,29 +18,28 @@
       <nav>
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <div class="nav-header">
-            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
-          </div>
-          <a href="#">Home</a>
-          <a href="#">Feed</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
-              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
-              <a hred="#" style="font-size: 20px;">Plumbing</a>
-              <a hred="#" style="font-size: 20px;">Electrical</a>
-              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
-              <a hred="#" style="font-size: 20px;">Interior Painting</a>
-              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
-              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
-              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
-              <a hred="#" style="font-size: 20px;">General Contracting</a>
-              <a hred="#" style="font-size: 20px;">Gas Lines</a>
-              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
+                  <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');"style="font-size: 20px;">Appliance Repairs</a>
+                  <a href="browse.html" onclick= "goToBrowseBasement(); updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');"style="font-size: 20px;">Basement Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseBathroom(); updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" style="font-size: 20px;">Bathroom Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseDrywall(); updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" style="font-size: 20px;">Drywalling</a>
+                  <a href="browse.html" onclick= "goToBrowseElectric(); updateCHeader('Electrical'); goToResults(); filterSelection('electric');" style="font-size: 20px;">Electrical</a>
+                  <a href="browse.html" onclick= "goToBrowseKitchen(); updateCHeader('Kitchen Remodeling'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
+                  <a href="browse.html" onclick= "goToBrowseLandscaping(); updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" style="font-size: 20px;">Landscaping</a>
+                  <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
+                  <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
+                  <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
             </div>
+          </div>
+          <div class="nav-footer">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="settings.html" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
           </div>
         </div>
 
@@ -49,21 +48,18 @@
         </div>
 
         <div class="website-icon">
-          <button>Contractor Pro</button>
-        </div>
+          <button href="index.html">Contractor Pro</button>        </div>
 
         <!-- Search bar -->
         <div class="search-location-bars">
-          <input type="search" placeholder="Basement Renovations" style="width: 300px;">
-    
-          <!-- Location bar -->
-          <input type="search" placeholder="Winnipeg, MB" style="width: 300px;">
+          <input type="search" id="searchInput"  placeholder="Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
           <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+          <div id="suggestions-container" class="suggestions-dropdown"></div>
         </div>
 
         <!-- My Account Button -->
         <div class="login-signup">
-          <button class = "my-account" onclick="goToUserHomePage()"><i class="fa fa-user"></i> My Account</button>
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
         </div>
 
       </nav>

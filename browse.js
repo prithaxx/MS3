@@ -136,6 +136,11 @@ function toggleMap(i) {
 
 }
 
+function mapToggle(){
+  const map = document.getElementById('map');
+  map.classList.toggle('show'); 
+}
+
 
 
 
