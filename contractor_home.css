@@ -21,27 +21,54 @@ body {
 }
 
 .contractor-intro{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
   height: 100%;
   text-align: center;
   padding-top: 20px;
 }
 
 .contractor-info{
+  width: 66.6%;
   text-align: justify;
   padding-right: 15px;
 }
 
+.contractor-btn-rating{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profileRating{
+  margin-left: 6%;
+  margin-top: 12px;
+}
 .rating i{
   color: rgb(255, 123, 0);
   font-size: 15px;
 }
 
-.contractor-images img{
-  height: 280px;
-  width: 280px;
+.profileImg{
+  /* width: 100% */
+  margin-left:40px;
 }
+.contractor-images img{
+  /* height: 280px; */
+  width: 280px;
+  margin-left:10%;
+  margin-right:40px; 
+}
+
+ @media screen and (max-width:1300px) {
+  .contractor-images {
+    width: 12%; /* Hide the images container when the screen is too small */
+    height: auto;
+   }
+  
+} 
 
 @media screen and (max-width: 700px) {
   .contractor-images {
@@ -55,9 +82,10 @@ body {
 
 .services-provided{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 3px;
   size: 100%;
+  
 }
 
 .services-provided button{
@@ -66,15 +94,20 @@ body {
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: black;
+  width: 16.6%; 
 }
 
 .important-btns{
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 3px;
   size: 100%;
+  width: 66.6%;
+  
 }
 .important-btns button{
   max-width: 100%;
@@ -87,6 +120,7 @@ body {
   width: 120px;
   background-color: #c2452d;
   font-size: 15px;
+  width: 25%;
 }
 .important-btns button:hover{
   background-color: white;
@@ -132,6 +166,46 @@ body {
 .descriptive-summary{
   margin-bottom: 30px;
 }
+
+.contact {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* The actual popup */
+.contact .popuptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  padding-left: 20px;
+  padding-right: 20px; 
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  /* left: 50%; */
+  margin-left: -40px;
+}
+
+
+
+/* Toggle this class - hide and show the popup */
+.contact .showPopUp {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
 
 /* ------------NAVBAR------------- */
 

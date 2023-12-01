@@ -153,3 +153,72 @@ if (confirm("Are you sure you want to delete this row?")) {
     row.parentNode.removeChild(row); // Remove the <tr> from the table
 }
 }
+
+function contact(i) {
+  var contact = document.getElementById(i);
+  contact.classList.toggle("showPopUp");
+}
+
+
+
+function goToBrowseAll(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+
+}
+
+function goToBrowseAppliance(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+  
+}
+
+function goToBrowseBasement(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowseBathroom(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowseDrywall(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowseElectric(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+
+function goToBrowseKitchen(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowseLandscaping(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowsePainting(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowsePlumbing(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+function goToBrowseRoofing(){
+  var targetPage = 'browse.html';
+  window.location.href = targetPage;
+}
+
+
+  
+

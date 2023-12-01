@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
       <link rel="shortcut icon" href="images/favicon.png"/>
+      <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
        
     </head>
 
@@ -23,17 +24,17 @@
             <a hred="#" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
-              <a href="#" style="font-size: 20px;">Browse All</a> 
-              <a href="#" style="font-size: 20px;">Appliance Repairs</a>
-              <a href="#" style="font-size: 20px;">Basement Renovation</a>
-              <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
-              <a href="#" style="font-size: 20px;">Drywalling</a>
-              <a href="#" style="font-size: 20px;">Electrical</a>
-              <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
-              <a href="#" style="font-size: 20px;">Landscaping</a>
-              <a href="#" style="font-size: 20px;">Painting</a>
-              <a hred="#" style="font-size: 20px;">Plumbing</a>
-              <a href="#" style="font-size: 20px;">Roofing</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Browse All</a> 
+              <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');" style="font-size: 20px;">Appliance Repairs</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Basement Renovation</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');"  style="font-size: 20px;">Bathroom Renovation</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Drywalling</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Electrical</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Landscaping</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Painting</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Plumbing</a>
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('Kitchen'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Roofing</a>
             </div>
           </div>
           <div class="nav-footer">
@@ -70,39 +71,52 @@
           <div class="contractor-intro">
             <div class="contractor-info">
               <h1>Innovate Renovations</h1>
-              <p style="font-size: 15px;">Here at Innocate Renovations we provide you with a family first aspect. 
+              <h3 style="color: brown; justify-content: flex-end;">214 Prince Avenue, Winnipeg, MB, R2T5G7</h3> 
+              <p style="font-size: 15px;">Here at Innovate Renovations we provide you with a family first aspect. 
                 We have three generations of family members here at Innovate Renovations. 
                 We are 100% family owned and operated with over 30 years of experience under our tool belts.
                 We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
-              <h2 style="color: brown;">214 Prince Avenue, Winnipeg, MB, R2T5G7</h2>  
-              <h3>Services Provided</h3>
-              <div class="services-provided">
-                <button disabled>Interior Painting</button>
-                <button disabled>Kitchen Remodeling</button>
-                <button disabled>Carpentry Works</button>
-                <button disabled>Flooring</button>
-                <button disabled>Basement Furnishing</button>
-              </div>
-              <div class="important-btns">
-                <button onclick="goToScedulePage()">Schedule</button>
-                <button>Contact</button>
-                <button onclick="goToQuotePage()">Get a Quote</button>
-                <button onclick="scrollWriteReviewSection()"> Write a Review </button>
-              </div>
+               
             </div>
-
             <div class="contractor-images">
               <img src="images/innovate_reno.jpeg">
-              <div class="rating">
-                <p>Rating: <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </p>
-              </div>
+              
+            
             </div>
           </div>
+        
+          <div class="contractor-btn-rating">
+            <div class="important-btns">
+              <button onclick="goToScedulePage()">Schedule</button>
+              <button class ="contact" onclick="contact('contact1')" ><span class="popuptext" id= "contact1">111-111-1111</span>Contact</button>
+              <button onclick="goToQuotePage()">Get a Quote</button>
+              <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+            </div>
+            
+            <div class ="profileRating">
+              <p class="rating">Rating: <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </p>
+            </div>
+          </div>
+          
+
+            
+          
+          <h3>Services Provided</h3>
+          <div class="services-provided">
+            <button disabled>Painting</button>
+            <button disabled>Drywalling</button>
+            <button disabled>Basement Renovation</button>
+            <button disabled>Flooring</button>
+            <button disabled>Flooring</button>
+            <button disabled>Flooring</button>
+
+          </div>
+
           
           <div class="customer-reviews">
             <div class="review-heading">
@@ -134,7 +148,7 @@
               <div class="box">
                 <h2>Andre Braugher</h2>
                 <p class="summary">A little condescending <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i></p>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
                 <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
                   Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
                   Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.

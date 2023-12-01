@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="browseStyle.css">
+    
     <link rel= "stylesheet" href= "contractor_home.css">
+    <link rel="stylesheet" href="browseStyle.css">
     <script src= "browse.js"></script>
     <script src = "script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,67 +15,56 @@
     </head>
 
     <body>
-    <!-- ÷<div class = "navDiv"> -->
-        <!-- Navigation bar -->
-      <nav>
-        <div id = "my-burger-links" class="burger-links">
-          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <div class="nav-header">
-            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
-          </div>
-          <a href="index.html">Home</a>
-          <a href="index.html">Feed</a>
-          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
-          <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
-            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
-            <div class="services-container">
-              <a href="#" style="font-size: 20px;">Browse All</a> 
-              <a href="#" style="font-size: 20px;">Appliance Repairs</a>
-              <a href="#" style="font-size: 20px;">Basement Renovation</a>
-              <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
-              <a href="#" style="font-size: 20px;">Drywalling</a>
-              <a href="#" style="font-size: 20px;">Electrical</a>
-              <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
-              <a href="#" style="font-size: 20px;">Landscaping</a>
-              <a href="#" style="font-size: 20px;">Painting</a>
-              <a hred="#" style="font-size: 20px;">Plumbing</a>
-              <a href="#" style="font-size: 20px;">Roofing</a>
-              
-              
-              
-              
-              
-              
-              
-              
+        <nav>
+            <div id = "my-burger-links" class="burger-links">
+              <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+              <a href="#">Home</a>
+              <a href="#">Feed</a>
+              <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+              <div class="browse-container">
+                <a hred="#" style="font-size: 20px;">By Region</a>
+                <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+                <div class="services-container">
+                  <a href="#" style="font-size: 20px;">Browse All</a> 
+                  <a href="#" style="font-size: 20px;">Appliance Repairs</a>
+                  <a href="#" style="font-size: 20px;">Basement Renovation</a>
+                  <a href="#" onclick style="font-size: 20px;">Bathroom Renovation</a>
+                  <a href="#" style="font-size: 20px;">Drywalling</a>
+                  <a href="#" style="font-size: 20px;">Electrical</a>
+                  <a href="#" style="font-size: 20px;">Kitchen Remodeling</a>
+                  <a href="#" style="font-size: 20px;">Landscaping</a>
+                  <a href="#" style="font-size: 20px;">Painting</a>
+                  <a hred="#" style="font-size: 20px;">Plumbing</a>
+                  <a href="#" style="font-size: 20px;">Roofing</a>
+                </div>
+              </div>
+              <div class="nav-footer">
+                <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+                <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+              </div>
             </div>
-          </div>
-        
-        </div>
-
-        <div id="main">
-          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
-        </div>
-
-        <div class="website-icon">
-          <button>Contractor Pro</button>
-        </div>
-
-       <!-- Search bar -->
-       <div class="search-location-bars">
-        <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
-        <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-      </div>
-
-        <!-- My Account Button -->
-        <div class="login-signup">
-          <button class = "my-account" onclick="goToUserHomePage()"><i class="fa fa-user"></i> My Account</button>
-        </div>
-
-      </nav>
-    <!-- </div>     -->
+    
+            <div id="main">
+              <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+            </div>
+    
+            <div class="website-icon">
+              <button>Contractor Pro</button>
+            </div>
+    
+            <!-- Search bar -->
+            <div class="search-location-bars">
+                <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+                <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+                <div id="suggestions-container" class="suggestions-dropdown"></div>
+              </div>
+    
+            <!-- My Account Button -->
+            <div class="login-signup">
+              <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
+            </div>
+    
+          </nav>
 
 
 
@@ -122,6 +112,7 @@
                                 <li onclick="updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');" class = item >Basement Renovation</li>
                                 <li onclick="updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" class = item >Bathroom Renovation</li>
                                 <li onclick="updateCHeader('Carpeting'); goToResults(); filterSelection('carpet');" class = item>Carpeting</li>
+                                <li onclick="updateCHeader('Cleaning Services'); goToResults(); filterSelection('cleaning');" class = item>Cleaning Services</li>
                                 <li onclick="updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" class = item>Drywalling</li>
                                 <li onclick="updateCHeader('Electrical'); goToResults(); filterSelection('electric');" class = item>Electrical</li>
                                 <li onclick="updateCHeader('Flooring'); goToResults(); filterSelection('flooring');" class = item>Flooring</li>
@@ -137,6 +128,7 @@
                                 <li onclick="updateCHeader('Roofing'); goToResults(); filterSelection('roofing');" class = item>Roofing</li>
                                 <li onclick="updateCHeader('Siding'); goToResults(); filterSelection('siding');" class = item>Siding</li>
                                 <li onclick="updateCHeader('Tree Services'); goToResults(); filterSelection('tree-services');" class = item>Tree Services</li>
+                                <li onclick="updateCHeader('Tiling'); goToResults(); filterSelection('tiling');" class = item>Tiling</li>
                                 <li onclick="updateCHeader('Water Heating'); goToResults(); filterSelection('water-heating');" class = item>Water Heating</li>
                                 <li onclick="updateCHeader('Windows and Doors'); goToResults(); filterSelection('windows-doors');" class = item>Windows and Doors</li>
                             </ul>
@@ -196,7 +188,7 @@
                 </div>
                 <div class = "clist sortAll show" id = "clist">
                     <ul class="clist" >
-                        <li id = "filterContractors" class="clisting all $1 5star landscaping tree-services foundation" data-clisting = "1">
+                        <li id = "filterContractors" class="clisting all $1 5star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Innovate Renovations</h2>
@@ -215,14 +207,16 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does landscaping, tree services, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                         kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Here at Innovate Renovations we provide you with a family first aspect. 
+                                        We have three generations of family members here at Innovate Renovations. 
+                                        We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                                        We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact1')">Contact<span class="popuptext" id= "contact1">111-111-1111</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons"onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -232,10 +226,10 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class = "clisting all $1 10km 5star appliance electric kitchen water-heating utility" data-clisting = "1">
+                        <li id = "filterContractors" class = "clisting all $1 10km 5star appliance electric kitchen water-heating cleaning tiling" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2 class = "clistingName" id= "c2">Kitchen Kings</h2>
+                                    <h2 class = "clistingName" id= "c2" href="kitchenKing.html">Kitchen Kings</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$</h3>
                                         <div class = "c-rating">
@@ -251,27 +245,26 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does appliance, electric, kitchen, water-heating, utility       ;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                        kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Step into the realm of culinary excellence with Kitchen King, your ultimate destination for top-tier kitchen solutions. As a beacon of innovation and style, we take pride in transforming your kitchen into a masterpiece of functionality and aesthetics. At Kitchen King, we blend cutting-edge design with practicality to create spaces that inspire culinary creativity and elevate the heart of your home.</p>
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact2')">Contact<span class="popuptext" id= "contact2">222-222-2222</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons"onclick="goToQuotePage()">Get a Quote</button>
                                         <button  class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
                                 </div>
                                 </div>
                             
-                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            <img class = "listing-img" src="images/kitchen_jd.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $2 5km 3star bathroom drywall flooring electric painting plumbing utility" data-clisting = "2">
+                        <li id = "filterContractors" class= "clisting all $2 5km 3star bathroom drywall flooring electric painting tiling plumbing utility" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
-                                    <h2  class = "clistingName" id= "c3">Smith & Sons Pvt Ltd</h2>
+                                    <h2  class = "clistingName" id= "c3" href= "smith_sons.html">Smith & Sons Pvt Ltd</h2>
                                     <div class = cIconInfo>
                                         <h3 class = "price">$$</h3>
                                         <div class = "c-rating">
@@ -287,24 +280,23 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does bathroom, drywall, flooring, electric, painting, plumbing, utility     lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                        kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Welcome to Smith & Sons Construction, where dreams take shape and visions become reality. With a legacy of craftsmanship and a commitment to excellence, we stand as your trusted partner in building the spaces you envision. From concept to completion, Smith & Sons Construction is dedicated to delivering quality construction services tailored to your unique needs.</p>
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact3')">Contact<span class="popuptext" id= "contact3">333-333-3333</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons"onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
                                 </div>
                                 </div>
                             
-                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            <img class = "listing-img" src="images/smithson.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class= "clisting all $1 20km basement  4star carpet drywall foundation flooring insulation painting bedroom office nursery" data-clisting = "1">
+                        <li id = "filterContractors" class= "clisting all $1 20km basement  4star roofing siding attic windows-doors foundation" data-clisting = "1">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h2  class = "clistingName" id = "c4">Contractor 4</h2>
@@ -328,9 +320,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact4')">Contact<span class="popuptext" id= "contact4">444-444-4444</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -340,7 +332,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all $3 1star roofing siding attic windows-doors foundation" data-clisting = "3">
+                        <li id = "filterContractors" class="clisting all $3 1star carpet flooring basement bedroom office nursery painting tiling cleaning" data-clisting = "3">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h2  class = "clistingName" id="c5">Fabulous Carpeting</h2>
@@ -359,21 +351,20 @@
                                     </div>
                                 </div>
                                 <div class = "description">
-                                    <p>Contractor description: This contractor does: roofing, siding, attic, windows-doors, foundation lkjsd;lgfkjhas;ldgkh;aowirgh;asdhglkasjdf;lkjasd;lfkjhalksdjgl
-                                        kfjhg;lkjasdfl;kjasd l;kajsdf;lkajsdf o;iasdg;lad jl;akdj f;ladjsk kjshg ;ljadskflakjsdh ;lkjsag ;ljsf hg;lkd jl;ad jkf;ld kjsh;lakd f;lsadjkfl;d jsf;kl jds;lkdjs;sld jsd</p>
+                                    <p>Step into a world of luxury and comfort with Fabulous Carpeting. As your premier destination for exquisite flooring solutions, we bring elegance and style to every step. At Fabulous Carpeting, we redefine the art of interior design, creating spaces that are as remarkable as they are inviting.</p>
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact5')">Contact<span class="popuptext" id= "contact5">555-555-5555</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
                                 </div>
                                 </div>
                             
-                            <img class = "listing-img" src="images/innovate_reno.jpeg">
+                            <img class = "listing-img" src="images/carpet_jd.webp">
                             
                         </li>
                         <li id = "filterContractors" class= "clisting all $1 4star 5km heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
@@ -401,9 +392,9 @@
                                 </div>
                                <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact6')">Contact<span class="popuptext" id= "contact6">666-666-6666</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button  class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -413,7 +404,7 @@
                             <img class = "listing-img" src="images/innovate_reno.jpeg">
                             
                         </li>
-                        <li id = "filterContractors" class="clisting all $2 3star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "2">
+                        <li id = "filterContractors" class="clisting all $2 3star landscaping tree-services foundation" data-clisting = "2">
                             <div class = "c-info">
                                 <div class = "clisting1">
                                     <h2  class = "clistingName" id="c7">Contractor 7</h2>
@@ -438,9 +429,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact7')">Contact<span class="popuptext" id= "contact7">777-777-7777</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -475,9 +466,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact8')">Contact<span class="popuptext" id= "contact8">888-888-8888</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -512,9 +503,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact9')">Contact<span class="popuptext" id= "contact9">999-999-9999</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -549,10 +540,10 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact10')">Contact<span class="popuptext" id= "contact10">101-101-1010</span></button>
 
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -587,9 +578,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact11')">Contact<span class="popuptext" id= "contact11">101-101-1111</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -624,9 +615,9 @@
                                 </div>
                                 <div class = "c-listing-buttons">
                                     <div class="important-btns">
-                                        <button class = "listingbuttons">Schedule</button>
+                                        <button class = "listingbuttons" onclick="goToScedulePage()">Schedule</button>
                                         <button class= "contact listingbuttons" onclick="contact('contact12')">Contact<span class="popuptext" id= "contact12">121-121-1212</span></button>
-                                        <button class = "listingbuttons">Get a Quote</button>
+                                        <button class = "listingbuttons" onclick="goToQuotePage()">Get a Quote</button>
                                         <button class = "listingbuttons" onclick="scrollWriteReviewSection()"> Write a Review </button>
                                       </div>
 
@@ -658,7 +649,7 @@
                             <li id = "filterContractors" class="maplisting all $1 5star landscaping tree-services foundation" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2 class = "clistingName" id= "c1" onclick="clistingName('c1');">Innovate Renovations</h2>
+                                        <h2 class = "mapclistingName" id= "c1" onclick="clistingName('c1');">Innovate Renovations</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -681,7 +672,7 @@
                             <li id = "filterContractors" class = "maplisting all $1 10km 5star appliance electric kitchen water-heating utility" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2 class = "clistingName" id= "c2">Kitchen Kings</h2>
+                                        <h2 class = "mapclistingName" id= "c2">Kitchen Kings</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -704,7 +695,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 5km 3star bathroom drywall flooring electric painting plumbing utility" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id= "c3">Smith & Sons Pvt Ltd</h2>
+                                        <h2  class = "mapclistingName" id= "c3">Smith & Sons Pvt Ltd</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">
@@ -727,7 +718,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 20km basement  4star carpet drywall foundation flooring insulation painting bedroom office nursery" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id = "c4">Contractor 4</h2>
+                                        <h2  class = "mapclistingName" id = "c4">Contractor 4</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -750,7 +741,7 @@
                             <li id = "filterContractors" class="maplisting all $3 1star roofing siding attic windows-doors foundation" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c5">Fabulous Carpeting</h2>
+                                        <h2  class = "mapclistingName" id="c5">Fabulous Carpeting</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "c-rating">
@@ -773,7 +764,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 4star 5km heating-cooling utility water-heating appliance electric plumbing" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c6">Contractor 6</h2>
+                                        <h2  class = "mapclistingName" id="c6">Contractor 6</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "map-c-rating">
@@ -797,7 +788,7 @@
                             <li id = "filterContractors" class="maplisting all $2 3star office bedroom bathroom nursery painting drywall carpet flooring" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c7">Contractor 7</h2>
+                                        <h2  class = "mapclistingName" id="c7">Contractor 7</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "c-rating">
@@ -820,7 +811,7 @@
                             <li id = "filterContractors" class= "maplisting all $1 5star 10km appliance electric utility water-heating heating-cooling" data-clisting = "1">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c8">Contractor 8</h2>
+                                        <h2  class = "mapclistingName" id="c8">Contractor 8</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$</h3>
                                             <div class = "c-rating">
@@ -843,7 +834,7 @@
                             <li id = "filterContractors" class= "maplisting all $3 2star 20km landscaping windows-doors siding attic roofing tree-services basement foundation" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c9">Contractor 9</h2>
+                                        <h2  class = "mapclistingName" id="c9">Contractor 9</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "map-c-rating">
@@ -866,7 +857,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 1star 5km kitchen plumbing electric painting bathroom utility" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c10">Contractor 10</h2>
+                                        <h2  class = "mapclistingName" id="c10">Contractor 10</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">
@@ -889,7 +880,7 @@
                             <li id = "filterContractors" class = "maplisting all $3 3star 5km insulation drywall painting flooring carpet bedroom nursery office basement" data-clisting = "3">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id= "c11">Contractor 11</h2>
+                                        <h2  class = "mapclistingName" id= "c11">Contractor 11</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$$</h3>
                                             <div class = "map-c-rating">
@@ -912,7 +903,7 @@
                             <li id = "filterContractors" class= "maplisting all $2 5star 5km utility plumbing electric heating-cooling water-heating" data-clisting = "2">
                                 <div class = "mapInfo">
                                     <div class = "maplisting1">
-                                        <h2  class = "clistingName" id="c12">Contractor 12</h2>
+                                        <h2  class = "mapclistingName" id="c12">Contractor 12</h2>
                                         <div class = mapIconInfo>
                                             <h3 class = "map-price">$$</h3>
                                             <div class = "map-c-rating">

@@ -16,12 +16,17 @@ ul li{
   font-family: Helvetica, sans-serif;
   font-size: 13px;
  font-weight:100;
-
+  /* margin-top:20px;  */
   margin-bottom: 40px;
   align-content: center;
   height: 100%; 
   
+  
 }
+.navStuff{
+  height:60px; 
+}
+
 @media screen and (min-width: 900px) {
   .mainpage {
     margin-left: 15%; 
@@ -55,26 +60,10 @@ margin-bottom: 100px;
 
 
 .service_header, .contractor_list{
-  /* width: 80%; 
-  height: 50px;
-  padding-bottom: 15px; 
   
-  padding-left: 40px;
-  /* margin: auto; */
-  
-  /* background-color:rgb(4, 6, 56);
-  color: white;
-  display: flex;
-  align-items: normal; */ 
-  
-  /* margin-top: 35px; */
-/* background-color:rgb(4, 6, 56);
-color: white; */
   background-color: rgb(4,6,56) ; 
   border: none;
-  /* border-radius: 5px; */
-  /* margin-top: 10px; */
-  /* margin-right: 30%; */
+  
   width: 100%; 
   /* padding-left: 20px; */
   padding-right: 15px;
@@ -84,10 +73,7 @@ color: white; */
   flex-direction: row;
   font-weight: lighter; 
   padding-left: 15px; 
-  /* padding-top: 2px; 
-  padding-bottom: 2px; */
-  /* justify-content: space-between; */
-  /* align-items: start; */
+  
  
 }
 
@@ -122,6 +108,7 @@ margin-right: -25px;
 
 .doll-buttons {
   position: absolute;
+  
 
 }
 
@@ -156,6 +143,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
+  cursor: pointer;
   
   
 }
@@ -188,6 +176,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .doll-utility{
@@ -211,6 +200,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
+  cursor: pointer;
 }
 
 .doll-bathroom2{
@@ -234,6 +224,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
+  cursor: pointer;
 }
 
 .doll-nursery{
@@ -257,6 +248,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
+  cursor: pointer;
 }
 
 .doll-bedroom{
@@ -280,6 +272,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold; 
+  cursor: pointer;
 }
 
 .doll-attic{
@@ -312,6 +305,7 @@ margin-right: -25px;
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
   border-top-color: rgba(128, 128, 128, 1);
+  cursor: pointer;
 }
 
 .doll-attic-text{
@@ -340,6 +334,7 @@ margin-right: -25px;
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
   border-top-color: rgba(128, 128, 128, 0.5); 
+  cursor: pointer;
 }
 
 .doll-office{
@@ -363,6 +358,7 @@ margin-right: -25px;
   background-color:  rgba(128, 128, 128, 0.5);
   color: rgba(0, 0, 0, 1); 
   font-weight: bold;
+  cursor: pointer;
 }
 
 
@@ -427,6 +423,7 @@ margin-right: -25px;
 .item:hover{
   color:rgb(141,27,5);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .results {
@@ -464,6 +461,7 @@ margin-right: -25px;
   width: 100%;
   padding-right: 20px;
   /* padding-bottom: 10px; */
+  height: auto; 
 }
 .clisting1{
   list-style-type: none;
@@ -473,9 +471,10 @@ margin-right: -25px;
   clear: both;
   margin-top: 20px;
   padding-left: 10px;
-  background-color: rgba(6, 62, 126, 0.212);
+  /* background-color: rgba(6, 62, 126, 0.212); */
   text-indent: 0; 
   width: 100%;
+  height: auto;
   
 }
 .clistingName {
@@ -485,6 +484,7 @@ margin-right: -25px;
 }
 .clistingName:hover {
 color: rgb(141,27,5);
+cursor: pointer;
 }
 #c1 {
 color:black; 
@@ -499,18 +499,23 @@ color:#5a01a7;
 
 .c-info{
   width: 100%; 
-  height: 200px; 
+  /* height: 200px;  */
   background-color: transparent;
   padding-left: 10px; 
   /* padding-bottom: 10px; */
   margin-right: 10px;
   margin-bottom: -5px;
+  height: auto;
 }
+
+
 
 .description{
 display: block;
-min-height:78px; 
-max-height: 78px;
+height: auto;
+margin-left: 10px;
+/* min-height:78px; 
+max-height: 78px; */
 }
 
 .listing-img{
@@ -526,12 +531,45 @@ max-height: 78px;
   /* padding-right: 20px; */
 }
 
+
 .c-listing-buttons{
   display: flex;
   flex-direction: row;
-  /* margin-bottom: -20px; */
+  margin-bottom: 20px;
   /* align-items: flex-start; */
   /* justify-content:right; */
+  
+}
+
+@media screen and (max-width: 700px) {
+  .listing-img {
+    display: none; /* Hide the images container when the screen is too small */
+  }
+
+  .c-info {
+    width: 100%; /* Take the full width when images are hidden */
+    height: auto;
+    /* padding: 20px; */
+  }
+  .clisting{
+    height: auto;
+    /* padding-bottom: 20px; */
+  }
+  .clisting1{
+    height: auto;
+  }
+  .c-listing-buttons{
+    /* margin-bottom: 20px;
+    margin-top: -20px;  */
+  }
+  .description{
+    /* margin-bottom: -10px; */
+  }
+}
+@media  screen and (min-width: 1000px) {
+  .description{
+    height: 80px;
+  }
   
 }
 
@@ -540,22 +578,26 @@ margin-right: 10px;
 }
 
 .important-btns{
-padding-top: 20px;
-display: flex;
-/* justify-content: space-between; */
-size: 100%;
+  padding-top: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: 3px;
+  size: 100%;
+  width: 100%;
+  
 }
 .important-btns button{
-max-width: 100%;
-color: white;
-font-weight: bold;
-height: 35px;
-border-radius: 5px;
-border: none;
-cursor: pointer;
-width: 120px;
-background-color: #c2452d;
-font-size: 15px;
+  max-width: 100%;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  /* width: 120px; */
+  background-color: #c2452d;
+  font-size: 15px;
+  width: 66.6%;
 }
 .important-btns button:hover{
 background-color: white;
@@ -599,7 +641,9 @@ margin-right:20px;
   color: rgb(255, 123, 0);
   font-size: 15px;
 }
-
+.fa-heart:hover{
+  cursor: pointer;
+}
 #heart {
   margin-top: 12px; 
   color: grey;  
@@ -884,6 +928,9 @@ margin-right:20px;
   
 
 }
+.sort-dropdown:hover{
+  cursor: pointer;
+}
 
 .google-map {
 display: flex;
@@ -958,6 +1005,7 @@ list-style-type: none;
   text-indent: 0; 
   width: 100%;
   height: 80px; 
+  /* padding-top:-5px;  */
 }
 
 .mapInfo{
@@ -1002,6 +1050,14 @@ width: 100%;
   .map-c-rating i{
     color: rgb(255, 123, 0);
     font-size: 15px;
+  }
+
+  .mapclistingName{
+    padding-bottom:5px; 
+    margin-top:8px; 
+  }
+  .mapclistingName:hover{
+    cursor: pointer;
   }
 
 .toggle{

@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
       <link rel="shortcut icon" href="images/favicon.png"/>
+      <script src="https://kit.fontawesome.com/6566835b4f.js" crossorigin="anonymous"></script>
        
     </head>
 
@@ -18,6 +19,7 @@
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
           <a href="#">Home</a>
+          <a href="#">Feed</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
             <a hred="#" style="font-size: 20px;">By Region</a>
@@ -34,7 +36,6 @@
               <a href="#" style="font-size: 20px;">Painting</a>
               <a hred="#" style="font-size: 20px;">Plumbing</a>
               <a href="#" style="font-size: 20px;">Roofing</a>
-
             </div>
           </div>
           <div class="nav-footer">
@@ -53,10 +54,10 @@
 
         <!-- Search bar -->
         <div class="search-location-bars">
-          <input type="search" id="searchInput"  placeholder="Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
-          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-          <div id="suggestions-container" class="suggestions-dropdown"></div>
-        </div>
+            <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+            <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+            <div id="suggestions-container" class="suggestions-dropdown"></div>
+          </div>
 
         <!-- My Account Button -->
         <div class="login-signup">
@@ -70,35 +71,47 @@
         <div class="mainpage">
           <div class="contractor-intro">
             <div class="contractor-info">
-              <h1>Kitchen King</h1>
-              <p style="font-size: 15px;">Step into the realm of culinary excellence with Kitchen King, your ultimate destination for top-tier kitchen solutions. As a beacon of innovation and style, we take pride in transforming your kitchen into a masterpiece of functionality and aesthetics. At Kitchen King, we blend cutting-edge design with practicality to create spaces that inspire culinary creativity and elevate the heart of your home.</p>
-              <h2 style="color: brown;">90 Oakville Boulevard, Selkirk, MB P3T5S2</h2>  
-              <h3>Services Provided</h3>
-              <div class="services-provided">
-                <button disabled>Kitchen Remodeling</button>
-                <button disabled>Appliance Fixing</button>
-                <button disabled>Electrical</button>
-                <button disabled>Cleaning Services</button>
-              </div>
-              <div class="important-btns">
+              <h1>Fabulous Carpetting</h1>
+              <h3 style="color: brown;">119 WillBorough Drive, Brandon, MB, B2M3S7</h3>
+              <p style="font-size: 15px;">Step into a world of luxury and comfort with Fabulous Carpeting. As your premier destination for exquisite flooring solutions, we bring elegance and style to every step. At Fabulous Carpeting, we redefine the art of interior design, creating spaces that are as remarkable as they are inviting.</p>
+            </div>
+            <div class="contractor-images">
+              <img src="images/fabCarpet.webp">
+              
+            </div>
+          </div>
+          <div class = "contractor-btn-rating">
+            <div class="important-btns">
                 <button onclick="goToScedulePage()">Schedule</button>
-                <button>Contact</button>
+                <button class="contact" onclick="contact('contact5')"><span class="popuptext" id= "contact5">555-555-5555</span>Contact</button>
                 <button onclick="goToQuotePage()">Get a Quote</button>
                 <button onclick="scrollWriteReviewSection()"> Write a Review </button>
               </div>
-            </div>
-
-            <div class="contractor-images">
-              <img src="images/kitchenKing.jpeg">
-              <div class="rating">
-                <p>Rating: <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i></p>
-              </div>
+              <div class = "profileRating">
+              
+                  <p class="rating">Rating: <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i></p>
             </div>
           </div>
+
+
+              <h3>Services Provided</h3>
+              <div class="services-provided">
+                <button disabled>Painting</button>
+                <button disabled>Tiling</button>
+                <button disabled>Carpet Installation</button>
+                <button disabled>Cleaning Services</button>
+                <button disabled>Flooring</button>
+                <button disabled>Basement Renovation</button>
+              </div>
+              
+            
+
+            
+          
           
           <div class="customer-reviews">
             <div class="review-heading">
@@ -107,46 +120,38 @@
             
             <div class="comments">
               <div class="box">
-                <h2>Toran</h2>
-                <p class="summary">My kitchen looks new!<i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <h2>Felix</h2>
+                <p class="summary">Very rude <i class="fa fa-star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></i>
                  </p>
-                <p class="descriptive-summary">Kitchen King surpassed my expectations with their impeccable service and outstanding craftsmanship. The attention to detail in their kitchen designs is unparalleled, and the team went above and beyond to ensure every aspect of the project was executed flawlessly. I now have a kitchen that not only meets but exceeds my culinary needs and aesthetic preferences.</p>
-                <div class="image-reviews">
-                    <img src="images/kitchen1.jpg">
-                    <img src="images/kitchen2.jpg">
-                    <img src="images/kitchen3.webp">
-                </div>
-                
+                <p class="descriptive-summary">Regrettably, the service fell short, displaying an unfortunate level of rudeness. 
+                    The staff's lack of courtesy and professionalism left a disappointing impression, diminishing the overall customer experience. 
+                    Enhancements in customer service are essential to ensure a more positive and welcoming atmosphere in the future.</p>
               </div>
 
               <div class="box">
-                <h2>Ginelle</h2>
-                <p class="summary">Very polite <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i></p>
-                <p class="descriptive-summary">Choosing Kitchen King for my kitchen remodel was the best decision I made. From the initial consultation to the final installation, the entire process was seamless. The team demonstrated expertise in optimizing space and functionality without compromising on style. I'm thrilled with the result, and my kitchen has become the focal point of my home.</p>
-                <div class="image-reviews">
-                    <img src="images/kitchen4.jpg">
-                    <img src="images/kitchen5.jpg">
-                </div>
-                </div>
+                <h2>Richa Chaddha</h2>
+                <p class="summary">Very poor job <i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
+                  Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
+                  Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.
+                   Perhaps a more considered approach would benefit both their work and customer satisfaction. 
+                   Overall, I would cautiously recommend Innovative Renovations to those with a surplus of patience and a penchant for rework..</p>
+              </div>
 
-              <h2>Thamira Randeya</h2>
-              <p class="summary">Loved their work <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i></p>
-              <p class="descriptive-summary">Kitchen King truly lives up to its name. The quality of their products and the level of service provided are exceptional. The team's dedication to customer satisfaction is evident in every step of the process. My newly designed kitchen is a testament to their commitment to excellence, and I couldn't be happier with the transformation. Highly recommended!</p>
+              <div class="box">
+                <h2>Jane Joe</h2>
+                <p class="summary">Not as bad like what other says <i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                <p class="descriptive-summary">These are fake reviews! Their work isn't that bad</p>
+              </div>
+
+              <h2>Anmol Singh</h2>
+              <p class="summary">Did not clean carpet properly <i class="fa fa-star"><i class="fa fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></i>
+                </p>
+              <p class="descriptive-summary"></p>
               <div class="image-reviews">
-                <img src="images/kitchen6.jpg">
-                <img src="images/kitchen7.jpg">
-            </div>
+                <img src="images/dirtycarpet.jpeg">
+                <img src="images/dirtycarpet2.jpeg">
+              </div>
             </div>
           </div>
 
