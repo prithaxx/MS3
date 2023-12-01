@@ -73,3 +73,20 @@ function goToContractor(){
 function goToLogin(){
     window.location.href = 'login.html';
 }
+
+var swiper = new Swiper('.main-container', {
+  slidesPerView: 4,
+  // slidesPerGroup: 4,
+  centerSlide: "true",
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
