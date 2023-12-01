@@ -15,13 +15,13 @@
 
     <body>
        <!-- Navigation bar -->
-      <nav>
+      <nav class="navMargin navDiv">
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
               <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
@@ -40,7 +40,7 @@
           </div>
           <div class="nav-footer">
             <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+            <a href="settings.html" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
           </div>
         </div>
 
@@ -49,7 +49,7 @@
         </div>
 
         <div class="website-icon">
-          <button href="index.html">Contractor Pro</button>        </div>
+            <button href= "index.html" onclick= "gotoLandingPage();">Contractor Pro</button>        </div>
 
         <!-- Search bar -->
         <div class="search-location-bars">
@@ -64,7 +64,6 @@
         </div>
 
       </nav>
-
 
         <!-- MAIN PAGE STARTS HERE -->
         <div class="mainpage">

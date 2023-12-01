@@ -12,13 +12,13 @@
     </head>
     <body>
          <!-- Navigation bar -->
-      <nav>
+      <nav class="navMargin navDiv">
         <div id = "my-burger-links" class="burger-links">
           <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
           <div class="browse-container">
-            <a hred="#" style="font-size: 20px;">By Region</a>
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
             <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
             <div class="services-container">
               <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
@@ -32,11 +32,12 @@
                   <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
                   <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
                   <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
+
             </div>
           </div>
           <div class="nav-footer">
             <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+            <a href="settings.html" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
           </div>
         </div>
 
@@ -45,22 +46,31 @@
         </div>
 
         <div class="website-icon">
-          <button href="index.html">Contractor Pro</button>        </div>
+            <button href= "index.html" onclick= "gotoLandingPage();">Contractor Pro</button>        </div>
 
         <!-- Search bar -->
         <div class="search-location-bars">
-            <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovationss" oninput="showSuggestions()" style="width: 400px;">
-            <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-            <div id="suggestions-container" class="suggestions-dropdown"></div>
+          <input type="search" id="searchInput"  placeholder="Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+          <div id="suggestions-container" class="suggestions-dropdown"></div>
         </div>
-
 
         <!-- My Account Button -->
         <div class="login-signup">
-          <button class = "my-account">My Account <i class="fa fa-user"></i></button>
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
         </div>
+
       </nav>
 
+
+
+
+
+
+
+
+
+      
       <!-- Main page starts here -->
       <div class="mainpage">
         <div class="my-account-heading">

@@ -138,7 +138,7 @@ body {
 nav{
   display: flex;
   width: 100%;
-  background-color: rgba(4, 6, 56, 0.894);
+  background-color: rgb(4, 6, 56);
   position: fixed;
   justify-content: space-between;
   box-sizing: border-box;
@@ -149,6 +149,7 @@ nav{
 
 .website-icon button{
   font-family: 'Kanit', sans-serif;
+  padding-top: 5px;
   font-size: 20px;
   background-color: transparent;
   border: none;
@@ -157,7 +158,9 @@ nav{
 }
 
 .search-location-bars input{
+  top: 3px;
   height: 35px;
+  padding: 5px 15px 5px 15px;
   border-radius: 10px;
   border: solid;
   max-width: 100%;
@@ -165,6 +168,8 @@ nav{
 }
 
 .search-location-bars button{
+  padding-top: 6px;
+  padding-left: 6px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -178,12 +183,13 @@ nav{
 }
 
 .login-signup button{
+  top: 3px;
   position: relative;
   max-width: 100%;
   color: white;
   font-weight: bold;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 7px;
   border: none;
   cursor: pointer;
   width: 120px;
@@ -199,7 +205,7 @@ nav{
   color: white;
 }
 
-/* --------------BURGER ---------------- */
+/* BURGER  */
 .openbtn{
   background-color: transparent;
   border: none;
@@ -217,6 +223,7 @@ nav{
   left: 0;
   background-color: rgb(4, 6, 56);
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -295,6 +302,13 @@ nav{
   cursor: pointer;
   font-size: 20px;
   padding-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.services-container {
+  display: none;
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
 }
 
 /* Some media queries for responsiveness */
@@ -303,20 +317,40 @@ nav{
   .burger-links a {font-size: 18px;}
 }
 
-.nav-header{
+.nav-footer{
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  background-color:rgb(4, 6, 56);
   display: flex;
+}
+
+.write-review {
+  padding-top: 30px;
+}
+
+.write-review-heading h2 {
+  font-weight: lighter;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.review {
+  padding-top: 8px;
 }
 
 .review textarea{
   display: block;
-  width: 100%;
+  resize: none;
+  width: 95%;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   font-family: Arial;
   font-size: 15px;
 }
 .message{
-  height: 80px;
+  padding: 5px 15px 5px 15px;
 }
 .submit-button {
   display: block;
@@ -325,7 +359,7 @@ nav{
   color: white;
   font-weight: bold;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 7px;
   border: none;
   cursor: pointer;
   width: 120px;
@@ -333,6 +367,8 @@ nav{
   margin-top: 20px; /* Adjust the top margin as needed */
 }
 
+
+  
 .submit-confirmation{
   width: 400px;
   background: aliceblue;
@@ -376,7 +412,7 @@ nav{
   border: 0;
   outline: none;
   font-size: 18px;
-  border-radius: 4px;
+  border-radius: 7px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
@@ -390,6 +426,32 @@ nav{
   display: none;
   z-index: 999; /* Ensure the overlay appears below the popup */
 }
+
+  .suggestions-dropdown {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    width: 400px;
+    overflow-y: auto;
+    position: fixed;
+    display: none; /* initially hide the suggestions */
+  }
+  
+  .suggestions-dropdown a {
+    display: block; /* Each suggestion link on a separate line */
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .suggestions-dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+
 
   
 .feed-main {

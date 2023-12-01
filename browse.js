@@ -213,6 +213,9 @@ function contact(i) {
   contact.classList.toggle("showPopUp");
 }
 
+function goToLandingPage(){
+  window.location.href = 'index.html';
+}
 
 function gotoc1(){
   var targetPage = 'contractor_home.html';

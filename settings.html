@@ -3,7 +3,7 @@
 
     <head>
       <title>YourContractor.com</title>
-      <link rel="stylesheet" href="feed.css">
+      <link rel="stylesheet" href="settings.css">
       <link rel="stylesheet" href="contractor_home.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,61 +15,175 @@
 
     <body>
         <!-- Navigation bar -->
-        <nav>
-          <div id = "my-burger-links" class="burger-links">
-            <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
-            <a href="#">Home</a>
-            <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
-            <div class="browse-container">
-              <a hred="#" style="font-size: 20px;">By Region</a>
-              <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
-              <div class="services-container">
-                <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
-                    <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');"style="font-size: 20px;">Appliance Repairs</a>
-                    <a href="browse.html" onclick= "goToBrowseBasement(); updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');"style="font-size: 20px;">Basement Renovation</a>
-                    <a href="browse.html" onclick= "goToBrowseBathroom(); updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" style="font-size: 20px;">Bathroom Renovation</a>
-                    <a href="browse.html" onclick= "goToBrowseDrywall(); updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" style="font-size: 20px;">Drywalling</a>
-                    <a href="browse.html" onclick= "goToBrowseElectric(); updateCHeader('Electrical'); goToResults(); filterSelection('electric');" style="font-size: 20px;">Electrical</a>
-                    <a href="browse.html" onclick= "goToBrowseKitchen(); updateCHeader('Kitchen Remodeling'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
-                    <a href="browse.html" onclick= "goToBrowseLandscaping(); updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" style="font-size: 20px;">Landscaping</a>
-                    <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
-                    <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
-                    <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
-              </div>
-            </div>
-            <div class="nav-footer">
-              <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
-              <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
-            </div>
-          </div>
-  
-          <div id="main">
-            <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
-          </div>
-  
-          <div class="website-icon">
-            <button href="index.html">Contractor Pro</button>        </div>
-  
-          <!-- Search bar -->
-          <div class="search-location-bars">
-              <input type="search" id="searchInput"  placeholder="Search here ex. Basement Renovationss" oninput="showSuggestions()" style="width: 400px;">
-              <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
-              <div id="suggestions-container" class="suggestions-dropdown"></div>
-          </div>
-  
-  
-          <!-- My Account Button -->
-          <div class="login-signup">
-            <button class = "my-account">My Account <i class="fa fa-user"></i></button>
-          </div>
-        </nav>
+      <nav class="navMargin navDiv">
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <a href="index.html">Home</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a href="browse.html" onclick= "goToBrowseAll(); updateCHeader('BrowseAll'); goToResults(); filterSelection('all');" style="font-size: 20px;">Browse All</a> 
+                  <a href="browse.html" onclick= "goToBrowseAppliance(); updateCHeader('Appliance Repair'); goToResults(); filterSelection('appliance');"style="font-size: 20px;">Appliance Repairs</a>
+                  <a href="browse.html" onclick= "goToBrowseBasement(); updateCHeader('Basement Renovation'); goToResults(); filterSelection('basement');"style="font-size: 20px;">Basement Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseBathroom(); updateCHeader('Bathroom Renovation'); goToResults(); filterSelection('bathroom');" style="font-size: 20px;">Bathroom Renovation</a>
+                  <a href="browse.html" onclick= "goToBrowseDrywall(); updateCHeader('Drywalling'); goToResults(); filterSelection('drywall');" style="font-size: 20px;">Drywalling</a>
+                  <a href="browse.html" onclick= "goToBrowseElectric(); updateCHeader('Electrical'); goToResults(); filterSelection('electric');" style="font-size: 20px;">Electrical</a>
+                  <a href="browse.html" onclick= "goToBrowseKitchen(); updateCHeader('Kitchen Remodeling'); goToResults(); filterSelection('kitchen');" style="font-size: 20px;">Kitchen Remodeling</a>
+                  <a href="browse.html" onclick= "goToBrowseLandscaping(); updateCHeader('Landscaping'); goToResults(); filterSelection('landscaping');" style="font-size: 20px;">Landscaping</a>
+                  <a href="browse.html" onclick= "goToBrowsePainting(); updateCHeader('Painting'); goToResults(); filterSelection('painting');" style="font-size: 20px;">Painting</a>
+                  <a href="browse.html" onclick= "goToBrowsePlumbing(); updateCHeader('Plumbing'); goToResults(); filterSelection('plumbing');"style="font-size: 20px;">Plumbing</a>
+                  <a href="browse.html" onclick= "goToBrowseRoofing(); updateCHeader('Roofing'); goToResults(); filterSelection('roofing');"style="font-size: 20px;">Roofing</a>
 
+            </div>
+          </div>
+          <div class="nav-footer">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="settings.html" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+            <button href= "index.html" onclick= "gotoLandingPage();">Contractor Pro</button>        </div>
+
+        <!-- Search bar -->
+        <div class="search-location-bars">
+          <input type="search" id="searchInput"  placeholder="Basement Renovations" oninput="showSuggestions()" style="width: 400px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+          <div id="suggestions-container" class="suggestions-dropdown"></div>
+        </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account" onclick="goToUserHomePage()">My Account <i class="fa fa-user"></i></button>
+        </div>
+
+      </nav>
+
+
+
+
+
+        <!-- --------------------------- MAIN PAGE -------------------------------- -->
       <div class="mainpage">
 
 
-        <div class="my-account-heading">
-            <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Settings</h2>
+        <div class="main-settings-heading">
+            <h1 style="">Settings</h2>
+
+
+            
+
+
+
+
         </div>
+        
+        <div class = "privacy">
+          <h2 class = "settingHeading">Privacy Settings</h2>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Keep my account public</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Show my name in posts</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Show my name in reviews</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Show my posts in the Feed</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Show my reviews for contractors</h4>
+          </div>
+        </div>
+
+
+        <div class = "notifications">
+          <h2 class = "settingHeading">Email Notifications</h2>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Receive notifications for scheduled appointments</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Receive notifications for likes on your posts</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Receive notifications for comments on your posts</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Receive an email of your submitted quote requests</h4>
+          </div>
+          <div class = "toggle setting-line" id= "toggle">
+              
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider" onclick= "switchVisible(); "></span>
+            </label>
+            <h4 class = "setting-description">Receive monthly newsletter of our "Monthly Picks"  </h4>
+          </div>
+        </div>
+        <!-- <div>
+          <h2 class = "settingHeading">Email Notifications</h2>
+
+        </div> -->
+        <!-- <div>
+          <h2 class = "settingHeading">Email Notifications</h2>
+
+        </div>
+        <div>
+          <h2 class = "settingHeading">Email Notifications</h2>
+
+        </div> -->
 
       </div>
       
