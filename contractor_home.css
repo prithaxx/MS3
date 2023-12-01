@@ -45,6 +45,9 @@ body {
 .profileRating{
   margin-left: 6%;
   margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .rating i{
   color: rgb(255, 123, 0);
@@ -204,6 +207,22 @@ body {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
+#heart {
+  margin-top: 7px; 
+  margin-left:20px; 
+  color: grey;  
+  font-size: 30px;
+}
+
+#heart.red {
+  color: rgb(163, 7, 7);
+}
+
+.fa-heart:hover{
+  cursor: pointer;
+}
+
 
 
 

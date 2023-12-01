@@ -20,6 +20,7 @@ ul li{
   margin-bottom: 40px;
   align-content: center;
   height: 100%; 
+  margin:10%;
   
   
 }
@@ -28,10 +29,10 @@ ul li{
 }
 
 @media screen and (min-width: 900px) {
-  .mainpage {
+  /* .mainpage {
     margin-left: 15%; 
     margin-right: 15%;
-  }
+  } */
 }
 
 .browse{
@@ -578,6 +579,7 @@ max-height: 78px; */
 @media  screen and (min-width: 1000px) {
   .description{
     height: 80px;
+    margin:auto; 
   }
   
 }
@@ -634,7 +636,7 @@ margin-right:20px;
 
 }
 .price{
-  margin-right: 30px; 
+  margin-right: 20px; 
   margin-top: 20px; 
 }
 
@@ -642,7 +644,7 @@ margin-right:20px;
   /* align-items: self-end; */
   margin-left: 20px;
   margin-top: 7px; 
-  margin-right: 40px; 
+  margin-right: 20px; 
   /* width: 20%;  */
   /* justify-content: right; */
 }

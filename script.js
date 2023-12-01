@@ -231,5 +231,15 @@ function toggleMap(i) {
   w3AddClass(list, "hide");
 
 }
-  
+ 
+function favourite(i) {
+  const heart = document.getElementById(i); 
+  heart.addEventListener('click', redHeart(i) );
+}
+
+function redHeart(i) {
+  const heart = document.getElementById(i);
+  heart.classList.toggle('red');
+
+}
 
