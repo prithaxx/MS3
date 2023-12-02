@@ -85,6 +85,17 @@ border-color: black;
       width: 90%;
     }
   }
+
+  input:invalid{
+    background-image: rgb(126, 141, 189); 
+  }
+  input:invalid:required {
+    background-image: rgb(63, 64, 70);
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
   
   /* ------------NAVBAR------------- */
 

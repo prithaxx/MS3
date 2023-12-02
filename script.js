@@ -132,16 +132,16 @@ submitConf.style.visibility = "hidden";
 }
 
 
-function makeReview() {
-  var name = document.getElementById("rName").value;
-  var des = document.getElementById("rDes").value;
-  var html = <h2>${name}</h2>
-              <p class="summary"><i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i></p>
-              <p class="descriptive-summary">${des}</p>;
-  document.getElementById("newReview").innerHTML = html;
-}
+// function makeReview() {
+//   var name = document.getElementById("rName").value;
+//   var des = document.getElementById("rDes").value;
+//   var html = <h2>${name}</h2>
+//               <p class="summary"><i class="fa fa-star"></i>
+//                 <i class="fa fa-star"></i>
+//                 <i class="fa fa-star"></i></p>
+//               <p class="descriptive-summary">${des}</p>;
+//   document.getElementById("newReview").innerHTML = html;
+// }
 
 // ------------------- JS FOR LINKING TO USER HOME PAGE ----------------------------
 function goToUserHomePage(){
@@ -818,9 +818,11 @@ generateCalendar(currentMonth, currentYear);
 
 //function that works onclick for get a quote
 function getAQuote() {
+  
   alert("Request for a quote has been submitted successfully!");
   goToUserHomePage();
 }
+
 
 // ------------------- JS FOR LINKING TO USER HOME PAGE ----------------------------
 function goToUserHomePage() {

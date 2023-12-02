@@ -18,6 +18,9 @@ margin-bottom: 40px;
   margin-right: 15%;
   }
 }
+.login{
+  font-family: Helvetica, sans-serif;
+}
 
 .login-box {
 border: solid;
@@ -78,4 +81,15 @@ td input{
 .loginbtn:active{
   background-color: white;
   color: rgb(141, 27, 5);
+}
+
+input:invalid{
+  background-image: rgb(126, 141, 189); 
+}
+input:invalid:required {
+  background-image: rgb(63, 64, 70);
+}
+
+input:valid {
+  border: 2px solid black;
 }

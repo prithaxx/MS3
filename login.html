@@ -17,26 +17,26 @@
       <div class="mainpage">
         <div class="login-box" style="background: #fff;">
           <h1>Login</h1>
-          <form>
+          <form class = "login" >
               <div class="login-group">
                 <p>Don't have an account? Register <a href="register.html">here</a></p>
                 <table>
                     <tr>
-                        <td>Enter email as username:</td>
-                        <td><input></td>
+                        <td class= "login">Enter email as username:</td>
+                        <td><input type = "email" ></td>
                     </tr>
                     <tr>
-                        <td>Enter your password:</td>
-                        <td><input></td>
+                        <td class = "login">Enter your password:</td>
+                        <td><input type = "text" ></td>
                     </tr>
                 </table>
                 <p>Continue as a <a href="index.html">guest</a></p>
-                <button class="loginbtn" type="button" onclick="goToLandingPage()">Login!</button>
+                <button class="loginbtn" onclick="goToLandingPage()" >Login!</button>
                 </div>
             </form>
           </div>
       </div>
-      <script src="mel-script.js"></script>
+      <script src="script.js"></script>
     </body>
     
 </html>    
