@@ -214,7 +214,7 @@ function contact(i) {
 }
 
 function goToLandingPage(){
-  window.location.href = 'index.html';
+  window.location.href = 'feed.html';
 }
 
 function gotoc1(){

@@ -480,7 +480,7 @@ function contact(i) {
 }
 
 function goToLandingPage(){
-  window.location.href = 'index.html';
+  window.location.href = 'feed.html';
 }
 
 function gotoc1(){
@@ -610,7 +610,7 @@ element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" }
 
 
 function goToLandingPage(){
-  window.location.href = 'index.html';
+  window.location.href = 'feed.html';
 }
 
 function goToContractor(){
@@ -618,7 +618,7 @@ function goToContractor(){
 }
 
 function goToLogin(){
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 var swiper = new Swiper('.main-container', {

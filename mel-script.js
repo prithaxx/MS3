@@ -63,7 +63,7 @@ function scrollWriteReviewSection() {
 
 
 function goToLandingPage(){
-    window.location.href = 'index.html';
+    window.location.href = 'feed.html';
 }
 
 function goToContractor(){
