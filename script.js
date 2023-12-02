@@ -802,17 +802,64 @@ dateTable.dataset.month = currentMonth;
 dateTable.dataset.year = currentYear;
 generateCalendar(currentMonth, currentYear);
 
+// -------------LOGIN_-------
 
+function doLogin() {
+  var loginItem1 = document.getElementById("login-email");
+  var loginItem2 = document.getElementById("login-pwd");
 
+  if (!checkValidity(loginItem1) || !checkValidity(loginItem2)) {
+    alert("Enter valid email and password.");
+  } else {
+    goToLandingPage();
+  }
+}
+function checkValidity(item){
+  if (item && item.value == "")
+    return false;
+  return true;
+}
 
+function doRegister() {
+  var loginItem1 = document.getElementById("reg-email");
+  var loginItem2 = document.getElementById("reg-pwd");
+  var loginItem3 = document.getElementById("reg-pwd2");
 
+  if (!checkValidity(loginItem1) || !checkValidity(loginItem2) || !checkValidity(loginItem3) ) {
+    alert("Enter valid email and password.");
+  } else {
+    goToLogin();
+  }
+}
+function checkValidity(item){
+  if (item && item.value == "")
+    return false;
+  return true;
+}
 
 
 
 
 // -----------------------QUOTE-----------------------
+function getAQuote() {
+  var loginItem1 = document.getElementById("quoteemail");
+  var loginItem2 = document.getElementById("quoteph");
+  var loginItem3 = document.getElementById("quotename");
+  var loginItem4 = document.getElementById("quotemessage");
+  
+  
 
-
+  if (!checkValidity(loginItem1) || !checkValidity(loginItem2) ||!checkValidity(loginItem3) ||!checkValidity(loginItem4)) {
+    alert("Enter valid email and password.");
+  } else {
+    goToUserHomePage();
+  }
+}
+function checkValidity(item){
+  if (item && item.value == "")
+    return false;
+  return true;
+}
 
 
 

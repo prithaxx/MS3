@@ -29,7 +29,6 @@ Once the website has launched you may navigate between a total of 20 pages.
 
 
 
-## Imcomplete Features
 
 
 
