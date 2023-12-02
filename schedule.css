@@ -19,6 +19,7 @@ body {
     
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     height: 100%;
+    
   }
 
   .table{
@@ -40,6 +41,8 @@ body {
     background-color:  rgba(226, 241, 249, 0.5);
     margin-top:5%; 
     padding:20px; 
+    border: solid;
+border-color: black;
   }
   
   table {
@@ -49,7 +52,7 @@ body {
   }
   
   .available {
-    background-color: rgba(165, 166, 200, 0.894);
+    background-color: #c2462d61;
   }
   
   th,
@@ -80,7 +83,7 @@ body {
   #subButton {
     padding: 10px;
     margin-top: 10px;
-    background-color: rgba(4, 6, 56, 0.894);
+    background-color: #c2452d;
     color: white;
     border: none;
     cursor: pointer;
@@ -88,7 +91,7 @@ body {
   }
   
   #subButton:hover {
-    background-color: #2980b9;
+    background-color: white;
   }
   
   #selectedDateForm {

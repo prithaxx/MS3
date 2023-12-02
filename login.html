@@ -2,35 +2,36 @@
 <html>
 
     <head>
-      <title>Contractor Pro | Login</title>
+      <title>YourContractor.com</title>
       <link rel="stylesheet" href="login.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.png"/>
        
     </head>
 
     <body>
      
       <div class="mainpage">
-        <div class="login-box">
+        <div class="login-box" style="background: #fff;">
           <h1>Login</h1>
           <form>
               <div class="login-group">
-                  <p>Don't have an account? <a href="register.html">Register here!</a></p>
-                  <div class="login-field">
-                      <label>Enter email as username:</label>
-                      <input type="email" placeholder="example@something.ca">
-                  </div>
-  
-                  <div class="login-field">
-                      <label>Enter password:</label>
-                      <input type="password" placeholder="Password">
-                  </div>
-  
-                  <p>Forgot password? <a href="#">Click here!</a></p>
-                  <button type="button" onclick="goToLandingPage()">Login!</button>
+                <p>Don't have an account? Register <a href="register.html">here</a></p>
+                <table>
+                    <tr>
+                        <td>Enter email as username:</td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your password:</td>
+                        <td><input></td>
+                    </tr>
+                </table>
+                <p>Continue as a <a href="index.html">guest</a></p>
+                <button class="loginbtn" type="button" onclick="goToLandingPage()">Login!</button>
                 </div>
             </form>
           </div>
