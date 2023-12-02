@@ -818,13 +818,10 @@ generateCalendar(currentMonth, currentYear);
 
 //function that works onclick for get a quote
 function getAQuote() {
-  // var element = document.getElementById("getAQuote"); 
-  // var valid = element.HTMLSelectElement.checkValidity(); 
-  // if(valid){
+  if(validateForm()) {
     alert("Request for a quote has been submitted successfully!");
-  goToUserHomePage();
-  // }
-  
+    goToUserHomePage();
+  }
 }
 
 
