@@ -2,7 +2,7 @@
 <html>
 
     <head>
-      <title>YourContractor.com</title>
+      <title>Contractor Pro | Innovate Renovations</title>
       <link rel="stylesheet" href="contractor_home.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,7 +124,7 @@
               <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">5 Customer Reviews</h2>
             </div>
             
-            <div class="comments">
+            <div class="comments box" id= "newReview">
               <div class="box">
                 <h2>Jeff Winsten</h2>
                 <p class="summary">Fast Efficient Helpful <i class="fa fa-star"></i>
@@ -188,9 +188,9 @@
               <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Write a Review</h2>
           </div>
           <form class="review" id ="review">
-            <textarea class="message" placeholder="Enter your name" rows="1"></textarea>
+            <textarea class="message" id= "rName" placeholder="Enter your name" rows="1"></textarea>
             <textarea class="message" placeholder="Enter your email" rows="1"></textarea>
-            <textarea class="message" placeholder="Enter your message here" rows="8"></textarea>
+            <textarea class="message" id= "rDes" placeholder="Enter your message here" rows="8"></textarea>
             <button class="submit-button" onclick="openSubmitConf()">Submit</button>
 
             <div class="overlay" id="overlay"></div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Schedule</title>
+    <title>Contractor Pro | Schedule</title>
     <link rel="stylesheet" href="schedule.css"/>
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navMargin navDiv">
+    <nav class="navMargin navDiv navWidth">
       <div id = "my-burger-links" class="burger-links">
         <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
         <a href="index.html">Home</a>
@@ -78,11 +78,11 @@
 
 
 
-    
+
     <div id="scheduler">
       <div id="calendar">
         <h2>Book your Appointment</h2>
-        <table id="dateTable">
+        <table id="dateTable" class = "table">
           <thead>
             <tr>
               <th colspan="7"></th>
@@ -99,7 +99,7 @@
           </thead>
           <tbody id="calendarBody"></tbody>
         </table>
-      </div>
+      
 
       <div id="selectedDateForm">
         <div id="selectedDate">Selected Date:</div>
@@ -124,7 +124,7 @@
               <button onclick="closeSubmitConf()">OK</button>
               
             </div>
-        
+      </div>
       </div>
     </div>
 

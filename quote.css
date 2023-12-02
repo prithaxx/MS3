@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: aliceblue;
     height: 100%;
     margin: 0;
     /* padding: 0;  */
@@ -59,7 +59,7 @@ body {
   }
   
   #SubmitQButton {
-    background-color: rgb(141, 27, 5);
+    background-color: #c2452d;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -189,6 +189,8 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-align: left;
+  
 }
 
 .browse-dropdown-btn, .servicesbtn{
@@ -202,6 +204,7 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-indent: 25px;
 }
 
 .burger-links a:hover {
@@ -274,6 +277,7 @@ nav{
   width: 100%;
   background-color:rgb(4, 6, 56);
   display: flex;
+  text-align: center;
 }
 
 .write-review {
@@ -281,6 +285,7 @@ nav{
 }
 
 .write-review-heading h2 {
+  font-family: 'Kanit';
   font-weight: lighter;
   padding-left: 15px;
   padding-top: 8px;
@@ -401,28 +406,4 @@ nav{
     background-color: #f0f0f0;
   }
   
-  
-  
-  .suggestions-dropdown {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    max-height: 200px;
-    width: 400px;
-    overflow-y: auto;
-    position: fixed;
-    display: none; /* initially hide the suggestions */
-  }
-  
-  .suggestions-dropdown a {
-    display: block; /* Each suggestion link on a separate line */
-    padding: 8px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .suggestions-dropdown a:hover {
-    background-color: #f0f0f0;
-  }
   

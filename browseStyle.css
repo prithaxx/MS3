@@ -1439,6 +1439,8 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-align: left;
+  
 }
 
 .browse-dropdown-btn, .servicesbtn{
@@ -1452,6 +1454,7 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-indent: 25px;
 }
 
 .burger-links a:hover {
@@ -1524,6 +1527,7 @@ nav{
   width: 100%;
   background-color:rgb(4, 6, 56);
   display: flex;
+  text-align: center;
 }
 
 .write-review {
@@ -1531,6 +1535,7 @@ nav{
 }
 
 .write-review-heading h2 {
+  font-family: 'Kanit';
   font-weight: lighter;
   padding-left: 15px;
   padding-top: 8px;

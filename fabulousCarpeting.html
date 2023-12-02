@@ -2,7 +2,7 @@
 <html>
 
     <head>
-      <title>YourContractor.com</title>
+      <title>Contractor Pro | Fabulous Carpeting</title>
       <link rel="stylesheet" href="contractor_home.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +70,7 @@
         <div class="mainpage">
           <div class="contractor-intro">
             <div class="contractor-info">
-              <h1>Fabulous Carpetting</h1>
+              <h1>Fabulous Carpeting</h1>
               <h3 style="color: brown;">119 WillBorough Drive, Brandon, MB, B2M3S7</h3>
               <p style="font-size: 15px;">Step into a world of luxury and comfort with Fabulous Carpeting. As your premier destination for exquisite flooring solutions, we bring elegance and style to every step. At Fabulous Carpeting, we redefine the art of interior design, creating spaces that are as remarkable as they are inviting.</p>
             </div>
@@ -117,7 +117,7 @@
               <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">4 Customer Reviews</h2>
             </div>
             
-            <div class="comments">
+            <div class="comments box" id= "newReview">
               <div class="box">
                 <h2>Felix</h2>
                 <p class="summary">Very rude <i class="fa fa-star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></i>
@@ -159,9 +159,9 @@
               <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Write a Review</h2>
           </div>
           <form class="review" id ="review">
-            <textarea class="message" placeholder="Enter your name" rows="1"></textarea>
+            <textarea class="message" id = "rName" placeholder="Enter your name" rows="1"></textarea>
             <textarea class="message" placeholder="Enter your email" rows="1"></textarea>
-            <textarea class="message" placeholder="Enter your message here" rows="8"></textarea>
+            <textarea class="message" id= "rDes" placeholder="Enter your message here" rows="8"></textarea>
             <button class="submit-button" onclick="openSubmitConf()">Submit</button>
 
             <div class="overlay" id="overlay"></div>

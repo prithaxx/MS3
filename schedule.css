@@ -1,33 +1,51 @@
 body {
     font-family: Helvetica, sans-serif;
+    width: 100%;
+    margin-left:-10px;
+    height: 100%;  
+    background-color: aliceblue;
   }
+
+  /* .navWidth{
+    width: 100%;
+  } */
   
   #scheduler {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 40px;
+    
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: 100%;
+  }
+
+  .table{
+    margin-bottom: 20px;
   }
   
   .navMargin {
-    margin-top: -10px;
+    top:0; 
   }
   
   #calendar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
     max-width: 400px;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 40px;
-    padding-top: 70px;
+    background-color:  rgba(226, 241, 249, 0.5);
+    margin-top:5%; 
+    padding:20px; 
   }
   
   table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
   }
   
   .available {
@@ -198,6 +216,8 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-align: left;
+  
 }
 
 .browse-dropdown-btn, .servicesbtn{
@@ -211,6 +231,7 @@ nav{
   width: 100%;
   font-family: 'Kanit', sans-serif;
   border: none;
+  text-indent: 25px;
 }
 
 .burger-links a:hover {
@@ -283,6 +304,7 @@ nav{
   width: 100%;
   background-color:rgb(4, 6, 56);
   display: flex;
+  text-align: center;
 }
 
 .write-review {
@@ -290,6 +312,7 @@ nav{
 }
 
 .write-review-heading h2 {
+  font-family: 'Kanit';
   font-weight: lighter;
   padding-left: 15px;
   padding-top: 8px;
@@ -410,28 +433,4 @@ nav{
     background-color: #f0f0f0;
   }
   
-  
-  
-  .suggestions-dropdown {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    max-height: 200px;
-    width: 400px;
-    overflow-y: auto;
-    position: fixed;
-    display: none; /* initially hide the suggestions */
-  }
-  
-  .suggestions-dropdown a {
-    display: block; /* Each suggestion link on a separate line */
-    padding: 8px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .suggestions-dropdown a:hover {
-    background-color: #f0f0f0;
-  }
   
